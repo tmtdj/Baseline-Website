@@ -1,0 +1,242 @@
+/* exercise.css — Shared styles for exercise + shift landing pages */
+
+/* ── Inherit base tokens from main.css ── */
+:root {
+  --bg: #000; --surface: #111; --stroke: rgba(255,255,255,.08);
+  --t1: #fff; --t2: rgba(255,255,255,.7); --t3: rgba(255,255,255,.4);
+  --green: #30D158; --tangerine: #FF6F2C; --steel: #8EA8AA;
+  --indigo: #6366F1; --solar: #EAB308; --ice: #67E8F9;
+  --lavender: #A78BFA; --red: #EF4444;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'DM Sans', -apple-system, sans-serif;
+  --accent: #8FA89A;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--bg); color: var(--t1); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+/* ── Header ── */
+.page-header {
+  padding: 20px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--stroke);
+}
+.page-header .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.page-header .logo-mark {
+  width: 28px; height: 28px; background: #fff; border-radius: 6px;
+}
+.page-header .logo-text {
+  font-size: 13px; font-weight: 700; letter-spacing: 5px; color: var(--t1);
+}
+.page-header .nav-cta {
+  font-size: 13px; font-weight: 600; padding: 8px 18px;
+  background: var(--green); color: #000; border-radius: 100px;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  padding: 16px 0 0;
+  font-size: 13px; color: var(--t3);
+}
+.breadcrumb a { color: var(--t3); }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb span { margin: 0 6px; }
+
+/* ── Hero ── */
+.exercise-hero {
+  padding: 48px 0 40px;
+  border-bottom: 1px solid var(--stroke);
+}
+.exercise-hero .category-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 100px;
+  margin-bottom: 16px;
+}
+.exercise-hero h1 {
+  font-family: var(--serif); font-size: clamp(32px, 6vw, 48px);
+  font-weight: 400; line-height: 1.15; margin-bottom: 12px;
+}
+.exercise-hero .tagline {
+  font-size: 18px; color: var(--t2); line-height: 1.5;
+  max-width: 560px;
+}
+
+/* ── Dose Card ── */
+.dose-card {
+  margin: 40px 0;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+  background: var(--surface);
+}
+.dose-card .dose-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--t3); margin-bottom: 8px;
+}
+.dose-card .dose-time {
+  font-family: var(--serif); font-size: 42px; margin-bottom: 4px;
+}
+.dose-card .dose-explain {
+  font-size: 15px; color: var(--t2); line-height: 1.6;
+}
+
+/* ── Content Sections ── */
+.content-section { padding: 36px 0; border-bottom: 1px solid var(--stroke); }
+.content-section:last-of-type { border-bottom: none; }
+.content-section h2 {
+  font-family: var(--serif); font-size: 24px; font-weight: 400;
+  margin-bottom: 16px;
+}
+.content-section p, .content-section li {
+  font-size: 16px; color: var(--t2); line-height: 1.7;
+}
+.content-section ul { list-style: none; padding: 0; }
+.content-section ul li { padding: 8px 0; padding-left: 20px; position: relative; }
+.content-section ul li::before {
+  content: ''; position: absolute; left: 0; top: 16px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+}
+
+/* ── Cue Block ── */
+.cue-block {
+  margin: 20px 0;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border-left: 3px solid var(--green);
+  background: rgba(48,209,88,.04);
+}
+.cue-block .cue-title {
+  font-weight: 700; font-size: 16px; margin-bottom: 6px;
+}
+.cue-block .cue-detail {
+  font-size: 15px; color: var(--t2); line-height: 1.6;
+}
+
+/* ── Variant Cards ── */
+.variant-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+@media (max-width: 560px) { .variant-grid { grid-template-columns: 1fr; } }
+.variant-card {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke);
+  background: var(--surface);
+}
+.variant-card .variant-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.variant-card .variant-label.easier { color: var(--accent); }
+.variant-card .variant-label.harder { color: var(--tangerine); }
+.variant-card .variant-title { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+.variant-card .variant-desc { font-size: 14px; color: var(--t2); line-height: 1.5; }
+
+/* ── Guide Image / Video ── */
+.guide-figure {
+  text-align: center; padding: 32px 0;
+}
+.guide-figure img {
+  max-height: 500px; width: auto;
+  filter: drop-shadow(0 0 40px rgba(48,209,88,.15));
+}
+.guide-figure video {
+  width: 100%; max-width: 480px; height: auto;
+  border-radius: 12px;
+  position: relative;
+}
+/*
+ * Category tints — matches the app's .colorMultiply(color.opacity(0.92))
+ * Uses a pseudo-element overlay with mix-blend-mode: multiply
+ */
+.guide-figure { position: relative; display: inline-block; }
+.guide-figure::after {
+  content: '';
+  position: absolute;
+  inset: 32px 0;
+  border-radius: 12px;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.92;
+}
+.guide-figure[data-category="mobility"]::after {
+  background: #30D158;
+}
+.guide-figure[data-category="bodyweight"]::after {
+  background: #FF6F2C;
+}
+.guide-figure[data-category="recovery"]::after {
+  background: #7B8FA3;
+}
+/* Glow per category */
+.guide-figure[data-category="mobility"] video { filter: drop-shadow(0 0 40px rgba(48,209,88,.2)); }
+.guide-figure[data-category="bodyweight"] video { filter: drop-shadow(0 0 40px rgba(255,111,44,.2)); }
+.guide-figure[data-category="recovery"] video { filter: drop-shadow(0 0 40px rgba(123,143,163,.2)); }
+
+/* ── CTA Banner ── */
+.cta-banner {
+  margin: 40px 0;
+  padding: 32px;
+  border-radius: 16px;
+  background: rgba(48,209,88,.06);
+  border: 1px solid rgba(48,209,88,.15);
+  text-align: center;
+}
+.cta-banner h3 {
+  font-family: var(--serif); font-size: 22px; font-weight: 400;
+  margin-bottom: 8px;
+}
+.cta-banner p { font-size: 15px; color: var(--t2); margin-bottom: 20px; }
+.cta-banner .dl-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 32px; border-radius: 100px;
+  font-size: 16px; font-weight: 600;
+  background: var(--green); color: #000;
+}
+
+/* ── Related Exercises ── */
+.related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+.related-card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke);
+  background: var(--surface);
+  transition: border-color .2s;
+}
+.related-card:hover { border-color: var(--green); text-decoration: none; }
+.related-card .related-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+.related-card .related-dose { font-size: 13px; color: var(--t3); }
+
+/* ── Shift-specific ── */
+.breath-pattern {
+  display: flex; align-items: center; gap: 12px;
+  margin: 20px 0;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke);
+  background: var(--surface);
+  font-size: 20px; font-weight: 600;
+}
+.breath-phase { padding: 4px 14px; border-radius: 8px; }
+.breath-arrow { color: var(--t3); font-size: 14px; }
+
+.state-transition {
+  font-size: 13px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--t3);
+  margin-bottom: 20px;
+}
+
+/* ── Footer ── */
+.page-footer {
+  padding: 40px 24px;
+  border-top: 1px solid var(--stroke);
+  text-align: center;
+}
+.page-footer .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 12px; }
+.page-footer .footer-links a { font-size: 14px; color: var(--t3); }
+.page-footer .footer-copy { font-size: 13px; color: var(--t3); }
