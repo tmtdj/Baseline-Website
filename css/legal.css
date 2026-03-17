@@ -1,0 +1,109 @@
+/* ═══ Shared styles for disclaimer + privacy pages ═══ */
+:root {
+  --bg: #000;
+  --t1: rgba(255,255,255,0.92);
+  --t2: rgba(255,255,255,0.65);
+  --t3: rgba(255,255,255,0.40);
+  --accent: #8FA89A;
+  --red: #EF4444;
+  --rule: rgba(255,255,255,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { background: var(--bg); color: var(--t1); -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+h1 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: var(--t1);
+  margin-bottom: 8px;
+}
+.date {
+  font-size: 13px;
+  color: var(--t3);
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+p { color: var(--t2); margin-bottom: 14px; }
+p strong { color: var(--t1); font-weight: 600; }
+.rule { border: none; border-top: 1px solid var(--rule); margin: 32px 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--t3);
+  margin-bottom: 32px;
+}
+.footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--t3);
+}
+
+/* ═══ Disclaimer-specific ═══ */
+.warn {
+  border-left: 3px solid var(--red);
+  padding: 16px 20px;
+  margin: 24px 0;
+  background: rgba(239,68,68,0.06);
+  border-radius: 0 8px 8px 0;
+}
+.warn p { color: var(--t1); margin-bottom: 0; }
+.warn h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* ═══ Privacy-specific ═══ */
+.tldr {
+  border-left: 3px solid var(--accent);
+  padding: 16px 20px;
+  margin-bottom: 36px;
+  background: rgba(143,168,154,0.06);
+  border-radius: 0 8px 8px 0;
+}
+.tldr p { color: var(--t1); margin-bottom: 0; font-weight: 500; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 20px;
+  font-size: 14px;
+}
+th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--t1);
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+td {
+  padding: 10px 12px;
+  color: var(--t2);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  vertical-align: top;
+}
