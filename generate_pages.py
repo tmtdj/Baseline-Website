@@ -561,7 +561,7 @@ def video_html(ex_id, category="mobility"):
     if ex_id in available_videos:
         return f'''
     <div class="guide-figure" data-category="{category}">
-      <video autoplay loop muted playsinline>
+      <video autoplay loop muted playsinline preload="none" poster="../assets/poster/{ex_id}.jpg" width="480" height="480">
         <source src="../assets/video/{ex_id}.mp4" type="video/mp4">
       </video>
     </div>'''
@@ -618,8 +618,16 @@ def exercise_page(ex):
 
     video_schema = ""
     if ex["id"] in available_videos:
-        video_schema = ',{{"@context":"https://schema.org","@type":"VideoObject","name":"{} — Exercise Guide","description":"{}","contentUrl":"https://baselinebody.app/assets/video/{}.mp4","thumbnailUrl":"https://baselinebody.app/assets/{}.png"}}'.format(
+        video_schema = ',{{"@context":"https://schema.org","@type":"VideoObject","name":"{} — Exercise Guide","description":"{}","contentUrl":"https://baselinebody.app/assets/video/{}.mp4","thumbnailUrl":"https://baselinebody.app/assets/poster/{}.jpg"}}'.format(
             h.escape(ex["name"]), h.escape(desc), ex["id"], ex["id"])
+
+    faq_q1 = "How long should I do {}?".format(h.escape(ex["name"]))
+    faq_a1 = "The minimum effective dose for {} is {}. That's the shortest time that still creates real, measurable change.".format(h.escape(ex["name"]), dose_fmt)
+    faq_q2 = "What does {} target?".format(h.escape(ex["name"]))
+    faq_a2 = h.escape(ex["targets"])
+    faq_schema = ',{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{"@type":"Question","name":"{}","acceptedAnswer":{{"@type":"Answer","text":"{}"}}}},{{"@type":"Question","name":"{}","acceptedAnswer":{{"@type":"Answer","text":"{}"}}}}]}}'.format(faq_q1, faq_a1, faq_q2, faq_a2)
+
+    og_image = "https://baselinebody.app/assets/poster/{}.jpg".format(ex["id"]) if ex["id"] in available_videos else "https://baselinebody.app/assets/og-image.png"
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -630,15 +638,20 @@ def exercise_page(ex):
 <meta name="description" content="{h.escape(desc[:160])}">
 <meta property="og:title" content="{h.escape(title)}">
 <meta property="og:description" content="{h.escape(desc[:160])}">
+<meta property="og:image" content="{og_image}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://baselinebody.app/exercises/{s}.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{h.escape(title)}">
+<meta name="twitter:description" content="{h.escape(desc[:160])}">
+<meta name="twitter:image" content="{og_image}">
 <link rel="canonical" href="https://baselinebody.app/exercises/{s}.html">
 <link rel="icon" href="../assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/exercise.css">
-<script type="application/ld+json">[{schema}{video_schema}]</script>
+<script type="application/ld+json">[{schema}{video_schema}{faq_schema}]</script>
 </head>
 <body>
 
@@ -677,6 +690,15 @@ def exercise_page(ex):
   </div>
   {variants_html}
   {related_html}
+  <div class="content-section">
+    <h2>Pair with breathwork</h2>
+    <p style="margin-bottom:12px">Wind down after your session with a Shift breathwork protocol.</p>
+    <div class="related-grid">
+      <a class="related-card" href="../shift/arrive.html"><div class="related-name" style="color:var(--indigo)">Arrive</div><div class="related-dose">Scattered \u2192 Present</div></a>
+      <a class="related-card" href="../shift/reset.html"><div class="related-name" style="color:var(--ice)">Reset</div><div class="related-dose">Depleted \u2192 Restored</div></a>
+    </div>
+  </div>
+
   <div class="cta-banner">
     <h3>Baseline builds this into your session automatically.</h3>
     <p>No choosing. No planning. The system decides what you need and tells you exactly what to do.</p>
@@ -726,8 +748,13 @@ def shift_page(mode):
 <meta name="description" content="{h.escape(desc[:160])}">
 <meta property="og:title" content="{h.escape(title)}">
 <meta property="og:description" content="{h.escape(desc[:160])}">
+<meta property="og:image" content="https://baselinebody.app/assets/og-image.png">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://baselinebody.app/shift/{s}.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{h.escape(title)}">
+<meta name="twitter:description" content="{h.escape(desc[:160])}">
+<meta name="twitter:image" content="https://baselinebody.app/assets/og-image.png">
 <link rel="canonical" href="https://baselinebody.app/shift/{s}.html">
 <link rel="icon" href="../assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -788,6 +815,15 @@ def shift_page(mode):
     <div class="related-grid">{related_cards}</div>
   </div>
 
+  <div class="content-section">
+    <h2>Pair with movement</h2>
+    <p style="margin-bottom:12px">Combine breathwork with mobility or bodyweight training.</p>
+    <div class="related-grid">
+      <a class="related-card" href="../exercises/index.html"><div class="related-name" style="color:var(--green)">Mobility Library</div><div class="related-dose">20+ exercises with effective doses</div></a>
+      <a class="related-card" href="../exercises/index.html#bodyweight"><div class="related-name" style="color:var(--tangerine)">Bodyweight Library</div><div class="related-dose">25+ exercises, no equipment</div></a>
+    </div>
+  </div>
+
   <div class="cta-banner">
     <h3>Shift is built into Baseline.</h3>
     <p>The system picks the mode based on your state. Binaural beats, haptic feedback, and guided breathing \u2014 all automatic.</p>
@@ -825,6 +861,10 @@ def exercise_index():
         <div class="related-dose" style="color:{color}">Dose: {format_dose(e["dose"])}</div>
       </a>''' for e in exs)
 
+    list_items = ",".join('{{"@type":"ListItem","position":{},"url":"https://baselinebody.app/exercises/{}.html","name":"{}"}}'.format(
+        i+1, slug(e["id"]), h.escape(e["name"])) for i, e in enumerate(exercises))
+    itemlist_schema = '<script type="application/ld+json">{{"@context":"https://schema.org","@type":"ItemList","name":"Baseline Exercise Library","numberOfItems":{},"itemListElement":[{}]}}</script>'.format(len(exercises), list_items)
+
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -832,12 +872,22 @@ def exercise_index():
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exercise Library \u2014 Minimum Effective Dose for Every Movement | Baseline</title>
 <meta name="description" content="Every exercise in Baseline, with its minimum effective dose. Mobility, bodyweight strength, and recovery \u2014 the shortest time that still creates real change.">
+<meta property="og:title" content="Exercise Library \u2014 Minimum Effective Dose for Every Movement | Baseline">
+<meta property="og:description" content="Every exercise in Baseline, with its minimum effective dose. The shortest time that still creates real change.">
+<meta property="og:image" content="https://baselinebody.app/assets/og-image.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://baselinebody.app/exercises/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Exercise Library \u2014 Minimum Effective Dose | Baseline">
+<meta name="twitter:description" content="Every exercise in Baseline, with its minimum effective dose.">
+<meta name="twitter:image" content="https://baselinebody.app/assets/og-image.png">
 <link rel="canonical" href="https://baselinebody.app/exercises/">
 <link rel="icon" href="../assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/exercise.css">
+{itemlist_schema}
 </head>
 <body>
 <header class="page-header">
@@ -869,14 +919,6 @@ def exercise_index():
     <h2 style="color:var(--indigo)">Shift \u2014 Breathwork</h2>
     <p>Five breathwork protocols for shifting state. <a href="../shift/index.html">View all Shift modes \u2192</a></p>
   </div>
-  <div class="cta-banner">
-    <h3>You don't pick the exercises. The system does.</h3>
-    <p>Baseline reads your body, builds your session, and tells you exactly what to do. Every day. Under 20 minutes.</p>
-    <a href="https://apps.apple.com/app/baseline/idYOUR_APP_ID" class="dl-btn">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      Download free
-    </a>
-  </div>
 </main>
 <footer class="page-footer">
   <div class="footer-links">
@@ -899,6 +941,10 @@ def shift_index():
       <div class="related-dose">{m["state_from"]} \u2192 {m["state_to"]} \u00b7 Dose: {format_dose(m["dose"])}</div>
     </a>''' for m in shift_modes)
 
+    list_items = ",".join('{{"@type":"ListItem","position":{},"url":"https://baselinebody.app/shift/{}.html","name":"{}"}}'.format(
+        i+1, m["id"], h.escape(m["title"])) for i, m in enumerate(shift_modes))
+    itemlist_schema = '<script type="application/ld+json">{{"@context":"https://schema.org","@type":"ItemList","name":"Shift Breathwork Protocols","numberOfItems":{},"itemListElement":[{}]}}</script>'.format(len(shift_modes), list_items)
+
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -906,12 +952,22 @@ def shift_index():
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shift \u2014 Breathwork for Shifting State | Baseline</title>
 <meta name="description" content="Five breathwork protocols for shifting your nervous system state. Arrive, Prime, Reset, Downshift, Override.">
+<meta property="og:title" content="Shift \u2014 Breathwork for Shifting State | Baseline">
+<meta property="og:description" content="Five breathwork protocols for shifting your nervous system state.">
+<meta property="og:image" content="https://baselinebody.app/assets/og-image.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://baselinebody.app/shift/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shift \u2014 Breathwork for Shifting State | Baseline">
+<meta name="twitter:description" content="Five breathwork protocols for shifting your nervous system state.">
+<meta name="twitter:image" content="https://baselinebody.app/assets/og-image.png">
 <link rel="canonical" href="https://baselinebody.app/shift/">
 <link rel="icon" href="../assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/exercise.css">
+{itemlist_schema}
 </head>
 <body>
 <header class="page-header">
@@ -927,14 +983,6 @@ def shift_index():
   <div class="content-section">
     <h2>Choose your state</h2>
     <div class="related-grid" style="grid-template-columns:1fr">{cards}</div>
-  </div>
-  <div class="cta-banner">
-    <h3>You don't choose. The system reads your state.</h3>
-    <p>Binaural beats, haptic feedback, and guided breathing. All automatic. Built into Baseline.</p>
-    <a href="https://apps.apple.com/app/baseline/idYOUR_APP_ID" class="dl-btn">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      Download free
-    </a>
   </div>
 </main>
 <footer class="page-footer">
@@ -983,6 +1031,51 @@ if __name__ == "__main__":
         f.write(shift_index())
     count += 1
 
+    # ── Sitemap ──
+    from datetime import date
+    today = date.today().isoformat()
+    urls = [
+        ("https://baselinebody.app/", "1.0", "weekly"),
+        ("https://baselinebody.app/exercises/", "0.9", "weekly"),
+        ("https://baselinebody.app/shift/", "0.9", "weekly"),
+    ]
+    for ex in exercises:
+        urls.append((f"https://baselinebody.app/exercises/{slug(ex['id'])}.html", "0.7", "monthly"))
+    for mode in shift_modes:
+        urls.append((f"https://baselinebody.app/shift/{mode['id']}.html", "0.7", "monthly"))
+    # Blog articles
+    blog_slugs = ["how-long-should-you-stretch", "morning-mobility-routine", "breathwork-for-sleep"]
+    for bs in blog_slugs:
+        urls.append((f"https://baselinebody.app/blog/{bs}.html", "0.8", "monthly"))
+    urls.append(("https://baselinebody.app/blog/", "0.8", "weekly"))
+    urls.append(("https://baselinebody.app/privacy.html", "0.3", "yearly"))
+    urls.append(("https://baselinebody.app/disclaimer.html", "0.3", "yearly"))
+
+    sitemap_entries = "\n".join(f"""  <url>
+    <loc>{u[0]}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>{u[2]}</changefreq>
+    <priority>{u[1]}</priority>
+  </url>""" for u in urls)
+
+    sitemap = f'''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{sitemap_entries}
+</urlset>'''
+
+    with open(os.path.join(BASE, "sitemap.xml"), "w") as f:
+        f.write(sitemap)
+
+    robots = """User-agent: *
+Allow: /
+
+Sitemap: https://baselinebody.app/sitemap.xml"""
+
+    with open(os.path.join(BASE, "robots.txt"), "w") as f:
+        f.write(robots)
+
     print(f"Generated {count} pages ({videos_used} with video)")
     print(f"Videos available: {len(available_videos)}")
     print(f"Exercises in catalog: {len(exercises)}")
+    print(f"Sitemap: {len(urls)} URLs")
+    print("robots.txt: written")
