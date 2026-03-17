@@ -470,7 +470,7 @@ exercises = [
 
 shift_modes = [
     {"id":"arrive","title":"Arrive","state_from":"Scattered","state_to":"Present",
-     "color_hex":"#6366F1","color_var":"var(--indigo)",
+     "color_hex":"#6366F1","color_var":"var(--indigo)","orb_color":"indigo",
      "breath_label":"4 seconds in, 6 seconds out",
      "breath_html":'<span class="breath-phase" style="background:rgba(99,102,241,.15);color:var(--indigo)">4s in</span><span class="breath-arrow">\u2192</span><span class="breath-phase" style="background:rgba(99,102,241,.15);color:var(--indigo)">6s out</span>',
      "cycle":"10s","dose":90,"min_duration":"2 min",
@@ -482,7 +482,7 @@ shift_modes = [
      "font_family":"'JosefinSans-ThinItalic', sans-serif"},
 
     {"id":"prime","title":"Prime","state_from":"Flat","state_to":"Warm",
-     "color_hex":"#EAB308","color_var":"var(--solar)",
+     "color_hex":"#EAB308","color_var":"var(--solar)","orb_color":"solar",
      "breath_label":"3 seconds in, 3 seconds out",
      "breath_html":'<span class="breath-phase" style="background:rgba(234,179,8,.15);color:var(--solar)">3s in</span><span class="breath-arrow">\u2192</span><span class="breath-phase" style="background:rgba(234,179,8,.15);color:var(--solar)">3s out</span>',
      "cycle":"6s","dose":60,"min_duration":"1 min",
@@ -494,7 +494,7 @@ shift_modes = [
      "font_family":"'Unbounded-Black', sans-serif"},
 
     {"id":"reset","title":"Reset","state_from":"Depleted","state_to":"Restored",
-     "color_hex":"#67E8F9","color_var":"var(--ice)",
+     "color_hex":"#67E8F9","color_var":"var(--ice)","orb_color":"ice",
      "breath_label":"4 seconds in, sip, 8 seconds out",
      "breath_html":'<span class="breath-phase" style="background:rgba(103,232,249,.12);color:var(--ice)">4s in</span><span class="breath-arrow">\u2192</span><span class="breath-phase" style="background:rgba(103,232,249,.12);color:var(--ice)">sip</span><span class="breath-arrow">\u2192</span><span class="breath-phase" style="background:rgba(103,232,249,.12);color:var(--ice)">8s out</span>',
      "cycle":"14s","dose":60,"min_duration":"2 min",
@@ -506,7 +506,7 @@ shift_modes = [
      "font_family":"'FragmentMono-Italic', monospace"},
 
     {"id":"downshift","title":"Downshift","state_from":"On","state_to":"Off",
-     "color_hex":"#A78BFA","color_var":"var(--lavender)",
+     "color_hex":"#A78BFA","color_var":"var(--lavender)","orb_color":"lavender",
      "breath_label":"4 seconds in, 8 seconds out",
      "breath_html":'<span class="breath-phase" style="background:rgba(167,139,250,.12);color:var(--lavender)">4s in</span><span class="breath-arrow">\u2192</span><span class="breath-phase" style="background:rgba(167,139,250,.12);color:var(--lavender)">8s out</span>',
      "cycle":"12s","dose":120,"min_duration":"3 min",
@@ -518,7 +518,7 @@ shift_modes = [
      "font_family":"'Fraunces-LightItalic', serif"},
 
     {"id":"override","title":"Override","state_from":"Overwhelm","state_to":"Control",
-     "color_hex":"#EF4444","color_var":"var(--red)",
+     "color_hex":"#EF4444","color_var":"var(--red)","orb_color":"red",
      "breath_label":"2.5 seconds in, 1.5 seconds out \u00d7 40 breaths",
      "breath_html":'<span class="breath-phase" style="background:rgba(239,68,68,.12);color:var(--red)">2.5s in</span><span class="breath-arrow">\u2192</span><span class="breath-phase" style="background:rgba(239,68,68,.12);color:var(--red)">1.5s out</span><span class="breath-arrow">\u00d7 40</span>',
      "cycle":"4s","dose":140,"min_duration":"3 min",
@@ -707,25 +707,6 @@ def shift_page(mode):
     title = f'{mode["title"]}: Breathwork for Shifting State | Baseline'
     desc = f'{mode["title"]} \u2014 {mode["state_from"]} \u2192 {mode["state_to"]}. {mode["breath_label"]}. Minimum effective dose: {format_dose(mode["dose"])}.'
 
-    cues_html = ""
-    if mode["physical_cues"]:
-        items = "".join(f"<li>{h.escape(c)}</li>" for c in mode["physical_cues"])
-        cues_html = f'''
-    <div class="content-section">
-      <h2>Physical cues</h2>
-      <p style="color:var(--t3);font-size:14px;margin-bottom:12px">Body-addressed prompts that appear during the session:</p>
-      <ul>{items}</ul>
-    </div>'''
-
-    attention_html = ""
-    if mode["attention_lines"]:
-        items = "".join(f"<li>{h.escape(l)}</li>" for l in mode["attention_lines"])
-        attention_html = f'''
-    <div class="content-section">
-      <h2>Attention lines</h2>
-      <ul>{items}</ul>
-    </div>'''
-
     other_modes = [m for m in shift_modes if m["id"] != mode["id"]]
     related_cards = "".join(f'''<a class="related-card" href="{m["id"]}.html">
         <div class="related-name" style="color:{m["color_var"]}">{m["title"]}</div>
@@ -733,6 +714,8 @@ def shift_page(mode):
       </a>''' for m in other_modes)
 
     schema = f'{{"@context":"https://schema.org","@type":"HowTo","name":"{h.escape(mode["title"])} Breathwork","description":"{h.escape(mode["description"])}","totalTime":"PT{mode["dose"]}S"}}'
+
+    orb_color = mode["orb_color"]
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -769,6 +752,15 @@ def shift_page(mode):
     <p class="tagline">{h.escape(mode["description"])}</p>
   </div>
 
+  <div class="shift-orb-wrap">
+    <div class="shift-orb" data-color="{orb_color}">
+      <div class="shift-orb-outer"></div>
+      <div class="shift-orb-mid"></div>
+      <div class="shift-orb-inner"></div>
+      <div class="shift-orb-block"></div>
+    </div>
+  </div>
+
   <div class="dose-card">
     <div class="dose-label">Minimum Effective Dose</div>
     <div class="dose-time" style="color:{mode["color_var"]}">{format_dose(mode["dose"])}</div>
@@ -790,8 +782,7 @@ def shift_page(mode):
     <h2>The science</h2>
     <p>{h.escape(mode["science"])}</p>
   </div>
-  {cues_html}
-  {attention_html}
+
   <div class="content-section">
     <h2>Other Shift modes</h2>
     <div class="related-grid">{related_cards}</div>

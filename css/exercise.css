@@ -231,6 +231,67 @@ a:hover { text-decoration: underline; }
   margin-bottom: 20px;
 }
 
+/* ── Shift Orb ── */
+@keyframes shiftOuter{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes shiftMid{from{transform:translate(-50%,-50%) rotate(120deg)}to{transform:translate(-50%,-50%) rotate(-240deg)}}
+@keyframes shiftInner{from{transform:translate(-50%,-50%) rotate(240deg)}to{transform:translate(-50%,-50%) rotate(600deg)}}
+@keyframes shiftPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.018)}}
+
+.shift-orb-wrap { text-align: center; padding: 40px 0 20px; }
+.shift-orb {
+  position: relative; width: 200px; height: 200px;
+  margin: 0 auto;
+  animation: shiftPulse 10s ease-in-out infinite;
+}
+.shift-orb-outer {
+  position: absolute; top: 50%; left: 50%;
+  width: 92%; height: 88%; border-radius: 50%;
+  filter: blur(3px);
+  animation: shiftOuter 50s linear infinite;
+}
+.shift-orb-mid {
+  position: absolute; top: 50%; left: 50%;
+  width: 78%; height: 72%; border-radius: 50%;
+  filter: blur(2px);
+  animation: shiftMid 38s linear infinite;
+}
+.shift-orb-inner {
+  position: absolute; top: 50%; left: 50%;
+  width: 62%; height: 58%; border-radius: 50%;
+  animation: shiftInner 28s linear infinite;
+}
+.shift-orb-block {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 35%; height: 35%; border-radius: 12%;
+}
+
+/* Orb color themes */
+.shift-orb[data-color="indigo"] .shift-orb-outer { background: rgba(99,102,241,.28); }
+.shift-orb[data-color="indigo"] .shift-orb-mid { background: rgba(99,102,241,.40); }
+.shift-orb[data-color="indigo"] .shift-orb-inner { background: rgba(99,102,241,.55); }
+.shift-orb[data-color="indigo"] .shift-orb-block { background: rgba(99,102,241,.45); border: 1px solid rgba(99,102,241,.70); }
+
+.shift-orb[data-color="solar"] .shift-orb-outer { background: rgba(234,179,8,.28); }
+.shift-orb[data-color="solar"] .shift-orb-mid { background: rgba(234,179,8,.40); }
+.shift-orb[data-color="solar"] .shift-orb-inner { background: rgba(234,179,8,.55); }
+.shift-orb[data-color="solar"] .shift-orb-block { background: rgba(234,179,8,.45); border: 1px solid rgba(234,179,8,.70); }
+
+.shift-orb[data-color="ice"] .shift-orb-outer { background: rgba(103,232,249,.28); }
+.shift-orb[data-color="ice"] .shift-orb-mid { background: rgba(103,232,249,.40); }
+.shift-orb[data-color="ice"] .shift-orb-inner { background: rgba(103,232,249,.55); }
+.shift-orb[data-color="ice"] .shift-orb-block { background: rgba(103,232,249,.45); border: 1px solid rgba(103,232,249,.70); }
+
+.shift-orb[data-color="lavender"] .shift-orb-outer { background: rgba(167,139,250,.28); }
+.shift-orb[data-color="lavender"] .shift-orb-mid { background: rgba(167,139,250,.40); }
+.shift-orb[data-color="lavender"] .shift-orb-inner { background: rgba(167,139,250,.55); }
+.shift-orb[data-color="lavender"] .shift-orb-block { background: rgba(167,139,250,.45); border: 1px solid rgba(167,139,250,.70); }
+
+.shift-orb[data-color="red"] .shift-orb-outer { background: rgba(239,68,68,.28); }
+.shift-orb[data-color="red"] .shift-orb-mid { background: rgba(239,68,68,.40); }
+.shift-orb[data-color="red"] .shift-orb-inner { background: rgba(239,68,68,.55); }
+.shift-orb[data-color="red"] .shift-orb-block { background: rgba(239,68,68,.45); border: 1px solid rgba(239,68,68,.70); }
+
 /* ── Footer ── */
 .page-footer {
   padding: 40px 24px;
