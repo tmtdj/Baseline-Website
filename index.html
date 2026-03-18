@@ -344,7 +344,7 @@
 
 <div class="bottom-bar">
   <span>Launching May 2026</span>
-  <a href="#notify">Get notified →</a>
+  <a href="#notify" onclick="event.preventDefault();document.querySelector('#notify input[type=email]').scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>document.querySelector('#notify input[type=email]').focus(),600)">Get notified →</a>
 </div>
 
 <script src="js/main.js"></script>
