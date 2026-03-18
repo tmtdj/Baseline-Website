@@ -647,6 +647,7 @@ def exercise_page(ex):
 <meta name="twitter:image" content="{og_image}">
 <link rel="canonical" href="https://baselinebody.app/exercises/{s}.html">
 <link rel="icon" href="../assets/favicon.ico">
+<meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
@@ -760,6 +761,7 @@ def shift_page(mode):
 <meta name="twitter:image" content="https://baselinebody.app/assets/og-image.png">
 <link rel="canonical" href="https://baselinebody.app/shift/{s}.html">
 <link rel="icon" href="../assets/favicon.ico">
+<meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
@@ -888,6 +890,7 @@ def exercise_index():
 <meta name="twitter:image" content="https://baselinebody.app/assets/og-image.png">
 <link rel="canonical" href="https://baselinebody.app/exercises/">
 <link rel="icon" href="../assets/favicon.ico">
+<meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
@@ -968,6 +971,7 @@ def shift_index():
 <meta name="twitter:image" content="https://baselinebody.app/assets/og-image.png">
 <link rel="canonical" href="https://baselinebody.app/shift/">
 <link rel="icon" href="../assets/favicon.ico">
+<meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
