@@ -215,3 +215,12 @@ footer{padding:40px 0;border-top:1px solid var(--stroke);text-align:center}
 .bottom-bar span{font-size:14px;color:var(--t2)}
 .bottom-bar a{font-size:13px;font-weight:700;color:var(--bg);background:var(--green);padding:8px 18px;border-radius:20px;white-space:nowrap}
 .bottom-bar a:hover{opacity:.85;text-decoration:none}
+
+/* ═══ Email signup form ═══ */
+.notify-form{display:flex;gap:8px;max-width:380px;margin:0 auto}
+.notify-form input[type="email"]{flex:1;padding:14px 18px;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,.06);color:var(--t1);font-family:var(--sans);font-size:15px;outline:none;transition:border-color .2s}
+.notify-form input[type="email"]::placeholder{color:var(--t3)}
+.notify-form input[type="email"]:focus{border-color:var(--accent)}
+.notify-form button{padding:14px 24px;border-radius:12px;border:none;background:var(--green);color:rgba(0,0,0,.88);font-family:var(--sans);font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap;transition:opacity .2s}
+.notify-form button:hover{opacity:.85}
+.notify-success{color:var(--accent);font-size:15px;font-weight:600}

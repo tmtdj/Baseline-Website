@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Baseline — Mobility, Strength, Breathwork in Under 20 Minutes</title>
+<title>Baseline | Mobility, Strength, Breathwork in Under 20 Minutes</title>
 <meta name="description" content="Mobility, strength, and breathwork in under 20 minutes. No choosing. No planning. Press start. The system builds your session. Free on iPhone.">
 <meta name="theme-color" content="#000000">
-<meta property="og:title" content="Baseline — The Minimum Effective Dose">
+<meta property="og:title" content="Baseline | The Minimum Effective Dose">
 <meta property="og:description" content="Mobility, strength, and breathwork in under 20 minutes. No choosing. No planning. Press start. Free on iPhone.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://baselinebody.app">
 <meta property="og:image" content="https://baselinebody.app/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Baseline — The Minimum Effective Dose">
+<meta name="twitter:title" content="Baseline | The Minimum Effective Dose">
 <meta name="twitter:description" content="Mobility, strength, and breathwork in under 20 minutes. No choosing. No planning. Press start. Free to try on iPhone.">
 <meta name="twitter:image" content="https://baselinebody.app/assets/og-image.png">
 <link rel="canonical" href="https://baselinebody.app/">
@@ -48,18 +48,15 @@
 
 <header>
   <div class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></div>
-  <div style="display:flex;align-items:center;gap:12px">
-    <a href="#download" class="nav-cta">Download free</a>
-    <button class="nav-burger" id="navBurger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 <nav class="mobile-nav" id="mobileNav">
   <a href="exercises/index.html">Exercise Library</a>
   <a href="shift/index.html">Shift Breathwork</a>
   <a href="blog/index.html">Blog</a>
-  <a href="#download">Download</a>
+  <a href="#notify">Get Notified</a>
   <a href="#references">Research</a>
   <a href="disclaimer.html">Health Disclaimer</a>
   <a href="privacy.html">Privacy Policy</a>
@@ -72,23 +69,24 @@
 <section class="hero">
   <div class="glow" id="heroGlow" style="background:radial-gradient(circle,var(--green-glow),transparent)"></div>
 
-  <!-- Rotating figure — 3 poses, one per category -->
+  <!-- Rotating figure: 3 poses, one per category -->
   <div class="hero-model" id="heroModel" aria-hidden="true">
-    <img src="assets/hero_mobility.png" alt="Mobility exercise — single leg stretch" class="active" data-cat="mobility">
+    <img src="assets/hero_mobility.png" alt="Mobility exercise, single leg stretch" class="active" data-cat="mobility">
     <img src="assets/hero_bodyweight.png" alt="Bodyweight strength exercise" data-cat="bodyweight">
     <img src="assets/hero_breathwork.png" alt="Breathwork and nervous system regulation" data-cat="breathwork">
   </div>
 
   <div class="hero-copy">
     <h1>The minimum<br><em>effective dose.</em></h1>
-    <p class="hero-sub">Mobility. Strength. Breathwork.<br><strong>In under 20 minutes.</strong></p>
-    <p class="hero-bridge">Three practices. One app. No bloat. The system builds your session and tells you exactly what to do.</p>
-    <div id="download" style="animation:fadeUp .7s ease .6s both;text-align:center">
-      <a href="https://apps.apple.com/app/baseline/idYOUR_APP_ID" class="dl-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        Download free
-      </a>
-      <p style="margin-top:12px;font-size:14px;color:var(--t3)">First session free. No account needed.</p>
+    <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
+    <p class="hero-bridge">Three practices combined into one daily session. The system builds it for you and tells you exactly what to do, so you never have to plan again.</p>
+    <div id="notify" style="animation:fadeUp .7s ease .6s both;text-align:center">
+      <p style="margin-bottom:16px;font-size:15px;color:var(--accent);font-weight:600">Launching May 2026 · iPhone</p>
+      <form class="notify-form" action="https://formspree.io/f/xojkyqza" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Notify me</button>
+      </form>
+      <p style="margin-top:12px;font-size:13px;color:var(--t3)">Be first in line. No spam. One email on launch day.</p>
     </div>
   </div>
   <div class="hero-scroll">↓</div>
@@ -101,7 +99,7 @@
   <div class="container">
     <div class="section-label reveal">The science</div>
     <h2 class="reveal">Every exercise has an<br><em>effective dose</em>.</h2>
-    <p class="dose-lead reveal">The shortest time that still creates real change. Each exercise in Baseline has a research-backed minimum threshold. <strong>Hit it and the benefit starts.</strong> Everything after is bonus. <a href="#references" style="color:var(--accent);border-bottom:1px solid rgba(143,168,154,.3)">See the research</a>.</p>
+    <p class="dose-lead reveal">Every exercise has a threshold: the shortest duration that still creates measurable change. Baseline calculates that number from the research and uses it as your target. Once you hit it, the benefit is locked in. Everything beyond that is diminishing returns. <a href="#references" style="color:var(--accent);border-bottom:1px solid rgba(143,168,154,.3)">See the research</a>.</p>
 
     <div class="dose-card reveal" id="doseCard">
       <div class="dose-card-header">
@@ -109,19 +107,19 @@
         <span class="dose-card-label">~12 min</span>
       </div>
       <div class="dose-row">
-        <div class="dose-row-left"><span class="dose-row-name">Passive hang</span><span class="dose-row-why">Spinal decompression. Counteracts seated compression.</span></div>
+        <div class="dose-row-left"><span class="dose-row-name">Passive hang</span><span class="dose-row-why">Spinal decompression that counteracts hours of sitting</span></div>
         <span class="dose-row-time">2:30</span>
         <div class="dose-row-bar"><div class="dose-row-threshold" style="left:47%"></div><div class="dose-row-fill" data-w="100%"></div></div>
         <div class="dose-row-block earned" style="background:linear-gradient(135deg,#30D158f2,#30D158b3);box-shadow:0 0 8px rgba(48,209,88,.4)"></div>
       </div>
       <div class="dose-row">
-        <div class="dose-row-left"><span class="dose-row-name">Cat-cow</span><span class="dose-row-why">Segmental spinal flexion and extension.</span></div>
+        <div class="dose-row-left"><span class="dose-row-name">Cat-cow</span><span class="dose-row-why">Moves each vertebra individually instead of as a block</span></div>
         <span class="dose-row-time">1:00</span>
         <div class="dose-row-bar"><div class="dose-row-threshold" style="left:67%"></div><div class="dose-row-fill" data-w="100%"></div></div>
         <div class="dose-row-block earned" style="background:linear-gradient(135deg,#30D158f2,#30D158b3);box-shadow:0 0 8px rgba(48,209,88,.4)"></div>
       </div>
       <div class="dose-row">
-        <div class="dose-row-left"><span class="dose-row-name">Thoracic rotations</span><span class="dose-row-why">T-spine mobility. Primary desk worker deficit.</span></div>
+        <div class="dose-row-left"><span class="dose-row-name">Thoracic rotations</span><span class="dose-row-why">Upper back rotation, the main thing desk workers lose</span></div>
         <span class="dose-row-time">1:30</span>
         <div class="dose-row-bar"><div class="dose-row-threshold" style="left:44%"></div><div class="dose-row-fill" data-w="100%"></div></div>
         <div class="dose-row-block earned" style="background:linear-gradient(135deg,#30D158f2,#30D158b3);box-shadow:0 0 8px rgba(48,209,88,.4)"></div>
@@ -133,7 +131,7 @@
         <div class="dose-row-block" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)"></div>
       </div>
       <div class="dose-row">
-        <div class="dose-row-left"><span class="dose-row-name">Deep squat hold</span><span class="dose-row-why">Full-body integration. Ankle, knee, hip, spine.</span></div>
+        <div class="dose-row-left"><span class="dose-row-name">Deep squat hold</span><span class="dose-row-why">Opens ankles, knees, hips, and spine all at once</span></div>
         <span class="dose-row-time">2:00</span>
         <div class="dose-row-bar"><div class="dose-row-threshold" style="left:46%"></div><div class="dose-row-fill" data-w="28%"></div></div>
         <div class="dose-row-block" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)"></div>
@@ -141,7 +139,7 @@
     </div>
 
     <p class="dose-kicker reveal">Short and frequent beats long and rare.</p>
-    <p class="dose-proof reveal">The timer is generous. The dose is the real prescription. <strong>Hit it and you earn a block.</strong> Showing up tomorrow matters more than staying longer today.</p>
+    <p class="dose-proof reveal">The timer is generous, but the dose is the real prescription. Hit the threshold and you earn a block. What matters more than staying longer today is whether you show up again tomorrow.</p>
   </div>
 </section>
 
@@ -151,7 +149,7 @@
   <div class="container">
     <div class="section-label reveal">The other problem</div>
     <h2 class="reveal">Fitness shouldn't feel like<br>choosing a film on Netflix.</h2>
-    <p class="decision-desc reveal">You open a fitness app. Hundreds of workouts. Filters. Difficulty levels. Instructor personalities. You spend more time <strong>choosing what to do than doing it.</strong> Baseline removes the entire step.</p>
+    <p class="decision-desc reveal">You open a fitness app and you're hit with hundreds of workouts, filters, difficulty levels, and instructor personalities. You end up spending more time <strong>choosing what to do than actually doing it.</strong> Baseline removes that entire step.</p>
     <div class="reveal" style="text-align:center;padding:40px 0 32px">
       <div style="display:inline-block;font-size:17px;font-weight:700;color:var(--bg);background:var(--green);padding:16px 48px;border-radius:14px">Start</div>
       <div style="font-size:14px;color:var(--t3);margin-top:12px">That's the whole interface.</div>
@@ -166,26 +164,26 @@
   <div class="glow"></div>
   <div class="container">
     <div class="section-label reveal">Your guide</div>
-    <h2 class="reveal">No instructor. No personality.<br>Just a body showing yours what to do.</h2>
-    <p class="guide-sub reveal">The guide changes colour to match your session. Follow along. Nothing else to think about.</p>
+    <h2 class="reveal">No instructor, no personality.<br>Just a body showing yours what to do.</h2>
+    <p class="guide-sub reveal">The guide changes colour to match your session. Follow along and let the thinking happen elsewhere.</p>
     <div class="model-strip">
       <div class="model-card reveal">
         <div class="model-frame mobility">
-          <img src="assets/guide_mobility.png" alt="Green guide — mobility">
+          <img src="assets/guide_mobility.png" alt="Green guide for mobility">
         </div>
         <div class="model-label" style="color:var(--green)">Mobility</div>
         <div class="model-sublabel">Daily maintenance</div>
       </div>
       <div class="model-card reveal">
         <div class="model-frame bodyweight">
-          <img src="assets/guide_bodyweight.png" alt="Tangerine guide — bodyweight">
+          <img src="assets/guide_bodyweight.png" alt="Tangerine guide for bodyweight">
         </div>
         <div class="model-label" style="color:var(--tangerine)">Bodyweight</div>
         <div class="model-sublabel">Strength to effort</div>
       </div>
       <div class="model-card reveal">
         <div class="model-frame recovery">
-          <img src="assets/guide_breathwork.png" alt="Steel guide — breathwork">
+          <img src="assets/guide_breathwork.png" alt="Steel guide for breathwork">
         </div>
         <div class="model-label" style="color:var(--steel)">Breathwork</div>
         <div class="model-sublabel">Nervous system regulation</div>
@@ -204,19 +202,19 @@
     <div class="modes">
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◆</span></div><div><div class="mode-name">Baseline</div><div class="mode-tag">Default daily ritual</div></div></div>
-        <p class="mode-desc">Combines light movement and nervous system regulation into one session. No thinking required.</p>
+        <p class="mode-desc">Combines light movement and nervous system regulation into one session, with nothing to think about or decide.</p>
       </div>
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◇</span></div><div><div class="mode-name">Mobility</div><div class="mode-tag">Stretching · Joint work · Maintenance</div></div></div>
-        <p class="mode-desc">Tight hips, stiff back, locked shoulders, dodgy knees. Pick a focus area or let the system decide.</p>
+        <p class="mode-desc">For tight hips, stiff backs, locked shoulders, and dodgy knees. Pick a focus area or let the system decide for you.</p>
       </div>
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(255,111,44,.15)"><span style="color:var(--tangerine);font-size:16px">▲</span></div><div><div class="mode-name">Bodyweight</div><div class="mode-tag">Strength · Push to effort · No equipment</div></div></div>
-        <p class="mode-desc">Push, pull, hold. No counting reps, no tracking weights. The system decides when you're ready for it.</p>
+        <p class="mode-desc">Push, pull, and hold your way through bodyweight strength without counting reps or tracking weights. The system decides when you're ready for harder variants.</p>
       </div>
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(99,102,241,.15)"><span style="color:var(--indigo);font-size:16px">●</span></div><div><div class="mode-name">Shift</div><div class="mode-tag">Breathwork · Shifting state</div></div></div>
-        <p class="mode-desc">Arrive, Prime, Reset, Downshift, Override. Each protocol targets a different state change. Binaural beats and haptic feedback guide you through it.</p>
+        <p class="mode-desc">Five breathwork protocols, each targeting a different nervous system state. Binaural beats and haptic feedback guide you through each breath cycle.</p>
       </div>
     </div>
   </div>
@@ -253,8 +251,8 @@
 <section class="blocks-section">
   <div class="container">
     <div class="section-label reveal">The grid</div>
-    <h2 class="reveal">One block per exercise.<br>Earned. Not assumed.</h2>
-    <p class="blocks-sub reveal">Blocks accumulate on a grid. Quiet proof you showed up. No percentages, no calories, no scores.</p>
+    <h2 class="reveal">One block per exercise.<br>Earned, not assumed.</h2>
+    <p class="blocks-sub reveal">Each block on the grid represents an exercise you completed at its effective dose. Quiet proof you showed up, without the noise of percentages, calories, or scores.</p>
     <div class="block-grid" id="blockGrid"></div>
     <div class="anti-pills reveal">
       <span class="anti-pill">No streaks</span>
@@ -271,10 +269,10 @@
   <div class="container">
     <h2 class="reveal">Everything you need.</h2>
     <div class="feature-grid">
-      <div class="feature-item reveal"><div class="feature-icon">⏱</div><div class="feature-title">20 minutes. Always.</div><div class="feature-desc">Bounded. Your day isn't hostage to your workout.</div></div>
-      <div class="feature-item reveal"><div class="feature-icon">🫁</div><div class="feature-title">Adapts to your day</div><div class="feature-desc">Reads Apple Health. Hard gym day? It gives you mobility instead.</div></div>
-      <div class="feature-item reveal"><div class="feature-icon">🏠</div><div class="feature-title">No equipment</div><div class="feature-desc">Bodyweight only. Living room, hotel, anywhere.</div></div>
-      <div class="feature-item reveal"><div class="feature-icon">🔑</div><div class="feature-title">No account needed</div><div class="feature-desc">Download and go. No sign-up. No internet required.</div></div>
+      <div class="feature-item reveal"><div class="feature-icon">⏱</div><div class="feature-title">Always under 20 minutes</div><div class="feature-desc">Your session has a ceiling, so your day is never held hostage by your workout.</div></div>
+      <div class="feature-item reveal"><div class="feature-icon">🫁</div><div class="feature-title">Adapts to your day</div><div class="feature-desc">Reads Apple Health and adjusts accordingly. Had a hard gym day? It gives you mobility instead.</div></div>
+      <div class="feature-item reveal"><div class="feature-icon">🏠</div><div class="feature-title">No equipment needed</div><div class="feature-desc">Everything is bodyweight, so it works in your living room, a hotel, or wherever you happen to be.</div></div>
+      <div class="feature-item reveal"><div class="feature-icon">🔑</div><div class="feature-title">No account needed</div><div class="feature-desc">Download it, open it, and go. No sign-up required and no internet connection needed.</div></div>
     </div>
   </div>
 </section>
@@ -293,18 +291,18 @@
   <div class="glow"></div>
   <div class="container">
     <h2 class="reveal">20 minutes.<br>Every day.<br><em>Handled.</em></h2>
-    <p class="final-sub reveal">First session free. No account needed. iPhone only.</p>
+    <p class="final-sub reveal">Launching May 2026. Free to try. iPhone.</p>
     <div class="reveal" style="max-width:380px;margin:0 auto 32px">
       <div style="padding:18px 22px;border-radius:14px;border:1px solid rgba(48,209,88,.2);background:rgba(48,209,88,.06);text-align:center">
-        <p style="font-size:15px;color:var(--t1);font-weight:600">Your first session is free</p>
-        <span style="font-size:13px;color:var(--t2)">No credit card. No sign-up. Just press start.</span>
+        <p style="font-size:15px;color:var(--t1);font-weight:600">Get notified on launch day</p>
+        <span style="font-size:13px;color:var(--t2)">First session free. No credit card. No sign-up.</span>
       </div>
     </div>
     <div class="reveal" style="text-align:center">
-      <a href="https://apps.apple.com/app/baseline/idYOUR_APP_ID" class="dl-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        Download free
-      </a>
+      <form class="notify-form" action="https://formspree.io/f/xojkyqza" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Notify me</button>
+      </form>
     </div>
   </div>
 </section>
@@ -348,8 +346,8 @@
 </footer>
 
 <div class="bottom-bar">
-  <span>Free to try · iPhone</span>
-  <a href="https://apps.apple.com/app/baseline/idYOUR_APP_ID">Download →</a>
+  <span>Launching May 2026</span>
+  <a href="#notify">Get notified →</a>
 </div>
 
 <script src="js/main.js"></script>

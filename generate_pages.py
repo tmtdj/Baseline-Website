@@ -26,24 +26,24 @@ exercises = [
      "easier_title":"Feet assist.","easier_detail":"Let toes help. Neck stays soft. No shoulder shrug battle.",
      "harder_title":"Strict hang. Breathe slow.","harder_detail":"No toe support. Stop before grip panic. Build time, not suffering.",
      "targets":"Spinal decompression, grip endurance, shoulder mobility",
-     "why":"Counteracts hours of seated compression. Hanging under bodyweight creates traction through the spine, opens the shoulder capsule, and builds grip endurance — all passively. Research shows decompression benefits begin after 60 seconds of sustained hang.",
-     "how":["Find a bar or ledge you can hang from with feet off the ground","Let your body go completely heavy — no shrugging, no gripping with the neck","Breathe normally and let gravity do the work","If grip fails, rest and resume — accumulated time counts"]},
+     "why":"Counteracts hours of seated compression. Hanging under bodyweight creates traction through the spine, opens the shoulder capsule, and builds grip endurance, all passively. Research shows decompression benefits begin after 60 seconds of sustained hang.",
+     "how":["Find a bar or ledge you can hang from with feet off the ground","Let your body go completely heavy, no shrugging, no gripping with the neck","Breathe normally and let gravity do the work","If grip fails, rest and resume — accumulated time counts"]},
 
     {"id":"cat_cow","name":"Cat-Cow","dose":40,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Segment the spine.","cue_detail":"Inhale to extend, exhale to round. Seven slow cycles. Each one should feel a little more open than the last.",
      "easier_title":"Smaller range. Gentle.","easier_detail":"Move what moves easily. No forcing.",
      "harder_title":"Pause at end-range. 3 seconds.","harder_detail":"Hold the round. Hold the arch. Breathe into the hold.",
      "targets":"Spinal segmental flexion and extension, breath coordination",
-     "why":"Cat-cow mobilises each segment of the spine individually. Most people move their spine as a single block — this exercise trains it to articulate. The breath linkage also activates the diaphragm and calms the nervous system.",
-     "how":["Start on all fours — hands under shoulders, knees under hips","Inhale: drop your belly, lift your chest and tailbone (cow)","Exhale: round your spine, tuck your chin and pelvis (cat)","Move one vertebra at a time — don't rush between positions"]},
+     "why":"Cat-cow mobilises each segment of the spine individually. Most people move their spine as a single block, and this exercise trains it to articulate. The breath linkage also activates the diaphragm and calms the nervous system.",
+     "how":["Start on all fours, hands under shoulders, knees under hips","Inhale: drop your belly, lift your chest and tailbone (cow)","Exhale: round your spine, tuck your chin and pelvis (cat)","Move one vertebra at a time — don't rush between positions"]},
 
     {"id":"thoracic_rotations","name":"Lying Thoracic Rotations","dose":40,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Rotate through the ribcage.","cue_detail":"Hips stay still. Follow your hand with your eyes. If the hips are moving, the rotation isn't coming from the thoracic.",
      "easier_title":"Seated rotation.","easier_detail":"Sit in a chair. Rotate upper body only. Hands on shoulders.",
      "harder_title":"Open-book from side-lying.","harder_detail":"Full rotation with a pause at end-range. Control the return.",
      "targets":"Thoracic spine rotation, desk worker deficit correction",
-     "why":"The thoracic spine is designed to rotate — but sitting all day locks it up. Lost thoracic rotation forces the lower back and neck to compensate, leading to pain. Just 40 seconds of controlled rotation restores range that most desk workers lose by midday.",
-     "how":["Lie on your side with knees stacked and bent to 90°","Extend your top arm and rotate your upper body open","Follow your hand with your eyes — the gaze drives rotation","Keep your hips completely still — if they move, reduce the range"]},
+     "why":"The thoracic spine is designed to rotate, but sitting all day locks it up. Lost thoracic rotation forces the lower back and neck to compensate, leading to pain. Just 40 seconds of controlled rotation restores range that most desk workers lose by midday.",
+     "how":["Lie on your side with knees stacked and bent to 90°","Extend your top arm and rotate your upper body open","Follow your hand with your eyes, because the gaze drives rotation","Keep your hips completely still — if they move, reduce the range"]},
 
     {"id":"ninety_ninety_transitions","name":"90-90 Hip Transitions","dose":50,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Rotation, not stretch.","cue_detail":"Feel the femur roll. If it turns pinchy, reduce range. Discomfort is useful information. Pain is not.",
@@ -51,15 +51,15 @@ exercises = [
      "harder_title":"Hands-free transitions.","harder_detail":"Sit tall. Let the hips do all the work.",
      "targets":"Hip internal and external rotation",
      "why":"Hip rotation is the most commonly lost range in adults who sit. The 90-90 position isolates internal and external rotation without compensating through the spine. Transitioning between sides trains the rotational control that protects knees and lower back.",
-     "how":["Sit with both knees bent at 90° — one leg in front, one behind","Transition both legs to the other side in a windshield-wiper motion","Focus on the rotation happening at the hip joint, not the knee","Use hands on the floor for support if balance is an issue"]},
+     "how":["Sit with both knees bent at 90°, one leg in front, one behind","Transition both legs to the other side in a windshield-wiper motion","Focus on the rotation happening at the hip joint, not the knee","Use hands on the floor for support if balance is an issue"]},
 
     {"id":"deep_squat_hold","name":"Deep Squat Hold","dose":55,"category":"mobility","tier":"Baseline Mobility",
-     "cue_title":"Settle in.","cue_detail":"This is a resting position, not a workout. Breathe and be heavy. If your heels lift, widen the stance.",
+     "cue_title":"Settle in.","cue_detail":"Treat it as a resting position, not a workout. Breathe and be heavy. If your heels lift, widen the stance.",
      "easier_title":"Assisted squat.","easier_detail":"Hold a doorframe or chair. Heels elevated if needed.",
      "harder_title":"Unassisted. Extended hold.","harder_detail":"Build toward 2 minutes. Shift weight side to side.",
-     "targets":"Full-body integration — ankles, knees, hips, spine",
-     "why":"The deep squat is a resting position used by every human culture — until chairs replaced it. Holding this position restores ankle dorsiflexion, hip flexion, and spinal alignment simultaneously. 55 seconds is enough to signal the nervous system that this range is safe.",
-     "how":["Stand with feet slightly wider than shoulder-width","Sink your hips down between your knees as low as you can","Keep your heels on the ground — widen your stance if they lift","Breathe normally and let your body settle into the position"]},
+     "targets":"Full-body integration: ankles, knees, hips, and spine",
+     "why":"The deep squat is a resting position used by every human culture until chairs replaced it. Holding this position restores ankle dorsiflexion, hip flexion, and spinal alignment simultaneously. 55 seconds is enough to signal the nervous system that this range is safe.",
+     "how":["Stand with feet slightly wider than shoulder-width","Sink your hips down between your knees as low as you can","Keep your heels on the ground, and widen your stance if they lift","Breathe normally and let your body settle into the position"]},
 
     {"id":"couch_stretch","name":"Couch Stretch","dose":55,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Tall torso.","cue_detail":"Glute lightly engaged. No lumbar arch. The sensation should be in the front of the hip, not the low back.",
@@ -67,7 +67,7 @@ exercises = [
      "harder_title":"Back foot high. Squeeze glute.","harder_detail":"Deeper hip flexor stretch. Torso stays tall. No leaning.",
      "targets":"Hip flexor length, quad stretch, anterior pelvic tilt correction",
      "why":"Sitting shortens the hip flexors. Shortened hip flexors tilt your pelvis forward and compress your lower back. The couch stretch targets the rectus femoris and iliopsoas directly. Research (Bandy 1997) shows 30 seconds per side is the minimum effective stretch duration.",
-     "how":["Kneel with your back foot against a wall or couch","Step your front foot forward into a lunge position","Keep your torso tall and glute lightly engaged","The stretch should be in the front of the hip — not the lower back"]},
+     "how":["Kneel with your back foot against a wall or couch","Step your front foot forward into a lunge position","Keep your torso tall and glute lightly engaged","The stretch should be in the front of the hip, not the lower back"]},
 
     # ═══ Baseline Mobility — Tail: Spinal Flow ═══
     {"id":"spinal_wave","name":"Spinal Wave","dose":40,"category":"mobility","tier":"Baseline Mobility",
@@ -75,24 +75,24 @@ exercises = [
      "easier_title":"Smaller ripple.","easier_detail":"Just pelvis and lower back. Upper body stays still.",
      "harder_title":"Full-body wave. Standing.","harder_detail":"Start from ankles, ripple through to fingertips.",
      "targets":"Spinal segmental control, body wave coordination",
-     "why":"The spinal wave trains your body to move the spine sequentially — one vertebra at a time. Most people can only move their spine as a rigid block. This builds the neuromuscular control needed for fluid, pain-free movement.",
-     "how":["Start on all fours or standing","Initiate the wave from your pelvis","Let each spinal segment follow the one below it","If you hit a stiff spot, slow down — that's where the work is"]},
+     "why":"The spinal wave trains your body to move the spine sequentially, one vertebra at a time. Most people can only move their spine as a rigid block, and this builds the neuromuscular control needed for fluid, pain-free movement.",
+     "how":["Start on all fours or standing","Initiate the wave from your pelvis","Let each spinal segment follow the one below it","If you hit a stiff spot, slow down, because that's where the work is"]},
 
     {"id":"jefferson_curl","name":"Jefferson Curl","dose":50,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"One vertebra at a time.","cue_detail":"Exhale as you roll down. No bounce, no yank. Controlled sequencing only.",
      "easier_title":"Shorten the range.","easier_detail":"Stop above discomfort. Control the descent. No stretch chasing.",
      "harder_title":"Full range. Slow tempo.","harder_detail":"Touch toes if earned. Same control. No bounce.",
      "targets":"Posterior chain flexibility, spinal articulation under load",
-     "why":"The Jefferson curl builds loaded flexibility through the entire posterior chain — hamstrings, glutes, and every segment of the spine. Unlike a static toe touch, it trains your nervous system to trust end-range positions under control.",
-     "how":["Stand tall on a slight elevation if available","Tuck your chin and begin rolling down one vertebra at a time","Exhale as you descend — inhale as you return","The return journey is identical: sequential, controlled, slow"]},
+     "why":"The Jefferson curl builds loaded flexibility through the entire posterior chain, including the hamstrings, glutes, and every segment of the spine. Unlike a static toe touch, it trains your nervous system to trust end-range positions under control.",
+     "how":["Stand tall on a slight elevation if available","Tuck your chin and begin rolling down one vertebra at a time","Exhale as you descend, inhale as you return","The return journey is identical: sequential, controlled, slow"]},
 
     {"id":"single_leg_goodmorning","name":"Single-Leg Good Morning","dose":40,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Hip folds. Spine stays long.","cue_detail":"Balance through mid-foot. Square hips, square shoulders. Fix your gaze on one point.",
      "easier_title":"Shallow hinge. Hand on wall.","easier_detail":"Short range with support. Feel the hamstring load, don't chase depth.",
      "harder_title":"Full depth. Arms overhead.","harder_detail":"Longer lever, more balance demand. Hips stay square.",
      "targets":"Hamstring length, single-leg balance, hip hinge pattern",
-     "why":"Combines the hip hinge with single-leg balance — two fundamental movement patterns in one exercise. The balance demand forces stabiliser muscles to engage, making the hamstring work more functional than a passive stretch.",
-     "how":["Stand on one leg with a slight knee bend","Hinge forward at the hip, keeping your spine long","Square hips and shoulders throughout","Fix your gaze on one point — that alone halves the wobble"]},
+     "why":"Combines the hip hinge with single-leg balance, which are two fundamental movement patterns in one exercise. The balance demand forces stabiliser muscles to engage, making the hamstring work more functional than a passive stretch.",
+     "how":["Stand on one leg with a slight knee bend","Hinge forward at the hip, keeping your spine long","Square hips and shoulders throughout","Fix your gaze on one point, because that alone halves the wobble"]},
 
     # ═══ Baseline Mobility — Tail: Hip Opening ═══
     {"id":"active_pigeon_stretch","name":"Active Pigeon","dose":50,"category":"mobility","tier":"Baseline Mobility",
@@ -100,16 +100,16 @@ exercises = [
      "easier_title":"Shin less angled.","easier_detail":"Front shin closer to body. Less external rotation demand.",
      "harder_title":"Shin more perpendicular.","harder_detail":"Work toward shin parallel to mat edge. Stay active, don't collapse.",
      "targets":"Hip external rotation, glute activation, hip flexor stretch",
-     "why":"The pigeon stretch opens the hip in external rotation — a range most people lose from sitting. The 'active' version keeps the muscles engaged rather than passively dumping into the joint, which builds usable range rather than borrowed flexibility.",
-     "how":["From all fours, bring one shin forward across your body","Keep the back leg extended behind you","Stay active — push the front shin into the floor lightly","Don't collapse into the stretch — maintain muscle engagement"]},
+     "why":"The pigeon stretch opens the hip in external rotation, a range most people lose from sitting. The active version keeps the muscles engaged rather than passively dumping into the joint, which builds usable range rather than borrowed flexibility.",
+     "how":["From all fours, bring one shin forward across your body","Keep the back leg extended behind you","Stay active and push the front shin into the floor lightly","Don't collapse into the stretch — maintain muscle engagement"]},
 
     {"id":"horse_stance_squats","name":"Horse Stance Squats","dose":45,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Feet press out. Knees track.","cue_detail":"Even pressure across the foot. Don't collapse inward to find depth.",
      "easier_title":"Narrower stance. Shallower.","easier_detail":"Find a width you own. Don't chase wide.",
      "harder_title":"Wider. Longer holds at bottom.","harder_detail":"Sit deeper. Hold 5 seconds at the bottom of each rep.",
      "targets":"Hip adductors, inner thigh mobility, lateral hip strength",
-     "why":"Wide-stance squatting loads the adductors and inner thigh — muscles that get chronically tight from sitting with knees together. The horse stance also builds lateral hip strength that protects the knees during everyday movement.",
-     "how":["Stand with feet wide, toes slightly turned out","Sit down into a wide squat, pressing knees out over toes","Even pressure across the whole foot","Don't collapse inward to find depth — less depth with clean form beats more"]},
+     "why":"Wide-stance squatting loads the adductors and inner thigh, muscles that get chronically tight from sitting with knees together. The horse stance also builds lateral hip strength that protects the knees during everyday movement.",
+     "how":["Stand with feet wide, toes slightly turned out","Sit down into a wide squat, pressing knees out over toes","Even pressure across the whole foot","Don't collapse inward to find depth, because less depth with clean form beats more"]},
 
     # ═══ Baseline Mobility — Tail: Shoulder ═══
     {"id":"shoulder_extensions","name":"Behind-Back Shoulder Stretch","dose":40,"category":"mobility","tier":"Baseline Mobility",
@@ -117,23 +117,23 @@ exercises = [
      "easier_title":"Hands wider.","easier_detail":"Less stretch, more control. Ribs stay down.",
      "harder_title":"Hands closer. Slow lift.","harder_detail":"Feel the front of the shoulder open. Hold the top.",
      "targets":"Anterior shoulder mobility, chest opening, posture correction",
-     "why":"Desk work rounds the shoulders forward, shortening the front of the shoulder capsule. This stretch reverses that pattern by opening the anterior shoulder while keeping the ribs down — preventing the common compensation of arching the lower back.",
-     "how":["Clasp your hands behind your back","Lift your arms away from your body","Keep your ribs down — the stretch should be in the front of the shoulder","If you feel it in your lower back, you're arching too much"]},
+     "why":"Desk work rounds the shoulders forward, shortening the front of the shoulder capsule. This stretch reverses that pattern by opening the anterior shoulder while keeping the ribs down, which prevents the common compensation of arching the lower back.",
+     "how":["Clasp your hands behind your back","Lift your arms away from your body","Keep your ribs down, because the stretch should be in the front of the shoulder","If you feel it in your lower back, you're arching too much"]},
 
     {"id":"shoulder_cars_sequence","name":"Shoulder CARs","dose":50,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Smooth arcs, no corners.","cue_detail":"Make the circle smaller before you make it faster. Slow down through clicks.",
      "easier_title":"Smaller circles.","easier_detail":"Keep it pain-free. Speed doesn't matter. Smoothness does.",
      "harder_title":"Biggest circle you own.","harder_detail":"Tension through the full arc. Pause at the hard spots.",
      "targets":"Shoulder joint health, full range of motion maintenance",
-     "why":"Controlled Articular Rotations (CARs) are the gold standard for joint health. Moving the shoulder through its complete range under tension sends a signal to the nervous system that this range is safe and should be maintained. Use it or lose it — CARs are how you keep it.",
-     "how":["Stand with one arm by your side","Slowly trace the biggest circle you can with your arm","Move through every degree of the range","Slow down through any clicks or tight spots — that's where the work is"]},
+     "why":"Controlled Articular Rotations (CARs) are the gold standard for joint health. Moving the shoulder through its complete range under tension sends a signal to the nervous system that this range is safe and should be maintained. Use it or lose it: CARs are how you keep it.",
+     "how":["Stand with one arm by your side","Slowly trace the biggest circle you can with your arm","Move through every degree of the range","Slow down through any clicks or tight spots, because that's where the work is"]},
 
     {"id":"worlds_greatest_stretch","name":"World's Greatest Stretch","dose":45,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Lunge, drop, reach.","cue_detail":"Keep the back knee off the floor if you can. Rotate from the ribcage.",
      "easier_title":"Hands stay down.","easier_detail":"Skip the rotation. Focus on the lunge and hip opening.",
      "harder_title":"Add thoracic rotation at the top.","harder_detail":"Full reach. Hold the open position for 3 breaths.",
      "targets":"Hip flexors, thoracic rotation, hamstrings, ankle mobility",
-     "why":"Hits more ranges of motion in a single movement than almost any other exercise. Hip flexion, thoracic rotation, hamstring length, and ankle dorsiflexion — all in one flowing sequence.",
+     "why":"Hits more ranges of motion in a single movement than almost any other exercise: hip flexion, thoracic rotation, hamstring length, and ankle dorsiflexion, all in one flowing sequence.",
      "how":["Step into a deep lunge position","Drop your inside elbow toward the floor beside your front foot","Rotate your chest open and reach your arm to the ceiling","Keep the front knee stacked over the ankle throughout"]},
 
     # ═══ Baseline Mobility — Tail: Balance ═══
@@ -143,14 +143,14 @@ exercises = [
      "harder_title":"Eyes closed.","harder_detail":"Remove visual input. Let proprioception do the work.",
      "targets":"Proprioception, ankle stability, fall prevention",
      "why":"Single-leg balance is the most underrated predictor of healthy ageing. The ability to stand on one leg for 10+ seconds correlates with reduced fall risk and all-cause mortality. Training it for 40 seconds builds the proprioceptive feedback loop that keeps you stable.",
-     "how":["Stand on one leg with a slight knee bend","Fix your gaze on one point","Let your ankle make small corrections — don't lock it","The goal is quiet stillness, not rigid freezing"]},
+     "how":["Stand on one leg with a slight knee bend","Fix your gaze on one point","Let your ankle make small corrections, don't lock it","The goal is quiet stillness, not rigid freezing"]},
 
     {"id":"wrist_extension_lift_offs","name":"Kneeling Wrist Extensions","dose":40,"category":"mobility","tier":"Baseline Mobility",
      "cue_title":"Lift clean, don't claw.","cue_detail":"Tension through forearm, not fingers. Keep knuckles relaxed.",
      "easier_title":"Less weight forward.","easier_detail":"Stay back on the knees. Gentle load on wrists.",
      "harder_title":"More weight forward. Pause at top.","harder_detail":"Lean into it. Hold the lift for 2 seconds.",
      "targets":"Wrist mobility, forearm strength, hand health",
-     "why":"Modern life wrecks wrists — typing, phones, driving. Kneeling wrist extensions build extension range and forearm strength simultaneously, protecting against repetitive strain injuries and carpal tunnel symptoms.",
+     "why":"Modern life wrecks wrists through typing, phones, and driving. Kneeling wrist extensions build extension range and forearm strength simultaneously, protecting against repetitive strain injuries and carpal tunnel symptoms.",
      "how":["Kneel on all fours with fingers pointing forward","Lean weight gently onto your palms","Lift your palms off the floor while keeping fingers down","The tension should be through the forearm, not the finger joints"]},
 
     {"id":"bear_crawl_hold","name":"Bear Crawl Hold","dose":30,"category":"mobility","tier":"Baseline Mobility",
@@ -159,7 +159,7 @@ exercises = [
      "harder_title":"Hold longer. Add slow movement.","harder_detail":"Crawl forward 4 steps, back 4 steps. Knees stay hovering.",
      "targets":"Core stability, shoulder endurance, breathing under tension",
      "why":"The bear crawl hold loads your core, shoulders, and hips simultaneously while demanding you maintain a neutral spine. The key challenge is breathing normally while under isometric load.",
-     "how":["Start on all fours — hands under shoulders, knees under hips","Lift your knees 1-2 inches off the floor","Hold this position while breathing normally","Don't hold your breath — that defeats the purpose"]},
+     "how":["Start on all fours, hands under shoulders, knees under hips","Lift your knees 1-2 inches off the floor","Hold this position while breathing normally","Don't hold your breath, because that defeats the purpose"]},
 
     # ═══ Move — Tier 1 Foundation ═══
     {"id":"push_up","name":"Push-Up","dose":40,"category":"bodyweight","tier":"Bodyweight — Foundation",
@@ -168,7 +168,7 @@ exercises = [
      "harder_title":"Slow tempo. 3 seconds down.","harder_detail":"Controlled descent. Explode up. Form breaks, rest in plank.",
      "targets":"Chest, triceps, anterior deltoids, core stability",
      "why":"The push-up is the foundational upper body pressing movement. It loads the chest, shoulders, and triceps while demanding core stability throughout. 40 seconds of push-up work is enough to create a meaningful strength stimulus.",
-     "how":["Hands slightly wider than shoulders, fingers spread","Lower your chest to the floor with elbows at roughly 45°","Press back up to full arm extension","The moment your hips sag or neck cranes — rest in plank position"]},
+     "how":["Hands slightly wider than shoulders, fingers spread","Lower your chest to the floor with elbows at roughly 45°","Press back up to full arm extension","The moment your hips sag or neck cranes, rest in plank position"]},
 
     {"id":"bodyweight_squat","name":"Bodyweight Squat","dose":40,"category":"bodyweight","tier":"Bodyweight — Foundation",
      "cue_title":"Full depth, heels down. Go until form breaks.","cue_detail":"Sit back and down. When your back rounds or heels lift, rest standing.",
@@ -184,15 +184,15 @@ exercises = [
      "harder_title":"Low-angle row. Body nearly horizontal.","harder_detail":"Feet forward, body straight. Full range.",
      "targets":"Upper back, biceps, rear deltoids, grip",
      "why":"The inverted row is the horizontal pulling counterpart to the push-up. It strengthens the upper back and biceps while correcting the forward-shoulder posture caused by desk work.",
-     "how":["Find a sturdy table edge or low bar","Hang underneath with feet on the floor, body straight","Pull your chest to the edge","Lower with control — when you can't clear your chest, rest"]},
+     "how":["Find a sturdy table edge or low bar","Hang underneath with feet on the floor, body straight","Pull your chest to the edge","Lower with control, and when you can't clear your chest, rest"]},
 
     {"id":"glute_bridge","name":"Glute Bridge","dose":40,"category":"bodyweight","tier":"Bodyweight — Foundation",
      "cue_title":"Hips to ceiling. Squeeze at the top.","cue_detail":"Drive through your heels. When your hips drop or lower back takes over, rest on the floor.",
      "easier_title":"Two-leg bridge. Hold at the top.","easier_detail":"Drive hips up, squeeze 2 seconds.",
      "harder_title":"Elevated feet. Heels on chair.","harder_detail":"Greater hip range. Drive through heels.",
      "targets":"Glutes, hamstrings, hip extension, lower back support",
-     "why":"The glute bridge activates the posterior chain — the muscles most inhibited by sitting. Strong glutes protect the lower back, stabilise the pelvis, and power every lower body movement.",
-     "how":["Lie on your back, knees bent, feet flat on the floor","Drive your hips toward the ceiling by pressing through your heels","Squeeze your glutes hard at the top — full hip extension","Lower with control. When your back takes over, rest on the floor"]},
+     "why":"The glute bridge activates the posterior chain, the muscles most inhibited by sitting. Strong glutes protect the lower back, stabilise the pelvis, and power every lower body movement.",
+     "how":["Lie on your back, knees bent, feet flat on the floor","Drive your hips toward the ceiling by pressing through your heels","Squeeze your glutes hard at the top for full hip extension","Lower with control. When your back takes over, rest on the floor"]},
 
     {"id":"hollow_body_hold","name":"Hollow Body Hold","dose":30,"category":"bodyweight","tier":"Bodyweight — Foundation",
      "cue_title":"Low back pressed flat. Hold until it lifts.","cue_detail":"Arms overhead, legs extended. The moment your lower back lifts, rest flat.",
@@ -200,7 +200,7 @@ exercises = [
      "harder_title":"Hollow body rock. Hold and rock.","harder_detail":"Same shape, add a gentle rock.",
      "targets":"Deep core, anterior chain, spinal stability",
      "why":"The hollow body hold is the foundation of all gymnastics core work. It trains the anterior chain to create and maintain a rigid, slightly curved shape. The minimum effective dose is just 30 seconds because the isometric demand is high.",
-     "how":["Lie on your back, arms overhead, legs extended","Press your lower back into the floor — this is non-negotiable","Lift your arms and legs slightly off the ground","The moment your lower back peels off the floor, rest"]},
+     "how":["Lie on your back, arms overhead, legs extended","Press your lower back into the floor; this is non-negotiable","Lift your arms and legs slightly off the ground","The moment your lower back peels off the floor, rest"]},
 
     {"id":"sit_to_stand","name":"Sit-to-Stand","dose":30,"category":"bodyweight","tier":"Bodyweight — Foundation",
      "cue_title":"Chair height. Control the sit.","cue_detail":"Lower slowly, pause, stand. When you can't control the descent, rest seated.",
@@ -223,7 +223,7 @@ exercises = [
      "easier_title":"Half superman. Lift arms only, then legs only.","easier_detail":"Alternate: arms up, then legs up.",
      "harder_title":"Superman with pull. Arms sweep back.","harder_detail":"Lift everything, then pull elbows to ribs.",
      "targets":"Lower back, glutes, posterior chain endurance",
-     "why":"The superman hold strengthens the entire posterior chain — lower back, glutes, and upper back — in one isometric position. It's the back-body counterpart to the hollow body hold.",
+     "why":"The superman hold strengthens the entire posterior chain (lower back, glutes, and upper back) in one isometric position. It's the back-body counterpart to the hollow body hold.",
      "how":["Lie face down, arms extended overhead","Lift arms, chest, and legs off the floor simultaneously","Hold the position while breathing normally","When your chest drops or you lose the squeeze, rest flat"]},
 
     {"id":"side_plank_hold","name":"Side Plank Hold","dose":40,"category":"bodyweight","tier":"Bodyweight — Foundation",
@@ -241,7 +241,7 @@ exercises = [
      "harder_title":"Free leg straight up. Slow tempo.","harder_detail":"Full extension. 3 seconds up, 3 seconds down.",
      "targets":"Unilateral glute strength, pelvic stability",
      "why":"The single-leg version doubles the load on each glute and exposes any asymmetry between sides. Pelvic stability on one leg is essential for walking, running, and stair climbing.",
-     "how":["Lie on your back, one foot planted, the other extended","Drive your hips up through the planted heel","Keep your hips level — no twisting","Lower with control and switch sides"]},
+     "how":["Lie on your back, one foot planted, the other extended","Drive your hips up through the planted heel","Keep your hips level, no twisting","Lower with control and switch sides"]},
 
     # ═══ Move — Tier 3 Strength ═══
     {"id":"pike_push_up","name":"Pike Push-Up","dose":35,"category":"bodyweight","tier":"Bodyweight — Strength",
@@ -265,8 +265,8 @@ exercises = [
      "easier_title":"Fingertips on wall. Shallower hinge.","easier_detail":"Support for balance. Feel the hamstring, don't chase depth.",
      "harder_title":"Arms overhead. Full depth.","harder_detail":"Longer lever, more demand. Torso parallel to floor.",
      "targets":"Hamstrings, glutes, single-leg balance, posterior chain",
-     "why":"The single-leg RDL is one of the most functional exercises in any program. It trains the hip hinge on one leg — the same pattern used in picking things up, climbing, and running.",
-     "how":["Stand on one leg with a slight knee bend","Hinge forward at the hip — free leg extends behind you","Keep your spine long and hips square","How far you go matters less than maintaining a straight back"]},
+     "why":"The single-leg RDL is one of the most functional exercises in any program. It trains the hip hinge on one leg, the same pattern used in picking things up, climbing, and running.",
+     "how":["Stand on one leg with a slight knee bend","Hinge forward at the hip as your free leg extends behind you","Keep your spine long and hips square","How far you go matters less than maintaining a straight back"]},
 
     {"id":"side_plank_hip_dip","name":"Side Plank with Hip Dip","dose":35,"category":"bodyweight","tier":"Bodyweight — Strength",
      "cue_title":"Lower hip, then drive it back up.","cue_detail":"Controlled dip, not a collapse. Drive-up stalls, rest and switch.",
@@ -290,7 +290,7 @@ exercises = [
      "easier_title":"Low elevation. Same form.","easier_detail":"Small step under feet. Less load on shoulders.",
      "harder_title":"High elevation. Slow tempo.","harder_detail":"Chair or high step. 3 seconds down, explode up.",
      "targets":"Upper chest, shoulders, triceps, core",
-     "why":"Elevating the feet shifts more load onto the upper chest and shoulders — bridging the gap between flat push-ups and pike push-ups. The decline position also increases core demand.",
+     "why":"Elevating the feet shifts more load onto the upper chest and shoulders, bridging the gap between flat push-ups and pike push-ups. The decline position also increases core demand.",
      "how":["Place your feet on a chair or step","Set up in a push-up position with hands on the floor","Lower your chest to the floor","Press back up — when hips sag, rest in plank"]},
 
     {"id":"assisted_pistol_squat","name":"Assisted Pistol Squat","dose":30,"category":"bodyweight","tier":"Bodyweight — Power",
@@ -306,7 +306,7 @@ exercises = [
      "easier_title":"Slower jump, 3-second lower.","easier_detail":"Shorter eccentric. Build control before time.",
      "harder_title":"8-second lower. Pause halfway.","harder_detail":"Elbows at 90°, hold 2 seconds, then continue down.",
      "targets":"Lats, biceps, grip, eccentric pulling strength",
-     "why":"Eccentric (lowering) training builds strength faster than concentric training. The negative pull-up lets you train the pulling muscles at loads you can't yet lift — it's the most effective way to build toward a full pull-up.",
+     "why":"Eccentric (lowering) training builds strength faster than concentric training. The negative pull-up lets you train the pulling muscles at loads you can't yet lift, and it's the most effective way to build toward a full pull-up.",
      "how":["Jump or step up to get your chin over the bar","Lower yourself as slowly as possible — target 5 seconds","Control the entire descent to a full dead hang","When you can't slow the drop, rest hanging"]},
 
     {"id":"nordic_curl","name":"Nordic Curl","dose":25,"category":"bodyweight","tier":"Bodyweight — Power",
@@ -315,7 +315,7 @@ exercises = [
      "harder_title":"Full range. Push off floor to reset.","harder_detail":"Lower as far as possible, push off floor to return.",
      "targets":"Hamstrings, eccentric knee flexion, injury prevention",
      "why":"The Nordic curl is the most evidence-backed exercise for hamstring injury prevention. The eccentric loading at long muscle lengths builds the hamstring strength that protects against strains during running and sprinting.",
-     "how":["Kneel on the floor with feet anchored under something heavy","Lean forward slowly, keeping your body straight","Catch yourself with your hands when you can't control the descent","Push off the floor to reset — progress is measured in seconds, not reps"]},
+     "how":["Kneel on the floor with feet anchored under something heavy","Lean forward slowly, keeping your body straight","Catch yourself with your hands when you can't control the descent","Push off the floor to reset; progress is measured in seconds, not reps"]},
 
     {"id":"l_sit_hold","name":"L-Sit Hold","dose":20,"category":"bodyweight","tier":"Bodyweight — Power",
      "cue_title":"Hands press down. Legs lift.","cue_detail":"On floor or books. Compress hard: hips lift, legs extend. Legs drop, rest seated.",
@@ -346,7 +346,7 @@ exercises = [
      "easier_title":"Tucked position. Shorter lever.","easier_detail":"Knees tucked tight. Lower and raise just the hips.",
      "harder_title":"Full extension. Straight body.","harder_detail":"Legs extended, body rigid. Lower to horizontal and back.",
      "targets":"Full anterior chain, advanced core strength",
-     "why":"The dragon flag is one of the most demanding core exercises. It trains the entire anterior chain to maintain rigidity against gravity — the same skill needed for handstands, levers, and advanced bodyweight movements.",
+     "why":"The dragon flag is one of the most demanding core exercises. It trains the entire anterior chain to maintain rigidity against gravity, the same skill needed for handstands, levers, and advanced bodyweight movements.",
      "how":["Lie on a bench and grip the edge behind your head","Lift your body into a straight line, supported by your upper back","Lower your body as one rigid unit toward the bench","When you lose the straight line, rest flat"]},
 
     # ═══ Move — Tier 5 Apex ═══
@@ -355,7 +355,7 @@ exercises = [
      "easier_title":"Partial range. Head to pad.","easier_detail":"Use a pillow to shorten range. Same form, less depth.",
      "harder_title":"Full range. Deficit if possible.","harder_detail":"Head to floor or hands on blocks for extra range.",
      "targets":"Overhead pressing strength, shoulder power, core stability",
-     "why":"The handstand push-up is the ultimate bodyweight pressing exercise. It loads the shoulders and triceps with your full bodyweight in an overhead position — building the kind of pressing strength that no other bodyweight exercise can match.",
+     "why":"The handstand push-up is the ultimate bodyweight pressing exercise. It loads the shoulders and triceps with your full bodyweight in an overhead position, building the kind of pressing strength that no other bodyweight exercise can match.",
      "how":["Kick up into a handstand against a wall","Lower your head toward the floor","Press back up to full arm extension","When you can't press, walk down safely"]},
 
     {"id":"pistol_squat","name":"Pistol Squat","dose":25,"category":"bodyweight","tier":"Bodyweight — Apex",
@@ -372,7 +372,7 @@ exercises = [
      "harder_title":"Slow negative. 5 seconds down.","harder_detail":"Full pull, then 5-second controlled lower.",
      "targets":"Lats, biceps, grip, upper back",
      "why":"The pull-up is the gold standard of upper body pulling strength. It loads the entire back, biceps, and grip in a single compound movement. The minimum dose is just 25 seconds because each rep carries a very high strength stimulus.",
-     "how":["Hang from a bar with palms facing away, slightly wider than shoulders","Pull your chin over the bar by driving your elbows down and back","Lower with control to a full dead hang","No kipping or swinging — strict form only"]},
+     "how":["Hang from a bar with palms facing away, slightly wider than shoulders","Pull your chin over the bar by driving your elbows down and back","Lower with control to a full dead hang","No kipping or swinging, strict form only"]},
 
     {"id":"shrimp_squat","name":"Shrimp Squat","dose":25,"category":"bodyweight","tier":"Bodyweight — Apex",
      "cue_title":"Grab rear foot. Kneel down on one leg.","cue_detail":"Rear knee touches floor behind you. Stand up.",
@@ -380,7 +380,7 @@ exercises = [
      "harder_title":"No support. Full depth. Pause.","harder_detail":"Rear knee touches floor, pause 1 second, drive up.",
      "targets":"Quad strength, balance, single-leg control",
      "why":"The shrimp squat loads the quads more than the pistol squat due to the rear leg position. It demands knee flexion strength and balance in a pattern that most people have never trained.",
-     "how":["Stand on one leg and grab the other foot behind you","Lower your back knee toward the floor","Touch the knee down with control","Stand back up — the quad tension and balance are the challenge"]},
+     "how":["Stand on one leg and grab the other foot behind you","Lower your back knee toward the floor","Touch the knee down with control","Stand back up; the quad tension and balance are the challenge"]},
 
     {"id":"muscle_up_negative","name":"Muscle-Up Negative","dose":20,"category":"bodyweight","tier":"Bodyweight — Apex",
      "cue_title":"Start on top of bar. Lower through transition.","cue_detail":"Slow descent from support to hang. The transition is the exercise.",
@@ -404,50 +404,50 @@ exercises = [
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Spinal decompression, shoulder opening, grip endurance",
      "why":"A passive hang decompresses the spine after exercise, opening up space between vertebrae and allowing the shoulder joint to stretch under gentle load. Used as a recovery tool rather than a mobility exercise.",
-     "how":["Find a bar and hang with a relaxed grip","Let your body go heavy — no shrugging","Breathe normally","Let the weight of your body do the work"]},
+     "how":["Find a bar and hang with a relaxed grip","Let your body go heavy, no shrugging","Breathe normally","Let the weight of your body do the work"]},
 
     {"id":"supine_lumbar_rotations","name":"Supine Lumbar Rotations","dose":40,"category":"recovery","tier":"Recovery",
      "cue_title":"Lower ribs melt down.","cue_detail":"Let gravity rotate you. Breathe out and soften, don't force range.",
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Lumbar spine mobility, lower back relief, spinal decompression",
-     "why":"Gentle rotations in a supine position allow the lower back to decompress without load. Gravity does the work — each exhale is permission to go a little further, not a demand.",
-     "how":["Lie on your back with knees bent","Let both knees fall to one side","Breathe out and let gravity deepen the rotation","Switch sides slowly — no forcing"]},
+     "why":"Gentle rotations in a supine position allow the lower back to decompress without load. Gravity does the work, and each exhale is permission to go a little further, not a demand.",
+     "how":["Lie on your back with knees bent","Let both knees fall to one side","Breathe out and let gravity deepen the rotation","Switch sides slowly, no forcing"]},
 
     {"id":"wall_butterfly","name":"Supine Wall Butterfly","dose":30,"category":"recovery","tier":"Recovery",
      "cue_title":"Knees drop gently.","cue_detail":"Back stays heavy on the wall. Let the inner thighs release gradually.",
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Inner thigh release, hip opening, nervous system calming",
      "why":"The wall butterfly uses gravity and the wall to passively open the hips without any muscular effort. It's a recovery position that lets the adductors release while the supported position calms the nervous system.",
-     "how":["Lie on your back with legs up the wall","Bring the soles of your feet together, knees dropping out","Let gravity open your hips — no pushing","Breathe and let the inner thighs release gradually"]},
+     "how":["Lie on your back with legs up the wall","Bring the soles of your feet together, knees dropping out","Let gravity open your hips, no pushing","Breathe and let the inner thighs release gradually"]},
 
     {"id":"supported_jefferson_stretch","name":"Supported Jefferson Stretch","dose":40,"category":"recovery","tier":"Recovery",
      "cue_title":"Assisted control.","cue_detail":"Hands help. No hanging weight. You get the spinal articulation without the loading demand.",
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Posterior chain release, spinal articulation, gentle decompression",
      "why":"A gentler version of the Jefferson curl that uses hand support to remove the loading demand. You get the spinal articulation and posterior chain stretch without the nervous system tension of unsupported end-range flexion.",
-     "how":["Stand with hands on a support","Roll down through the spine one vertebra at a time","Let your hands assist — no hanging weight","Roll back up the same way — sequential and controlled"]},
+     "how":["Stand with hands on a support","Roll down through the spine one vertebra at a time","Let your hands assist, no hanging weight","Roll back up the same way, sequential and controlled"]},
 
     {"id":"long_exhale_breathing","name":"Long Exhale Breathing","dose":25,"category":"recovery","tier":"Recovery",
      "cue_title":"Exhale longer than you inhale.","cue_detail":"Let ribs soften down. No forcing. Just a longer out-breath.",
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Parasympathetic activation, heart rate reduction, nervous system regulation",
      "why":"Extended exhales activate the vagus nerve, shifting your nervous system from fight-or-flight to rest-and-digest. This is the simplest, most evidence-backed breathing technique for immediate stress reduction.",
-     "how":["Breathe in through your nose for a natural count","Breathe out for roughly twice as long","No forcing — let the exhale be passive and soft","Focus on the ribs softening down with each breath out"]},
+     "how":["Breathe in through your nose for a natural count","Breathe out for roughly twice as long","No forcing, just let the exhale be passive and soft","Focus on the ribs softening down with each breath out"]},
 
     # ═══ Focus Prepends ═══
     {"id":"gentle_neck_rotations","name":"Gentle Neck Rotations","dose":30,"category":"mobility","tier":"Focus — Neck",
      "cue_title":"Easy arcs.","cue_detail":"Stop well before stretch. Let the neck find its own range. Move within total comfort.",
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Neck mobility, cervical spine health, tension relief",
-     "why":"Gentle neck rotations maintain cervical range of motion and relieve tension from desk work. The key is staying within comfortable range — the neck responds better to gentle, frequent movement than aggressive stretching.",
+     "why":"Gentle neck rotations maintain cervical range of motion and relieve tension from desk work. The key is staying within comfortable range, because the neck responds better to gentle, frequent movement than aggressive stretching.",
      "how":["Slowly rotate your head side to side","Stop well before any stretch or discomfort","Let the neck find its own range","Move within total comfort — range is not the goal"]},
 
     {"id":"chin_tucks","name":"Chin Tucks","dose":40,"category":"mobility","tier":"Focus — Neck",
      "cue_title":"Double chin. Hold gently.","cue_detail":"Draw the chin straight back, not down. Feel the back of the neck lengthen. Hold 5 seconds, release.",
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Deep cervical flexor activation, forward head posture correction",
-     "why":"Chin tucks activate the deep cervical flexors — the muscles that counteract forward head posture. The Jull protocol (10 reps × 5s hold) is the research-backed standard for cervical stabilisation.",
-     "how":["Sit or stand with good posture","Draw your chin straight back — not down","Create a 'double chin' position","Hold for 5 seconds, release, repeat 8-10 times"]},
+     "why":"Chin tucks activate the deep cervical flexors, which are the muscles that counteract forward head posture. The Jull protocol (10 reps x 5s hold) is the research-backed standard for cervical stabilisation.",
+     "how":["Sit or stand with good posture","Draw your chin straight back, not down","Create a 'double chin' position","Hold for 5 seconds, release, repeat 8-10 times"]},
 
     {"id":"shoulder_dislocates","name":"Shoulder Pass-Overs","dose":35,"category":"mobility","tier":"Focus — Shoulder",
      "cue_title":"Wide grip. Slow arc.","cue_detail":"Use a towel or band. Only go as far as control allows. Wider grip is easier.",
@@ -460,7 +460,7 @@ exercises = [
      "cue_title":"Knee tracks over toes.","cue_detail":"Heel stays down. Slow push, then release. Push until the heel almost lifts, then back off.",
      "easier_title":None,"easier_detail":None,"harder_title":None,"harder_detail":None,
      "targets":"Ankle dorsiflexion, squat depth, knee health",
-     "why":"Limited ankle dorsiflexion is the number one limiter of squat depth. The knee-to-wall stretch is the most effective way to improve it — push the knee forward over the toes while keeping the heel down.",
+     "why":"Limited ankle dorsiflexion is the number one limiter of squat depth. The knee-to-wall stretch is the most effective way to improve it: push the knee forward over the toes while keeping the heel down.",
      "how":["Stand facing a wall with one foot a few inches back","Push your knee forward toward the wall","Keep your heel firmly on the ground","Push until the heel almost lifts, then back off — that edge is where the range is"]},
 ]
 
@@ -657,7 +657,7 @@ def exercise_page(ex):
 
 <header class="page-header">
   <a href="../index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
-  <a href="../index.html#download" class="nav-cta">Download free</a>
+  <a href="../index.html#notify" class="nav-cta">Get notified</a>
 </header>
 
 <main class="container">
@@ -701,11 +701,12 @@ def exercise_page(ex):
 
   <div class="cta-banner">
     <h3>Baseline builds this into your session automatically.</h3>
-    <p>No choosing. No planning. The system decides what you need and tells you exactly what to do.</p>
-    <a href="https://apps.apple.com/app/baseline/idYOUR_APP_ID" class="dl-btn">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      Download free
-    </a>
+    <p>The system decides what you need, sequences the exercises, and runs the timers. All you do is press start.</p>
+    <p style="font-size:14px;color:var(--accent);font-weight:600;margin-bottom:12px">Launching May 2026 · iPhone</p>
+    <form class="notify-form" action="https://formspree.io/f/xojkyqza" method="POST" style="max-width:340px;margin:0 auto">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Notify me</button>
+    </form>
   </div>
 </main>
 
@@ -713,6 +714,8 @@ def exercise_page(ex):
   <div class="footer-links">
     <a href="../index.html">Home</a>
     <a href="index.html">All Exercises</a>
+    <a href="../shift/index.html">Shift Breathwork</a>
+    <a href="../blog/index.html">Blog</a>
     <a href="../disclaimer.html">Health Disclaimer</a>
     <a href="../privacy.html">Privacy Policy</a>
     <a href="mailto:support@baselinebody.app">Contact</a>
@@ -767,7 +770,7 @@ def shift_page(mode):
 
 <header class="page-header">
   <a href="../index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
-  <a href="../index.html#download" class="nav-cta">Download free</a>
+  <a href="../index.html#notify" class="nav-cta">Get notified</a>
 </header>
 
 <main class="container">
@@ -826,11 +829,12 @@ def shift_page(mode):
 
   <div class="cta-banner">
     <h3>Shift is built into Baseline.</h3>
-    <p>The system picks the mode based on your state. Binaural beats, haptic feedback, and guided breathing \u2014 all automatic.</p>
-    <a href="https://apps.apple.com/app/baseline/idYOUR_APP_ID" class="dl-btn">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      Download free
-    </a>
+    <p>The system picks the right protocol based on your state, then guides you through with binaural beats, haptic feedback, and timed breathing cues.</p>
+    <p style="font-size:14px;color:var(--accent);font-weight:600;margin-bottom:12px">Launching May 2026 · iPhone</p>
+    <form class="notify-form" action="https://formspree.io/f/xojkyqza" method="POST" style="max-width:340px;margin:0 auto">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Notify me</button>
+    </form>
   </div>
 </main>
 
@@ -839,6 +843,7 @@ def shift_page(mode):
     <a href="../index.html">Home</a>
     <a href="../exercises/index.html">All Exercises</a>
     <a href="index.html">All Shift Modes</a>
+    <a href="../blog/index.html">Blog</a>
     <a href="../disclaimer.html">Health Disclaimer</a>
     <a href="../privacy.html">Privacy Policy</a>
     <a href="mailto:support@baselinebody.app">Contact</a>
@@ -892,7 +897,7 @@ def exercise_index():
 <body>
 <header class="page-header">
   <a href="../index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
-  <a href="../index.html#download" class="nav-cta">Download free</a>
+  <a href="../index.html#notify" class="nav-cta">Get notified</a>
 </header>
 <main class="container">
   <div class="breadcrumb"><a href="../index.html">Home</a><span>\u203a</span>Exercises</div>
@@ -907,7 +912,7 @@ def exercise_index():
   </div>
   <div class="content-section">
     <h2 style="color:var(--tangerine)">Bodyweight Strength</h2>
-    <p>Push, pull, hold. No equipment. The system decides when you're ready to progress.</p>
+    <p>Push, pull, and hold with no equipment. The system decides when you're ready to progress.</p>
     <div class="related-grid">{cards(bodyweight, "var(--tangerine)")}</div>
   </div>
   <div class="content-section">
@@ -972,7 +977,7 @@ def shift_index():
 <body>
 <header class="page-header">
   <a href="../index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
-  <a href="../index.html#download" class="nav-cta">Download free</a>
+  <a href="../index.html#notify" class="nav-cta">Get notified</a>
 </header>
 <main class="container">
   <div class="breadcrumb"><a href="../index.html">Home</a><span>\u203a</span>Shift</div>
@@ -1044,7 +1049,7 @@ if __name__ == "__main__":
     for mode in shift_modes:
         urls.append((f"https://baselinebody.app/shift/{mode['id']}.html", "0.7", "monthly"))
     # Blog articles
-    blog_slugs = ["how-long-should-you-stretch", "morning-mobility-routine", "breathwork-for-sleep"]
+    blog_slugs = ["how-long-should-you-stretch", "morning-mobility-routine", "breathwork-for-sleep", "bodyweight-training-no-equipment", "why-less-exercise-is-more"]
     for bs in blog_slugs:
         urls.append((f"https://baselinebody.app/blog/{bs}.html", "0.8", "monthly"))
     urls.append(("https://baselinebody.app/blog/", "0.8", "weekly"))
