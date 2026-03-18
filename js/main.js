@@ -1,3 +1,14 @@
+// ═══ Bottom bar: show after scrolling past hero email form ═══
+(function(){
+  const bar = document.querySelector('.bottom-bar');
+  const notify = document.getElementById('notify');
+  if (!bar || !notify) return;
+  const obs = new IntersectionObserver(([e]) => {
+    bar.classList.toggle('visible', !e.isIntersecting);
+  }, {threshold:0});
+  obs.observe(notify);
+})();
+
 // ═══ Mobile nav toggle ═══
 (function(){
   const burger = document.getElementById('navBurger');
