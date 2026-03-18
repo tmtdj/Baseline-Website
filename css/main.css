@@ -66,13 +66,13 @@ section{position:relative}
 .mobile-nav a:hover{color:var(--accent)}
 
 /* ═══ HERO ═══ */
-.hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;overflow:hidden;padding:100px 24px 40px}
+.hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding:80px 24px 40px}
 .hero .glow{top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;transition:background .8s ease}
-.hero-model{position:absolute;bottom:calc(50% - 60px);left:50%;transform:translateX(-50%);width:min(80vw,420px);height:min(50vh,420px);z-index:1;pointer-events:none}
+.hero-model{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(100vw,560px);height:min(70vh,560px);z-index:1;pointer-events:none}
 .hero-model img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;opacity:0;transition:opacity 1s ease}
-.hero-model img.active{opacity:.7}
+.hero-model img.active{opacity:.25}
 .hero-model img.smaller{transform:scale(.55)}
-.hero-copy{text-align:center;max-width:480px;position:relative;z-index:2;margin-top:auto;padding-bottom:20px}
+.hero-copy{text-align:center;max-width:480px;position:relative;z-index:2;padding-bottom:20px}
 .hero h1{font-family:var(--serif);font-size:clamp(32px,8vw,52px);font-weight:400;line-height:1.1;color:var(--t1);margin-bottom:18px;animation:fadeUp .7s ease .15s both}
 .hero h1 em{font-style:italic;color:var(--green)}
 .hero-sub{font-size:19px;color:var(--t2);line-height:1.7;margin-bottom:16px;animation:fadeUp .7s ease .3s both}
