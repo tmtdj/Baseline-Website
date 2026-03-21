@@ -1,4 +1,4 @@
-/* exercise.css — Shared styles for exercise + shift landing pages */
+/* exercise.css: Shared styles for exercise + shift landing pages */
 
 /* ── Inherit base tokens from main.css ── */
 :root {
@@ -151,7 +151,7 @@ a:hover { text-decoration: underline; }
   position: relative;
 }
 /*
- * Category tints — matches the app's .colorMultiply(color.opacity(0.92))
+ * Category tints: matches the app's .colorMultiply(color.opacity(0.92))
  * Uses a pseudo-element overlay with mix-blend-mode: multiply
  */
 .guide-figure { position: relative; display: inline-block; }

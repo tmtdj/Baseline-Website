@@ -149,7 +149,7 @@ section{position:relative}
 .shift-header{text-align:center;margin-bottom:40px}
 .shift-wordmark{font-size:28px;font-weight:800;letter-spacing:4px;background:linear-gradient(90deg,var(--indigo),var(--ice),var(--solar),var(--lavender));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
 .shift-sub{color:var(--t2);font-size:16px;max-width:400px;margin:0 auto}
-/* Shift orb — concentric rotating ellipses (matches app ShiftModeOrb) */
+/* Shift orb: concentric rotating ellipses (matches app ShiftModeOrb) */
 @keyframes shiftOuter{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
 @keyframes shiftMid{from{transform:translate(-50%,-50%) rotate(120deg)}to{transform:translate(-50%,-50%) rotate(-240deg)}}
 @keyframes shiftInner{from{transform:translate(-50%,-50%) rotate(240deg)}to{transform:translate(-50%,-50%) rotate(600deg)}}
