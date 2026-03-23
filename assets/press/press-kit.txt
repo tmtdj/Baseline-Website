@@ -1,0 +1,51 @@
+BASELINE PRESS KIT
+==================
+
+Website: https://baselinebody.app
+Press page: https://baselinebody.app/press.html
+Contact: press@baselinebody.app
+
+
+BOILERPLATE
+-----------
+Baseline is a health app for iPhone that combines mobility, strength, and breathwork in a single app. Each session type takes under 20 minutes. The system is built around the concept of a minimum effective dose: the smallest amount of exercise that still produces a meaningful result, informed by peer-reviewed research. There is nothing to choose, plan, or configure. The system builds your session and you press start. Baseline costs $9.95 USD per year, compared to the $10 or more per month that most fitness apps charge. It requires no account, no internet connection, and no equipment. Baseline launches in May 2026.
+
+
+KEY FACTS
+---------
+What:        Mobility, strength, and breathwork in a single app. Each session type takes under 20 minutes.
+Platform:    iPhone (launching May 2026)
+Price:       $9.95 USD per year. The average fitness app charges $10+ per month.
+Philosophy:  Every exercise has a researched minimum effective dose. Health should be a quiet background state, not a project you manage.
+Privacy:     No accounts, no ads, no data sold. Works offline. No equipment needed.
+Integration: Reads and writes to Apple Health. Adapts sessions based on recent training activity.
+
+
+KEY NUMBERS
+-----------
+55+  exercises with researched minimum effective doses
+5    configurable breathwork protocols with binaural beats, ambient sounds, and narration
+<20  minutes per session type
+$9.95 USD/year vs $120+ USD/year industry average
+0    accounts, ads, or data sold
+4    peer-reviewed studies cited (Nature Medicine, The Lancet, Sports Medicine)
+
+
+FOUNDER
+-------
+Tim de Jardine
+Founder, Baseline
+
+3x CPO and 2x co-founder with a track record of building consumer products from zero to scale. Former Head of Product at ATHLEAN-X and CPO at SportCity (top-10 European gym chain). Deep roots in fitness and consumer apps. Baseline is what happens when you stop overcomplicating health.
+
+
+INCLUDED ASSETS
+---------------
+app-icon-1024.png    App icon (1024x1024). Please use as provided. Do not modify, recolor, or add effects.
+1.png - 7.png        App Store screenshots
+
+
+PRESS CONTACT
+-------------
+press@baselinebody.app
+For review copies, interviews, or additional assets.
