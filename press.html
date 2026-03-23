@@ -47,12 +47,34 @@
 
 <h2>Screenshots</h2>
 <div class="screenshot-gallery">
-  <img src="assets/press/BaselineView.PNG" alt="Baseline main view" loading="lazy">
-  <img src="assets/press/Exercise.PNG" alt="Exercise session" loading="lazy">
-  <img src="assets/press/PushUp.PNG" alt="Push-up exercise" loading="lazy">
-  <img src="assets/press/ShiftBreathwork.PNG" alt="Shift breathwork" loading="lazy">
-  <img src="assets/press/PrimeSession.PNG" alt="Prime breathwork session" loading="lazy">
+  <img src="assets/press/BaselineView.PNG" alt="Baseline main view" loading="lazy" onclick="openLightbox(this)">
+  <img src="assets/press/Exercise.PNG" alt="Exercise session" loading="lazy" onclick="openLightbox(this)">
+  <img src="assets/press/PushUp.PNG" alt="Push-up exercise" loading="lazy" onclick="openLightbox(this)">
+  <img src="assets/press/ShiftBreathwork.PNG" alt="Shift breathwork" loading="lazy" onclick="openLightbox(this)">
+  <img src="assets/press/PrimeSession.PNG" alt="Prime breathwork session" loading="lazy" onclick="openLightbox(this)">
 </div>
+<div style="margin-top:8px">
+  <a href="assets/press/baseline-press-kit.zip" download class="download-link">&#8595; Download all screenshots</a>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="if(event.target===this)closeLightbox()">
+  <button id="lb-close" onclick="closeLightbox()">&times;</button>
+  <button id="lb-prev" onclick="navLightbox(-1)">&#8249;</button>
+  <img id="lb-img" src="" alt="">
+  <button id="lb-next" onclick="navLightbox(1)">&#8250;</button>
+  <a id="lb-download" href="" download class="download-link" style="position:absolute;bottom:24px">&#8595; Download</a>
+</div>
+<script>
+const lbEl=document.getElementById('lightbox'),lbImg=document.getElementById('lb-img'),lbDl=document.getElementById('lb-download');
+const shots=[...document.querySelectorAll('.screenshot-gallery img')].map(i=>i.src);
+let lbIdx=0;
+function openLightbox(img){lbIdx=shots.indexOf(img.src);if(lbIdx<0)lbIdx=0;showLb();}
+function showLb(){lbImg.src=shots[lbIdx];lbDl.href=shots[lbIdx];lbEl.classList.add('active');}
+function closeLightbox(){lbEl.classList.remove('active');}
+function navLightbox(d){lbIdx=(lbIdx+d+shots.length)%shots.length;lbImg.src=shots[lbIdx];lbDl.href=shots[lbIdx];}
+document.addEventListener('keydown',e=>{if(!lbEl.classList.contains('active'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1);});
+</script>
 
 
 <h2>About Baseline</h2>
