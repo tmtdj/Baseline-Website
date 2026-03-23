@@ -8,15 +8,28 @@ Contact: press@baselinebody.app
 
 BOILERPLATE
 -----------
-Baseline is a health app for iPhone that combines mobility, strength, and breathwork in a single app. Each session type takes under 20 minutes. The system is built around the concept of a minimum effective dose: the smallest amount of exercise that still produces a meaningful result, informed by peer-reviewed research. There is nothing to choose, plan, or configure. The system builds your session and you press start. Baseline costs $9.95 USD per year, compared to the $10 or more per month that most fitness apps charge. It requires no account, no internet connection, and no equipment. Baseline launches in May 2026.
+Baseline is a health app for iPhone built around researched minimum effective doses for mobility, strength, and breathwork. The system builds your session, there is nothing to choose, plan, or configure. It costs $9.99 USD per year, requires no account, and launches May 2026.
+
+
+STORY ANGLES
+------------
+The health app that doesn't make you choose your workout.
+No library, no plans, no browsing. You open it, press start, and the system decides. It's built on the idea that every fitness app you've abandoned failed for the same reason: choosing is exhausting.
+
+The app that tells you when to stop, not when to start.
+Every exercise in Baseline has a researched minimum effective dose. Hit it and you're done. The science says short and frequent beats long and rare. Baseline is built around that.
+
+Three fitness disciplines. One Start button. Under 20 minutes.
+Mobility, breathwork, and bodyweight strength, usually sold as three separate subscriptions. Baseline combines them into a single system-generated session for $9.99 a year.
 
 
 KEY FACTS
 ---------
 What:        Mobility, strength, and breathwork in a single app. Each session type takes under 20 minutes.
 Platform:    iPhone (launching May 2026)
-Price:       $9.95 USD per year. The average fitness app charges $10+ per month.
-Philosophy:  Every exercise has a researched minimum effective dose. Health should be a quiet background state, not a project you manage.
+Price:       $9.99 USD per year. The average fitness app charges $10+ per month.
+Philosophy:  Every exercise is informed by a researched minimum effective dose. Health should be a quiet background state, not a project you manage.
+Research:    Informed by peer-reviewed studies in Nature Medicine, The Lancet Public Health, and Sports Medicine.
 Privacy:     No accounts, no ads, no data sold. Works offline. No equipment needed.
 Integration: Reads and writes to Apple Health. Adapts sessions based on recent training activity.
 
@@ -26,9 +39,28 @@ KEY NUMBERS
 55+  exercises with researched minimum effective doses
 5    configurable breathwork protocols with binaural beats, ambient sounds, and narration
 <20  minutes per session type
-$9.95 USD/year vs $120+ USD/year industry average
+$9.99 USD/year vs $120+ USD/year industry average
 0    accounts, ads, or data sold
 4    peer-reviewed studies cited (Nature Medicine, The Lancet, Sports Medicine)
+
+
+RESEARCH
+--------
+Short bursts of activity reduce mortality by 40%
+Stamatakis, E. et al. (2022). Nature Medicine, 28(12), 2521-2529.
+https://doi.org/10.1038/s41591-022-02100-x
+
+Minimal-dose resistance training improves strength and function
+Fyfe, J.J. et al. (2022). Sports Medicine, 52(3), 463-479.
+https://doi.org/10.1007/s40279-021-01605-8
+
+Brief bouts of activity cut cardiovascular risk
+Ahmadi, M.N. et al. (2023). The Lancet Public Health, 8(10), e800-e810.
+https://doi.org/10.1016/S2468-2667(23)00183-4
+
+Lower doses are enough for sedentary populations
+Behm, D.G. et al. (2023). Sports Medicine, 54, 289-302.
+https://doi.org/10.1007/s40279-023-01949-3
 
 
 FOUNDER
@@ -42,10 +74,10 @@ Founder, Baseline
 INCLUDED ASSETS
 ---------------
 app-icon-1024.png    App icon (1024x1024). Please use as provided. Do not modify, recolor, or add effects.
-1.png - 7.png        App Store screenshots
+*.PNG                App screenshots (raw, no marketing overlays)
 
 
 PRESS CONTACT
 -------------
 press@baselinebody.app
-For review copies, interviews, or additional assets.
+For review builds (TestFlight), interviews, or additional assets.
