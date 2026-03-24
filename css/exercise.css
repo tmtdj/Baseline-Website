@@ -28,15 +28,42 @@ a:hover { text-decoration: underline; }
 }
 .page-header .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .page-header .logo-mark {
-  width: 28px; height: 28px; background: #fff; border-radius: 6px;
+  width: 24px; height: 24px; background: #fff; border-radius: 5px;
 }
 .page-header .logo-text {
-  font-size: 13px; font-weight: 700; letter-spacing: 5px; color: var(--t1);
+  font-size: 16px; font-weight: 800; letter-spacing: 3px; color: var(--t1);
 }
+.page-header .nav-right { display: flex; align-items: center; gap: 12px; }
 .page-header .nav-cta {
   font-size: 13px; font-weight: 600; padding: 8px 18px;
   background: var(--green); color: #000; border-radius: 100px;
 }
+.page-header .nav-burger {
+  display: flex; flex-direction: column; gap: 4px;
+  background: none; border: none; cursor: pointer; padding: 6px;
+}
+.page-header .nav-burger span {
+  display: block; width: 20px; height: 2px; background: var(--t2);
+  border-radius: 1px; transition: transform .3s, opacity .3s;
+}
+.page-header .nav-burger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.page-header .nav-burger.open span:nth-child(2) { opacity: 0; }
+.page-header .nav-burger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.mobile-nav {
+  position: fixed; top: 61px; left: 0; right: 0; z-index: 99;
+  background: rgba(0,0,0,.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--stroke);
+  display: flex; flex-direction: column; padding: 16px 24px; gap: 4px;
+  transform: translateY(-100%); opacity: 0; pointer-events: none;
+  transition: transform .3s ease, opacity .3s ease;
+}
+.mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.mobile-nav a {
+  color: var(--t2); font-size: 15px; padding: 10px 0;
+  border-bottom: 1px solid var(--stroke); text-decoration: none;
+}
+.mobile-nav a:last-child { border-bottom: none; }
+.mobile-nav a:hover { color: var(--green); }
 
 /* ── Breadcrumb ── */
 .breadcrumb {
@@ -96,6 +123,7 @@ a:hover { text-decoration: underline; }
 .content-section p, .content-section li {
   font-size: 16px; color: var(--t2); line-height: 1.7;
 }
+.content-section p + p { margin-top: 16px; }
 .content-section ul { list-style: none; padding: 0; }
 .content-section ul li { padding: 8px 0; padding-left: 20px; position: relative; }
 .content-section ul li::before {
@@ -103,6 +131,18 @@ a:hover { text-decoration: underline; }
   width: 6px; height: 6px; border-radius: 50%;
   background: var(--green);
 }
+
+/* ── Routine List (numbered) ── */
+.routine-list { list-style: none; padding: 0; counter-reset: routine; }
+.routine-list li { padding: 24px 0; border-bottom: 1px solid var(--stroke); position: relative; padding-left: 0; }
+.routine-list li:last-child { border-bottom: none; }
+.routine-list li::before {
+  content: none;
+}
+.routine-list li strong {
+  display: block; font-size: 17px; color: var(--t1); margin-bottom: 8px;
+}
+.routine-list li p { margin-top: 8px; }
 
 /* ── Cue Block ── */
 .cue-block {

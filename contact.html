@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Contact | Baseline</title>
+<meta name="description" content="Get in touch with the Baseline team. Questions, feedback, press enquiries.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="css/legal.css">
+<style>
+  .contact-form { margin-top: 32px; }
+  .contact-form label {
+    display: block; font-size: 13px; font-weight: 600;
+    letter-spacing: 1px; text-transform: uppercase;
+    color: var(--t3); margin-bottom: 6px; margin-top: 20px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; padding: 12px 14px;
+    font-size: 15px; font-family: inherit; line-height: 1.5;
+    background: rgba(255,255,255,.05); color: var(--t1);
+    border: 1px solid var(--rule); border-radius: 8px;
+    outline: none; transition: border-color .2s;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus { border-color: #30D158; }
+  .contact-form textarea { min-height: 140px; resize: vertical; }
+  .contact-form button {
+    margin-top: 24px; padding: 12px 28px;
+    font-size: 15px; font-weight: 600; font-family: inherit;
+    background: #30D158; color: #000; border: none;
+    border-radius: 100px; cursor: pointer; transition: opacity .2s;
+  }
+  .contact-form button:hover { opacity: .85; }
+  .alt-contact { margin-top: 40px; font-size: 14px; color: var(--t3); }
+  .alt-contact a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
+  <div class="nav-right"><a href="index.html#notify" class="nav-cta">Get notified</a><button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button></div>
+</header>
+<nav class="mobile-nav">
+  <a href="exercises/index.html">Exercise Library</a>
+  <a href="shift/index.html">Shift Breathwork</a>
+  <a href="blog/index.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="press.html">Press</a>
+</nav>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span>&#8250;</span>Contact</div>
+
+<h1>Contact</h1>
+<p style="color:var(--t2)">Questions, feedback, or press enquiries. We read everything.</p>
+
+<form class="contact-form" action="https://formspree.io/f/xdawqboe" method="POST">
+  <label for="email">Your email</label>
+  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+
+  <button type="submit">Send message</button>
+</form>
+
+<p class="alt-contact">Or email directly: <a href="mailto:support@baselinebody.app">support@baselinebody.app</a></p>
+
+<script>
+(function(){
+  var b=document.querySelector('.nav-burger'),n=document.querySelector('.mobile-nav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){b.classList.toggle('open');n.classList.toggle('open');});
+})();
+</script>
+</body>
+</html>

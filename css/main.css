@@ -46,7 +46,8 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;display
 .logo{display:flex;align-items:center;gap:10px}
 .logo-mark{width:24px;height:24px;border-radius:5px;background:white}
 .logo-text{font-size:16px;font-weight:800;letter-spacing:3px;color:white}
-.nav-cta{font-size:13px;font-weight:600;color:var(--bg);background:var(--green);padding:8px 18px;border-radius:20px;border:none;cursor:pointer;transition:opacity .2s}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-cta{font-size:13px;font-weight:600;color:var(--bg);background:var(--green);padding:8px 18px;border-radius:20px;border:none;cursor:pointer;transition:opacity .2s;text-decoration:none}
 .nav-cta:hover{opacity:.85;text-decoration:none}
 
 /* ═══ SECTION SHARED ═══ */
@@ -135,8 +136,7 @@ section{position:relative}
 .modes-section h2{font-family:var(--serif);font-size:clamp(26px,6vw,36px);font-weight:400;line-height:1.25;color:var(--t1);margin-bottom:12px}
 .modes-sub{color:var(--t2);margin-bottom:36px;font-size:16px}
 .modes{display:flex;flex-direction:column;gap:14px}
-.mode-card{padding:22px;border-radius:16px;background:var(--surface);border:1px solid var(--stroke);transition:border-color .3s}
-.mode-card:hover{border-color:var(--accent-border)}
+.mode-card{padding:22px;border-radius:16px;background:var(--surface);border:1px solid var(--stroke)}
 .mode-header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
 .mode-swatch{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center}
 .mode-name{font-weight:700;font-size:16px;color:var(--t1)}

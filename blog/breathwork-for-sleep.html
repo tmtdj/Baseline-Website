@@ -27,8 +27,15 @@
 
 <header class="page-header">
   <a href="../index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
-  <a href="../index.html#notify" class="nav-cta">Get notified</a>
+  <div class="nav-right"><a href="../index.html#notify" class="nav-cta">Get notified</a><button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button></div>
 </header>
+<nav class="mobile-nav">
+  <a href="../exercises/index.html">Exercise Library</a>
+  <a href="../shift/index.html">Shift Breathwork</a>
+  <a href="../blog/index.html">Blog</a>
+  <a href="../contact.html">Contact</a>
+  <a href="../press.html">Press</a>
+</nav>
 
 <main class="container">
   <div class="breadcrumb"><a href="../index.html">Home</a><span>&#8250;</span><a href="index.html">Blog</a><span>&#8250;</span>Breathwork for Sleep</div>
@@ -43,7 +50,7 @@
     <h2>Why breathing controls sleep</h2>
     <p>Your breath is the only autonomic function you can consciously control. Heart rate, digestion, and pupil dilation are all automatic, but breathing sits at the intersection of voluntary and involuntary control, making it the most direct lever you have for shifting your nervous system state.</p>
     <p>When you extend the exhale relative to the inhale, you stimulate the vagus nerve. This activates the parasympathetic nervous system, the branch responsible for rest, digestion, and sleep. Heart rate drops, blood pressure falls, and the body's stress response winds down.</p>
-    <p>The research is clear: you don't need to breathe for 20 minutes. Changes in heart rate variability begin at 60&ndash;90 seconds of coherent breathing (Lehrer &amp; Gevirtz, 2014). Three minutes is enough for deep parasympathetic activation.</p>
+    <p>The good news is you don't need to breathe for 20 minutes. Research on heart rate variability biofeedback suggests that measurable shifts in autonomic tone begin within the first couple of minutes of coherent breathing, and three minutes of steady practice is enough for a noticeable parasympathetic shift.</p>
   </div>
 
   <div class="content-section">
@@ -76,7 +83,7 @@
     <p><strong>Pattern:</strong> 4 seconds in, sip, 8 seconds out<br>
     <strong>Duration:</strong> 60 seconds (4 cycles)<br>
     <strong>Best for:</strong> After a stressful day or difficult conversation</p>
-    <p>The physiological sigh, a double inhale followed by a long exhale, was identified by Stanford researchers as the fastest real-time stress reducer. The sip re-inflates collapsed alveoli in the lungs, maximising CO&#8322; offloading on the long exhale, and just 4 full sigh cycles produce measurable cortisol reduction.</p>
+    <p>The physiological sigh — a double inhale followed by a long exhale — was identified by Stanford researchers as one of the fastest real-time stress reducers. The sip re-inflates collapsed alveoli in the lungs, maximising CO&#8322; offloading on the long exhale. <a href="https://doi.org/10.1016/j.xcrm.2022.100895">Balban et al. (2023)</a> found that just 5 minutes of daily cyclic sighing improved mood and reduced physiological arousal more effectively than mindfulness meditation.</p>
     <p>Use Reset to clear the stress, then transition to Downshift for sleep.</p>
     <p><a href="../shift/reset.html">Full guide: Reset &rarr;</a></p>
   </div>
@@ -111,17 +118,6 @@
   </div>
 
   <div class="content-section">
-    <h2>Pair with recovery stretching</h2>
-    <p>If you stretch before bed, keep it gentle. These recovery exercises are designed to calm the nervous system, not challenge it:</p>
-    <div class="related-grid">
-      <a class="related-card" href="../exercises/supine-lumbar-rotations.html"><div class="related-name" style="color:var(--steel)">Supine Lumbar Rotations</div><div class="related-dose">Dose: 40s</div></a>
-      <a class="related-card" href="../exercises/wall-butterfly.html"><div class="related-name" style="color:var(--steel)">Wall Butterfly</div><div class="related-dose">Dose: 30s</div></a>
-      <a class="related-card" href="../exercises/supported-jefferson-stretch.html"><div class="related-name" style="color:var(--steel)">Supported Jefferson Stretch</div><div class="related-dose">Dose: 40s</div></a>
-      <a class="related-card" href="../exercises/long-exhale-breathing.html"><div class="related-name" style="color:var(--steel)">Long Exhale Breathing</div><div class="related-dose">Dose: 25s</div></a>
-    </div>
-  </div>
-
-  <div class="content-section">
     <h2>Explore all Shift modes</h2>
     <div class="related-grid">
       <a class="related-card" href="../shift/arrive.html"><div class="related-name" style="color:var(--indigo)">Arrive</div><div class="related-dose">Scattered &rarr; Present</div></a>
@@ -149,10 +145,17 @@
     <a href="../shift/index.html">Shift Modes</a>
     <a href="../disclaimer.html">Health Disclaimer</a>
     <a href="../privacy.html">Privacy Policy</a>
-    <a href="mailto:support@baselinebody.app">Contact</a>
+    <a href="../contact.html">Contact</a>
   </div>
   <p class="footer-copy">&copy; 2026 Baseline. Health without negotiation.</p>
 </footer>
 
+<script>
+(function(){
+  var b=document.querySelector('.nav-burger'),n=document.querySelector('.mobile-nav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){b.classList.toggle('open');n.classList.toggle('open');});
+})();
+</script>
 </body>
 </html>

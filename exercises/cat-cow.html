@@ -27,8 +27,15 @@
 
 <header class="page-header">
   <a href="../index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
-  <a href="../index.html#notify" class="nav-cta">Get notified</a>
+  <div class="nav-right"><a href="../index.html#notify" class="nav-cta">Get notified</a><button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button></div>
 </header>
+<nav class="mobile-nav">
+  <a href="../exercises/index.html">Exercise Library</a>
+  <a href="../shift/index.html">Shift Breathwork</a>
+  <a href="../blog/index.html">Blog</a>
+  <a href="../contact.html">Contact</a>
+  <a href="../press.html">Press</a>
+</nav>
 
 <main class="container">
   <div class="breadcrumb"><a href="../index.html">Home</a><span>›</span><a href="index.html">Exercises</a><span>›</span>Cat-Cow</div>
@@ -124,10 +131,17 @@
     <a href="../blog/index.html">Blog</a>
     <a href="../disclaimer.html">Health Disclaimer</a>
     <a href="../privacy.html">Privacy Policy</a>
-    <a href="mailto:support@baselinebody.app">Contact</a>
+    <a href="../contact.html">Contact</a>
   </div>
   <p class="footer-copy">&copy; 2026 Baseline. Health without negotiation.</p>
 </footer>
 
+<script>
+(function(){
+  var b=document.querySelector('.nav-burger'),n=document.querySelector('.mobile-nav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){b.classList.toggle('open');n.classList.toggle('open');});
+})();
+</script>
 </body>
 </html>

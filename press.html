@@ -22,7 +22,21 @@
 </head>
 <body>
 
+<header class="page-header">
+  <a href="index.html" class="logo"><div class="logo-mark"></div><span class="logo-text">BASELINE</span></a>
+  <div class="nav-right"><a href="index.html#notify" class="nav-cta">Get notified</a><button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button></div>
+</header>
+<nav class="mobile-nav">
+  <a href="exercises/index.html">Exercise Library</a>
+  <a href="shift/index.html">Shift Breathwork</a>
+  <a href="blog/index.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="press.html">Press</a>
+</nav>
+
 <a href="index.html" class="back">&larr; Baseline</a>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span>&#8250;</span>Press Kit</div>
 
 <h1>Press Kit</h1>
 <p class="date">Last updated March 2026</p>
@@ -188,5 +202,12 @@ document.addEventListener('keydown',e=>{if(!lbEl.classList.contains('active'))re
   <p>&copy; 2026 Baseline. Health without negotiation.</p>
 </div>
 
+<script>
+(function(){
+  var b=document.querySelector('.nav-burger'),n=document.querySelector('.mobile-nav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){b.classList.toggle('open');n.classList.toggle('open');});
+})();
+</script>
 </body>
 </html>
