@@ -50,7 +50,10 @@
 const revealObs = new IntersectionObserver(entries => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 50);
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+        if (entry.target.id === 'gridVideo') entry.target.play();
+      }, i * 50);
       revealObs.unobserve(entry.target);
     }
   });
@@ -70,40 +73,7 @@ const doseObs = new IntersectionObserver(entries => {
 }, { threshold: .3 });
 doseObs.observe(document.getElementById('doseCard'));
 
-// ═══ Blocks drop one by one ═══
-const blockColors = ['#30D158','#30D158','#30D158','#FF6F2C','#6366F1','#A78BFA',
-  '#30D158','#3D6B4F','#30D158','#67E8F9','#EAB308','#30D158',
-  '#30D158','#FF6F2C','#30D158','#7B8FA3'];
-const grid = document.getElementById('blockGrid');
-const filledCount = blockColors.length;
-const totalBlocks = 30;
 
-for (let i = 0; i < totalBlocks; i++) {
-  const b = document.createElement('div');
-  b.className = 'block';
-  if (i < filledCount) {
-    b.className += ' filled';
-    b.style.background = `linear-gradient(135deg, ${blockColors[i]}f2, ${blockColors[i]}b3)`;
-    b.style.boxShadow = `0 0 12px ${blockColors[i]}66`;
-  } else {
-    b.className += ' ghost';
-    b.style.animationDelay = `${i * .15}s`;
-  }
-  grid.appendChild(b);
-}
-
-const blockObs = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const filled = entry.target.querySelectorAll('.block.filled');
-      filled.forEach((b, i) => {
-        setTimeout(() => b.classList.add('dropped'), 100 + i * 80);
-      });
-      blockObs.unobserve(entry.target);
-    }
-  });
-}, { threshold: .2 });
-blockObs.observe(grid);
 
 // ═══ Breathing orb label ═══
 const orbLabel = document.getElementById('orbLabel');
