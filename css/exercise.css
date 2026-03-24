@@ -18,12 +18,14 @@ body { font-family: var(--sans); background: var(--bg); color: var(--t1); line-h
 a { color: var(--green); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+.container { max-width: 720px; margin: 0 auto; padding: 60px 24px 0; }
 
 /* ── Header ── */
 .page-header {
-  padding: 20px 24px;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 16px 24px;
   display: flex; align-items: center; justify-content: space-between;
+  background: rgba(0,0,0,.45); backdrop-filter: blur(24px) saturate(1.4); -webkit-backdrop-filter: blur(24px) saturate(1.4);
   border-bottom: 1px solid var(--stroke);
 }
 .page-header .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }

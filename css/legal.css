@@ -50,7 +50,7 @@ a:hover { text-decoration: underline; }
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   padding: 16px 24px;
   display: flex; align-items: center; justify-content: space-between;
-  background: rgba(0,0,0,.85); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  background: rgba(0,0,0,.45); backdrop-filter: blur(24px) saturate(1.4); -webkit-backdrop-filter: blur(24px) saturate(1.4);
   border-bottom: 1px solid var(--rule);
 }
 .page-header .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
