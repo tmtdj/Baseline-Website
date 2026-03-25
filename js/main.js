@@ -31,7 +31,7 @@
   var el = document.getElementById('dataGridHero');
   if (!el) return;
   var colors = ['var(--green)','var(--tangerine)','var(--ice)','var(--solar)','var(--lavender)','var(--indigo)','var(--accent)'];
-  var gap = 4, duration = 5, maxCells = 2000;
+  var gap = 4, duration = 5, maxCells = 800;
   var glowDiv = document.createElement('div');
   glowDiv.className = 'data-grid-glow';
   el.appendChild(glowDiv);
@@ -59,7 +59,7 @@
       cell.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
       cell.style.setProperty('--opacity-min','0.04');
       cell.style.setProperty('--opacity-max','0.20');
-      if (!reducedMotion){
+      if (!reducedMotion && Math.random() < 0.4){
         var r = Math.floor(i / cols), c = i % cols;
         var dr = Math.abs(r - centerR), dc = Math.abs(c - centerC);
         cell.style.animation = 'cell-pulse ' + duration + 's infinite alternate';
