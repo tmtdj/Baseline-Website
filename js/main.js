@@ -1,3 +1,32 @@
+// ═══ Localised pricing ═══
+(function(){
+  var prices = {
+    US:{first:'$9.99 USD',then:'$29.99 USD',breathwork:'~$130/yr',mobility:'~$108/yr',bodyweight:'~$80/yr',total:'~$318/yr'},
+    AU:{first:'$14.99 AUD',then:'$49.99 AUD',breathwork:'~A$200/yr',mobility:'~A$170/yr',bodyweight:'~A$125/yr',total:'~A$495/yr'},
+    GB:{first:'£9.99 GBP',then:'£29.99 GBP',breathwork:'~£105/yr',mobility:'~£85/yr',bodyweight:'~£65/yr',total:'~£255/yr'},
+    NZ:{first:'$19.99 NZD',then:'$49.99 NZD',breathwork:'~NZ$220/yr',mobility:'~NZ$185/yr',bodyweight:'~NZ$140/yr',total:'~NZ$545/yr'}
+  };
+  var eu = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE'];
+  var euPrice = {first:'€9.99 EUR',then:'€34.99 EUR',breathwork:'~€120/yr',mobility:'~€100/yr',bodyweight:'~€75/yr',total:'~€295/yr'};
+
+  fetch('https://ipapi.co/json/',{signal:AbortSignal.timeout(3000)})
+    .then(function(r){return r.json()})
+    .then(function(d){
+      var cc = d.country_code;
+      var p = prices[cc] || (eu.indexOf(cc) > -1 ? euPrice : null);
+      if (!p) return;
+      var el1 = document.getElementById('priceFirst');
+      var el2 = document.getElementById('priceThen');
+      if (el1) el1.innerHTML = p.first + '<span class="price-baseline-period">/first year</span>';
+      if (el2) el2.textContent = 'Then ' + p.then + '/year';
+      ['breathwork','mobility','bodyweight','total'].forEach(function(k){
+        var el = document.querySelector('[data-price="'+k+'"]');
+        if (el && p[k]) el.textContent = p[k];
+      });
+    })
+    .catch(function(){});
+})();
+
 // ═══ Bottom bar: show after scrolling past hero email form ═══
 (function(){
   const bar = document.querySelector('.bottom-bar');
