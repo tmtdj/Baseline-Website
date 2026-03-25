@@ -150,23 +150,19 @@ section{position:relative}
 
 /* ═══ Shift ═══ */
 .shift-section{padding:80px 0;border-top:1px solid var(--stroke);position:relative;overflow:hidden}
-.shift-section .glow{top:-60px;left:50%;transform:translateX(-50%);background:radial-gradient(circle,rgba(99,102,241,.1),transparent)}
-.shift-header{text-align:center;margin-bottom:40px}
+.shift-section .glow{display:none}
+.shift-header{text-align:center;margin-bottom:40px;position:relative;z-index:2}
 .shift-wordmark{font-size:28px;font-weight:800;letter-spacing:4px;background:linear-gradient(90deg,var(--indigo),var(--ice),var(--solar),var(--lavender));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
 .shift-sub{color:var(--t2);font-size:16px;max-width:400px;margin:0 auto}
-/* Shift orb: concentric rotating ellipses (matches app ShiftModeOrb) */
-@keyframes shiftOuter{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
-@keyframes shiftMid{from{transform:translate(-50%,-50%) rotate(120deg)}to{transform:translate(-50%,-50%) rotate(-240deg)}}
-@keyframes shiftInner{from{transform:translate(-50%,-50%) rotate(240deg)}to{transform:translate(-50%,-50%) rotate(600deg)}}
-@keyframes shiftPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.018)}}
-
-.shift-orb{position:relative;width:180px;height:180px;margin:0 auto 12px;animation:shiftPulse 10s ease-in-out infinite}
-.shift-orb-outer{position:absolute;top:50%;left:50%;width:92%;height:88%;border-radius:50%;background:rgba(99,102,241,.28);filter:blur(3px);animation:shiftOuter 50s linear infinite}
-.shift-orb-mid{position:absolute;top:50%;left:50%;width:78%;height:72%;border-radius:50%;background:rgba(99,102,241,.40);filter:blur(2px);animation:shiftMid 38s linear infinite}
-.shift-orb-inner{position:absolute;top:50%;left:50%;width:62%;height:58%;border-radius:50%;background:rgba(99,102,241,.55);animation:shiftInner 28s linear infinite}
-.shift-orb-block{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:35%;height:35%;border-radius:12%;background:rgba(99,102,241,.45);border:1px solid rgba(99,102,241,.70)}
-.orb-label{text-align:center;font-size:13px;color:var(--t3);margin-bottom:32px;min-height:20px;transition:opacity .4s}
-.shift-modes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+/* Shift orb: full-width breathing circle behind all content */
+@keyframes orbBreatheIn{0%,100%{transform:translate(-50%,-50%) scale(.6);opacity:.3}50%{transform:translate(-50%,-50%) scale(1.1);opacity:.7}}
+@keyframes orbBlockBreathe{0%,100%{transform:translate(-50%,-50%) scale(.85);opacity:.5}50%{transform:translate(-50%,-50%) scale(1);opacity:.8}}
+.shift-orb{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);width:min(90vw,600px);height:min(90vw,600px);z-index:0;pointer-events:none}
+.shift-orb-outer{position:absolute;top:50%;left:50%;width:100%;height:100%;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.25),rgba(99,102,241,.05) 60%,transparent 75%);filter:blur(20px);animation:orbBreatheIn 8s ease-in-out infinite}
+.shift-orb-mid{position:absolute;top:50%;left:50%;width:65%;height:65%;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.35),rgba(99,102,241,.08) 70%,transparent);filter:blur(10px);animation:orbBreatheIn 8s ease-in-out infinite .5s}
+.shift-orb-inner{position:absolute;top:50%;left:50%;width:35%;height:35%;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.5),rgba(99,102,241,.1) 70%,transparent);filter:blur(4px);animation:orbBreatheIn 8s ease-in-out infinite 1s}
+.shift-orb-block{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:14px;background:rgba(99,102,241,.35);border:1px solid rgba(99,102,241,.6);animation:orbBlockBreathe 8s ease-in-out infinite}
+.shift-modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative;z-index:2}
 .shift-tile{padding:16px;border-radius:12px;background:var(--surface);border:1px solid var(--stroke);text-align:center}
 .shift-tile-name{font-weight:700;font-size:14px;color:var(--t1);margin-bottom:3px}
 .shift-tile-desc{font-size:12px;color:var(--t3);line-height:1.4}

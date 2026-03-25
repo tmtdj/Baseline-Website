@@ -152,7 +152,9 @@ doseObs.observe(document.getElementById('doseCard'));
     {bg:'var(--green)', glow:'rgba(48,209,88,.4)'}
   ];
   // Fill pattern from the video: how many cells filled per row (bottom-to-top)
-  var fillCounts = [7, 7, 5, 3, 2]; // bottom rows full, top row incomplete (week in progress)
+  // fillCounts[0]=bottom row .. fillCounts[4]=top row
+  // All rows complete except top row (week in progress)
+  var fillCounts = [7, 7, 7, 7, 3];
   var cells = [];
   for (var r = 0; r < ROWS; r++){
     for (var c = 0; c < COLS; c++){
