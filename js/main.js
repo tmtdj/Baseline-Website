@@ -31,7 +31,7 @@
   var el = document.getElementById('dataGridHero');
   if (!el) return;
   var colors = ['var(--green)','var(--tangerine)','var(--ice)','var(--solar)','var(--lavender)','var(--indigo)','var(--accent)'];
-  var cellSize = 32, gap = 4, duration = 5, maxCells = 600;
+  var gap = 4, duration = 5, maxCells = 2000;
   var glowDiv = document.createElement('div');
   glowDiv.className = 'data-grid-glow';
   el.appendChild(glowDiv);
@@ -40,13 +40,15 @@
     Array.from(el.querySelectorAll('.grid-cell')).forEach(function(c){c.remove()});
     var w = el.offsetWidth, h = el.offsetHeight;
     if (!w || !h) return;
+    // Scale cell size: smaller on wider screens so grid stays dense
+    var cellSize = w > 1200 ? 28 : w > 768 ? 32 : 36;
     var cols = Math.floor(w / (cellSize + gap));
     var rows = Math.floor(h / (cellSize + gap));
     while (rows * cols > maxCells) { rows > cols ? rows-- : cols--; }
-    el.style.gridTemplateColumns = 'repeat(' + cols + ',' + cellSize + 'px)';
-    el.style.gridTemplateRows = 'repeat(' + rows + ',' + cellSize + 'px)';
-    el.style.justifyContent = 'center';
-    el.style.alignContent = 'center';
+    el.style.gridTemplateColumns = 'repeat(' + cols + ',1fr)';
+    el.style.gridTemplateRows = 'repeat(' + rows + ',1fr)';
+    el.style.justifyContent = 'stretch';
+    el.style.alignContent = 'stretch';
     el.style.gap = gap + 'px';
     var centerR = Math.floor(rows / 2), centerC = Math.floor(cols / 2);
     var frag = document.createDocumentFragment();
