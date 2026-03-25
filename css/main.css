@@ -149,11 +149,12 @@ section{position:relative}
 .mode-desc{color:var(--t2);font-size:15px;line-height:1.7}
 
 /* ═══ Shift ═══ */
-.shift-section{padding:100px 0 80px;border-top:1px solid var(--stroke);position:relative;overflow:hidden;min-height:80vh}
+.shift-section{padding:60px 0 60px;border-top:1px solid var(--stroke);position:relative;overflow:hidden}
 .shift-section .glow{display:none}
+.shift-section .container{position:relative;z-index:2}
 .shift-header{text-align:center;margin-bottom:40px;position:relative;z-index:2}
 .shift-wordmark{font-size:28px;font-weight:800;letter-spacing:4px;background:linear-gradient(90deg,var(--indigo),var(--ice),var(--solar),var(--lavender));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0}
-.shift-sub{color:var(--t2);font-size:16px;max-width:400px;margin:180px auto 0}
+.shift-sub{color:var(--t2);font-size:16px;max-width:400px;margin:100px auto 0}
 /* Shift orb: full-width breathing circle behind all content */
 @keyframes orbBreatheIn{0%,100%{transform:translate(-50%,-50%) scale(.6);opacity:.3}50%{transform:translate(-50%,-50%) scale(1.1);opacity:.7}}
 @keyframes orbBlockBreathe{0%,100%{transform:translate(-50%,-50%) scale(.85);opacity:.5}50%{transform:translate(-50%,-50%) scale(1);opacity:.8}}
