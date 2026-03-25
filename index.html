@@ -69,25 +69,29 @@
 <main>
 <!-- ═══ HERO ═══ -->
 <section class="hero">
+  <div class="data-grid-hero" id="dataGridHero" aria-hidden="true"></div>
   <div class="glow" id="heroGlow" style="background:radial-gradient(circle,var(--green-glow),transparent)"></div>
-
-  <!-- Rotating figure: 3 poses, one per category -->
-  <div class="hero-model" id="heroModel" aria-hidden="true">
-    <img src="assets/hero_mobility.png" alt="Mobility exercise, single leg stretch" class="active" data-cat="mobility">
-    <img src="assets/hero_bodyweight.png" alt="Bodyweight strength exercise" data-cat="bodyweight">
-    <img src="assets/hero_breathwork.png" alt="Breathwork and nervous system regulation" data-cat="breathwork">
-  </div>
 
   <div class="hero-copy">
     <h1>The minimum<br><em>effective dose.</em></h1>
+
+    <!-- Rotating figure: 3 poses, one per category -->
+    <div class="hero-model" id="heroModel" aria-hidden="true">
+      <img src="assets/hero_mobility.png" alt="" class="active" data-cat="mobility">
+      <img src="assets/hero_jefferson.png" alt="" data-cat="mobility">
+      <img src="assets/hero_bodyweight.png" alt="" data-cat="bodyweight">
+      <img src="assets/hero_lunge.png" alt="" data-cat="bodyweight">
+      <img src="assets/hero_breathwork.png" alt="" data-cat="breathwork">
+    </div>
+
     <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
-    <p class="hero-bridge">Three practices, one daily ritual. The system builds it for you, so you never have to plan again.</p>
+    <p class="hero-bridge">No choosing. No planning. Press start.</p>
     <div id="notify" style="animation:fadeUp .7s ease .6s both;text-align:center">
-      <p style="margin-bottom:16px;font-size:15px;color:var(--accent);font-weight:600">Launching May 2026 · Free to try · Only on iPhone</p>
       <form class="notify-form" action="https://formspree.io/f/xojkyqza" method="POST">
         <input type="email" name="email" placeholder="Enter your email" required>
         <button type="submit">Notify me</button>
       </form>
+      <p style="margin-top:16px;font-size:15px;color:var(--accent);font-weight:600">Launching May 2026 · Free to try · Only on iPhone</p>
     </div>
   </div>
   <div class="hero-scroll">↓</div>
