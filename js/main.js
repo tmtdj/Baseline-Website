@@ -201,3 +201,46 @@ const orbObs = new IntersectionObserver(entries => {
   });
 }, { threshold: .5 });
 orbObs.observe(document.getElementById('orbWrap'));
+
+// ═══ Position orb glow on the shift-orb-block center ═══
+function positionOrb() {
+  const block = document.querySelector('.shift-orb-block');
+  const section = document.querySelector('.shift-section');
+  const wrap = document.getElementById('orbWrap');
+  if (!block || !section || !wrap) return;
+  // Use offsetTop/offsetLeft to avoid animation transform skewing the position
+  let top = 0, left = 0, el = block;
+  while (el && el !== section) { top += el.offsetTop; left += el.offsetLeft; el = el.offsetParent; }
+  wrap.style.top = (top + block.offsetHeight / 2) + 'px';
+  wrap.style.left = (left + block.offsetWidth / 2) + 'px';
+}
+positionOrb();
+window.addEventListener('resize', positionOrb);
+
+// ═══ Orb color rotation: indigo → solar → ice → lavender ═══
+(function() {
+  const orbColors = [
+    { r: 99, g: 102, b: 241 },  // indigo
+    { r: 234, g: 179, b: 8 },   // solar
+    { r: 103, g: 232, b: 249 }, // ice
+    { r: 167, g: 139, b: 250 }  // lavender
+  ];
+  const orbBg = document.querySelector('.shift-orb-bg');
+  const orbBlock = document.querySelector('.shift-orb-block');
+  if (!orbBg || !orbBlock) return;
+  const orbInner = document.querySelector('.shift-orb-inner');
+  if (!orbInner) return;
+  let idx = 0;
+  function setOrbColor(c) {
+    orbBg.style.setProperty('--orb-r', c.r);
+    orbBg.style.setProperty('--orb-g', c.g);
+    orbBg.style.setProperty('--orb-b', c.b);
+    orbBlock.style.background = `rgba(${c.r},${c.g},${c.b},.3)`;
+    orbBlock.style.borderColor = `rgba(${c.r},${c.g},${c.b},.55)`;
+  }
+  // Change color when the breath completes (at the smallest/quietest point)
+  orbInner.addEventListener('animationiteration', function() {
+    idx = (idx + 1) % orbColors.length;
+    setOrbColor(orbColors[idx]);
+  });
+})();
