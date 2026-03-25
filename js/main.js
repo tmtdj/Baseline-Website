@@ -43,8 +43,10 @@
     var cols = Math.floor(w / (cellSize + gap));
     var rows = Math.floor(h / (cellSize + gap));
     while (rows * cols > maxCells) { rows > cols ? rows-- : cols--; }
-    el.style.gridTemplateColumns = 'repeat(' + cols + ',1fr)';
-    el.style.gridTemplateRows = 'repeat(' + rows + ',1fr)';
+    el.style.gridTemplateColumns = 'repeat(' + cols + ',' + cellSize + 'px)';
+    el.style.gridTemplateRows = 'repeat(' + rows + ',' + cellSize + 'px)';
+    el.style.justifyContent = 'center';
+    el.style.alignContent = 'center';
     el.style.gap = gap + 'px';
     var centerR = Math.floor(rows / 2), centerC = Math.floor(cols / 2);
     var frag = document.createDocumentFragment();
