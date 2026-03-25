@@ -115,7 +115,7 @@ const revealObs = new IntersectionObserver(entries => {
     if (entry.isIntersecting) {
       setTimeout(() => {
         entry.target.classList.add('visible');
-        if (entry.target.id === 'gridVideo') entry.target.play();
+        if (entry.target.id === 'blockGrid') animateBlockGrid();
       }, i * 50);
       revealObs.unobserve(entry.target);
     }
@@ -137,6 +137,56 @@ const doseObs = new IntersectionObserver(entries => {
 doseObs.observe(document.getElementById('doseCard'));
 
 
+
+// ═══ Block grid animation ═══
+(function(){
+  var grid = document.getElementById('blockGrid');
+  if (!grid) return;
+  var COLS = 7, ROWS = 5;
+  // Row colors bottom-to-top: green, green, tangerine, ice, indigo
+  var rowColors = [
+    {bg:'var(--indigo)', glow:'rgba(99,102,241,.4)'},
+    {bg:'var(--ice)', glow:'rgba(103,232,249,.4)'},
+    {bg:'var(--tangerine)', glow:'rgba(255,111,44,.4)'},
+    {bg:'var(--green)', glow:'rgba(48,209,88,.4)'},
+    {bg:'var(--green)', glow:'rgba(48,209,88,.4)'}
+  ];
+  // Fill pattern from the video: how many cells filled per row (bottom-to-top)
+  var fillCounts = [7, 7, 6, 4, 2]; // bottom row full, tapers toward top
+  var cells = [];
+  for (var r = 0; r < ROWS; r++){
+    for (var c = 0; c < COLS; c++){
+      var cell = document.createElement('div');
+      cell.className = 'block-cell empty';
+      var color = rowColors[r];
+      cell.dataset.row = r;
+      cell.dataset.col = c;
+      cell.dataset.bg = color.bg;
+      cell.dataset.glow = color.glow;
+      cell.style.setProperty('--cell-glow', color.glow);
+      grid.appendChild(cell);
+      cells.push(cell);
+    }
+  }
+  window.animateBlockGrid = function(){
+    var delay = 0;
+    for (var r = ROWS - 1; r >= 0; r--){
+      var count = fillCounts[ROWS - 1 - r];
+      for (var c = 0; c < count; c++){
+        (function(row, col, d){
+          setTimeout(function(){
+            var cell = cells[row * COLS + col];
+            cell.style.backgroundColor = cell.dataset.bg;
+            cell.style.transform = 'scale(1.1)';
+            cell.style.boxShadow = '0 0 12px ' + cell.dataset.glow;
+            setTimeout(function(){ cell.style.transform = 'scale(1)'; }, 150);
+          }, d);
+        })(r, c, delay);
+        delay += 80;
+      }
+    }
+  };
+})();
 
 // ═══ Breathing orb label ═══
 const orbLabel = document.getElementById('orbLabel');

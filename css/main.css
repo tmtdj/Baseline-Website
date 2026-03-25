@@ -176,7 +176,11 @@ section{position:relative}
 .blocks-section{padding:80px 0;border-top:1px solid var(--stroke);text-align:center}
 .blocks-section h2{font-family:var(--serif);font-size:clamp(26px,6vw,36px);font-weight:400;line-height:1.25;margin-bottom:16px}
 .blocks-sub{color:var(--t2);max-width:420px;margin:0 auto 8px;font-size:16px}
-.grid-video{display:block;width:100%;max-width:360px;margin:28px auto;border-radius:12px}
+.block-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(7,40px);grid-template-rows:repeat(5,40px);justify-content:center;gap:8px;margin:28px auto;padding:20px;background:rgba(255,255,255,.04);border-radius:16px;border:1px solid var(--stroke);width:fit-content}
+.block-cell{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);transition:background-color .4s ease,box-shadow .4s ease,transform .3s ease;transform:scale(1);opacity:1}
+.block-cell.filled{}
+.block-cell.filled{transform:scale(1);opacity:1}
+.block-cell.glow{box-shadow:0 0 12px var(--cell-glow)}
 .anti-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px}
 .anti-pill{font-size:13px;font-weight:500;color:var(--t2);padding:8px 14px;border-radius:20px;background:var(--surface-strong);border:1px solid rgba(255,255,255,.12)}
 
