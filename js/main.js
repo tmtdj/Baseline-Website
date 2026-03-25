@@ -244,3 +244,27 @@ window.addEventListener('resize', positionOrb);
     setOrbColor(orbColors[idx]);
   });
 })();
+
+// ═══ Screenshots carousel dots ═══
+(function(){
+  var track = document.getElementById('screenshotsTrack');
+  var dots = document.querySelectorAll('#screenshotsDots .dot');
+  if (!track || !dots.length) return;
+  var cards = track.querySelectorAll('.screenshot-card');
+  var scrollObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        var i = parseInt(entry.target.dataset.index);
+        dots.forEach(function(d){ d.classList.remove('active'); });
+        if (dots[i]) dots[i].classList.add('active');
+      }
+    });
+  }, {root: track, threshold: 0.6});
+  cards.forEach(function(card){ scrollObs.observe(card); });
+  dots.forEach(function(dot){
+    dot.addEventListener('click', function(){
+      var i = parseInt(dot.dataset.index);
+      if (cards[i]) cards[i].scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+    });
+  });
+})();

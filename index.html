@@ -73,29 +73,93 @@
   <div class="glow" id="heroGlow" style="background:radial-gradient(circle,var(--green-glow),transparent)"></div>
 
   <div class="hero-copy">
-    <h1>The minimum<br><em>effective dose.</em></h1>
+    <h1>The minimum<br><em>effective dose</em></h1>
 
     <!-- Rotating figure: 3 poses, one per category -->
     <div class="hero-model" id="heroModel" aria-hidden="true">
-      <img src="assets/hero_mobility.png" alt="" class="active" data-cat="mobility">
-      <img src="assets/hero_jefferson.png" alt="" data-cat="mobility">
-      <img src="assets/hero_bodyweight.png" alt="" data-cat="bodyweight">
-      <img src="assets/hero_lunge.png" alt="" data-cat="bodyweight">
-      <img src="assets/hero_breathwork.png" alt="" data-cat="breathwork">
+      <img src="assets/hero/hero_mobility.png" alt="" class="active" data-cat="mobility">
+      <img src="assets/hero/hero_jefferson.png" alt="" data-cat="mobility">
+      <img src="assets/hero/hero_bodyweight.png" alt="" data-cat="bodyweight">
+      <img src="assets/hero/hero_lunge.png" alt="" data-cat="bodyweight">
+      <img src="assets/hero/hero_breathwork.png" alt="" data-cat="breathwork">
     </div>
 
     <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
     <p class="hero-bridge">No scrolling. No choosing. Just press start.</p>
     <div id="notify" style="animation:fadeUp .7s ease .6s both;text-align:center">
-      <form class="notify-form" action="https://formspree.io/f/xojkyqza" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <button type="submit">Notify me</button>
-      </form>
-      <p style="margin-top:16px;font-size:15px;color:var(--accent);font-weight:600">Launching May 2026 · Free to try · Only on iPhone</p>
+      <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" height="54"></a>
     </div>
   </div>
   <div class="hero-scroll">↓</div>
 </section>
+
+
+<!-- ═══ NO DECISIONS ═══ -->
+<section class="decision-section">
+  <div class="container">
+    <div class="section-label reveal">A content problem</div>
+    <h2 class="reveal">Fitness shouldn't feel like<br>choosing a film on Netflix.</h2>
+    <p class="decision-desc reveal">You open a fitness app and you're bombarded with hundreds of workouts, filters, difficulty levels, and instructor personalities. You end up spending more time <strong>choosing what to do than actually doing it.</strong> Baseline removes this completely.</p>
+    <div class="reveal" style="text-align:center;padding:40px 0 32px">
+      <div style="display:inline-block;font-size:17px;font-weight:700;color:var(--bg);background:var(--green);padding:16px 48px;border-radius:14px">Start</div>
+    </div>
+    <p class="reveal" style="font-family:var(--serif);font-size:clamp(20px,4.5vw,26px);font-weight:400;font-style:italic;color:var(--accent);line-height:1.4">The system knows what you need. You just press start.</p>
+  </div>
+</section>
+
+
+<!-- ═══ APP SCREENSHOTS ═══ -->
+<section class="screenshots-section">
+  <div class="container">
+    <div class="section-label reveal">The whole app</div>
+    <h2 class="reveal">One screen. One button.</h2>
+    <p class="screenshots-sub reveal">No tabs. No feed. No content library to drown in.</p>
+  </div>
+  <div class="screenshots-track reveal" id="screenshotsTrack">
+    <div class="screenshot-card" data-index="0">
+      <div class="iphone-frame">
+        <div class="iphone-notch"></div>
+        <div class="iphone-screen">
+          <img src="assets/screenshots/screen-start.jpg" alt="Baseline home screen with block grid and start button" loading="lazy">
+        </div>
+      </div>
+      <div class="screenshot-caption">
+        <span class="screenshot-caption-label">Press start</span>
+        <p class="screenshot-caption-desc">The system picks your session. One button. No choosing.</p>
+      </div>
+    </div>
+    <div class="screenshot-card" data-index="1">
+      <div class="iphone-frame">
+        <div class="iphone-notch"></div>
+        <div class="iphone-screen">
+          <img src="assets/screenshots/screen-session.jpg" alt="Exercise session with 3D guide showing couch stretch" loading="lazy">
+        </div>
+      </div>
+      <div class="screenshot-caption">
+        <span class="screenshot-caption-label">Follow the guide</span>
+        <p class="screenshot-caption-desc">An animated 3D guide with written cues. Adjust difficulty on the fly.</p>
+      </div>
+    </div>
+    <div class="screenshot-card" data-index="2">
+      <div class="iphone-frame">
+        <div class="iphone-notch"></div>
+        <div class="iphone-screen">
+          <img src="assets/screenshots/screen-shift.jpg" alt="Shift breathwork screen showing Prime mode" loading="lazy">
+        </div>
+      </div>
+      <div class="screenshot-caption">
+        <span class="screenshot-caption-label">Shift your state</span>
+        <p class="screenshot-caption-desc">Breathwork that shifts you to your desired state.</p>
+      </div>
+    </div>
+  </div>
+  <div class="screenshots-dots" id="screenshotsDots">
+    <button class="dot active" data-index="0" aria-label="Screenshot 1"></button>
+    <button class="dot" data-index="1" aria-label="Screenshot 2"></button>
+    <button class="dot" data-index="2" aria-label="Screenshot 3"></button>
+  </div>
+</section>
+
 
 
 <!-- ═══ EFFECTIVE DOSE ═══ -->
@@ -144,53 +208,23 @@
     </div>
 
     <p class="dose-kicker reveal">Short and frequent beats long and rare.</p>
-    <p class="dose-proof reveal">You can stay longer if you want, but the block is earned at the threshold. What matters more than extra time today is whether you show up again tomorrow.</p>
+    <p class="dose-proof reveal">You can stay longer if you want, but the dose is earned at the threshold. What matters more than extra time today is whether you show up again tomorrow.</p>
   </div>
 </section>
 
 
-<!-- ═══ NO DECISIONS ═══ -->
-<section class="decision-section">
+<!-- ═══ BLOCKS ═══ -->
+<section class="blocks-section">
   <div class="container">
-    <div class="section-label reveal">A content problem</div>
-    <h2 class="reveal">Fitness shouldn't feel like<br>choosing a film on Netflix.</h2>
-    <p class="decision-desc reveal">You open a fitness app and you're bombarded with hundreds of workouts, filters, difficulty levels, and instructor personalities. You end up spending more time <strong>choosing what to do than actually doing it.</strong> Baseline removes this completely.</p>
-    <div class="reveal" style="text-align:center;padding:40px 0 32px">
-      <div style="display:inline-block;font-size:17px;font-weight:700;color:var(--bg);background:var(--green);padding:16px 48px;border-radius:14px">Start</div>
-    </div>
-    <p class="reveal" style="font-family:var(--serif);font-size:clamp(20px,4.5vw,26px);font-weight:400;font-style:italic;color:var(--accent);line-height:1.4">The system knows what you need. You just press start.</p>
-  </div>
-</section>
-
-
-<!-- ═══ GUIDE ═══ -->
-<section class="guide-section">
-  <div class="glow"></div>
-  <div class="container">
-    <div class="section-label reveal">Your guide</div>
-    <h2 class="reveal">No instructor, no personality.<br>Just a guide showing you what to do.</h2>
-    <div class="model-strip">
-      <div class="model-card reveal">
-        <div class="model-frame mobility">
-          <img src="assets/guide_mobility.png" alt="Green guide for mobility">
-        </div>
-        <div class="model-label" style="color:var(--green)">Mobility</div>
-        <div class="model-sublabel">Daily maintenance</div>
-      </div>
-      <div class="model-card reveal">
-        <div class="model-frame bodyweight">
-          <img src="assets/guide_bodyweight.png" alt="Tangerine guide for bodyweight">
-        </div>
-        <div class="model-label" style="color:var(--tangerine)">Bodyweight</div>
-        <div class="model-sublabel">Strength to effort</div>
-      </div>
-      <div class="model-card reveal">
-        <div class="model-frame recovery">
-          <img src="assets/guide_breathwork.png" alt="Steel guide for breathwork">
-        </div>
-        <div class="model-label" style="color:var(--steel)">Breathwork</div>
-        <div class="model-sublabel">Nervous system regulation</div>
-      </div>
+    <div class="section-label reveal">The grid</div>
+    <h2 class="reveal">One block per exercise.</h2>
+    <p class="blocks-sub reveal">Each block represents an exercise completed at its effective dose. <strong style="color:var(--t1)">The grid resets every week.</strong> No streak to protect, no guilt if you miss a day. Just a clean slate every Monday.</p>
+    <div class="block-grid reveal" id="blockGrid"></div>
+    <div class="anti-pills reveal">
+      <span class="anti-pill">No streaks</span>
+      <span class="anti-pill">No leaderboards</span>
+      <span class="anti-pill">No scores</span>
+      <span class="anti-pill">No calories</span>
     </div>
   </div>
 </section>
@@ -248,32 +282,56 @@
 </section>
 
 
-<!-- ═══ BLOCKS ═══ -->
-<section class="blocks-section">
-  <div class="container">
-    <div class="section-label reveal">The grid</div>
-    <h2 class="reveal">One block per exercise.</h2>
-    <p class="blocks-sub reveal">Each block represents an exercise completed at its effective dose. <strong style="color:var(--t1)">The grid resets every week.</strong> No streak to protect, no guilt if you miss a day. Just show up when you can.</p>
-    <div class="block-grid reveal" id="blockGrid"></div>
-    <div class="anti-pills reveal">
-      <span class="anti-pill">No streaks</span>
-      <span class="anti-pill">No leaderboards</span>
-      <span class="anti-pill">No scores</span>
-      <span class="anti-pill">No calories</span>
-    </div>
-  </div>
-</section>
-
 
 <!-- ═══ FEATURES ═══ -->
 <section class="features">
   <div class="container">
-    <h2 class="reveal">Everything you need.</h2>
+    <h2 class="reveal">Everything you need.<br><em>Nothing you don't.</em></h2>
+    <p class="features-sub reveal">Already work out? Baseline is everything else. The mobility you skip, the breathwork that shifts your state, the maintenance your body needs between sessions.</p>
     <div class="feature-grid">
       <div class="feature-item reveal"><div class="feature-title">Designed to be quick</div><div class="feature-desc">Every session fits into your day, not the other way around.</div></div>
       <div class="feature-item reveal"><div class="feature-title">Adapts to your day</div><div class="feature-desc">Reads Apple Health and adjusts accordingly. Had a hard gym day? It gives you mobility instead.</div></div>
       <div class="feature-item reveal"><div class="feature-title">No equipment needed</div><div class="feature-desc">Everything is bodyweight, so it works in your living room, a hotel, or wherever you happen to be.</div></div>
       <div class="feature-item reveal"><div class="feature-title">No account needed</div><div class="feature-desc">Download it, open it, and go. No sign-up required and no internet connection needed.</div></div>
+      <div class="feature-item reveal"><div class="feature-title">Reads your body</div><div class="feature-desc">Connects to Apple Health. After a hard gym session, it dials back to recovery. After rest, it pushes harder.</div></div>
+      <div class="feature-item reveal"><div class="feature-title">Works offline</div><div class="feature-desc">No internet, no account, no cloud sync. Your data stays on your phone.</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ WHO THIS IS FOR ═══ -->
+<section class="whoisfor-section">
+  <div class="container">
+    <div class="section-label reveal">Who it's for</div>
+    <h2 class="reveal">Built for people who don't want<br>fitness to be yet another job.</h2>
+    <p class="whoisfor-desc reveal">You already have a thing. A gym, a run, a sport, a class. Baseline is everything around it. The mobility you skip. The breathwork that shifts your state. The bodyweight work that keeps you moving between sessions.</p>
+    <div class="whoisfor-pills reveal">
+      <span class="anti-pill">Lifters who never stretch</span>
+      <span class="anti-pill">Runners who skip mobility</span>
+      <span class="anti-pill">Desk workers who sit 8+ hours</span>
+      <span class="anti-pill">Parents with zero free time</span>
+      <span class="anti-pill">Anyone who hates choosing workouts</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ PRICE COMPARISON ═══ -->
+<section class="price-section">
+  <div class="container">
+    <div class="section-label reveal">The cost</div>
+    <h2 class="reveal">Three apps in one.<br><em>A fraction of the price.</em></h2>
+    <div class="price-compare reveal">
+      <div class="price-row"><span class="price-row-name">Breathwork app</span><span class="price-row-cost">~$130/yr</span></div>
+      <div class="price-row"><span class="price-row-name">Mobility app</span><span class="price-row-cost">~$108/yr</span></div>
+      <div class="price-row"><span class="price-row-name">Bodyweight app</span><span class="price-row-cost">~$80/yr</span></div>
+      <div class="price-row price-row-total"><span class="price-row-name">Buying all three</span><span class="price-row-cost">~$318/yr</span></div>
+    </div>
+    <div class="price-baseline reveal">
+      <div class="price-baseline-amount">9.99 USD<span class="price-baseline-period">/first year</span></div>
+      <p class="price-baseline-regular">Then 29.99 USD/year</p>
+      <p class="price-baseline-note">All three disciplines. One app. Prices may vary by region.</p>
     </div>
   </div>
 </section>
@@ -294,11 +352,8 @@
     <h2 class="reveal">20 minutes.<br>Every day.<br><em>Handled.</em></h2>
     <p class="final-sub reveal">Launching May 2026. Free to try. Only on iPhone.</p>
     <div class="reveal" style="text-align:center">
-      <form class="notify-form" action="https://formspree.io/f/xojkyqza" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <button type="submit">Notify me</button>
-      </form>
-      <p style="margin-top:16px;font-size:14px;color:var(--t3)">Get notified on launch day</p>
+      <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" height="54"></a>
+      <p style="margin-top:16px;font-size:14px;color:var(--t3)">Pre-order now, pay on launch day</p>
     </div>
   </div>
 </section>
@@ -343,7 +398,7 @@
 
 <div class="bottom-bar">
   <span>Launching May 2026 · Free to try</span>
-  <a href="#notify" onclick="event.preventDefault();document.querySelector('#notify input[type=email]').scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>document.querySelector('#notify input[type=email]').focus(),600)">Get notified →</a>
+  <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" height="36"></a>
 </div>
 
 <script src="js/main.js"></script>
