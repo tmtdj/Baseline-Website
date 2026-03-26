@@ -1,0 +1,42 @@
+/* ═══ LANDING PAGE SHARED ═══ */
+
+/* Hero (simplified, no data-grid or rotating figures) */
+.lp-hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 24px 60px;overflow:hidden}
+.lp-hero .glow{top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;transition:background .8s ease}
+.lp-hero h1{font-family:var(--serif);font-size:clamp(32px,8vw,52px);font-weight:400;line-height:1.1;color:var(--t1);margin-bottom:20px;animation:fadeUp .7s ease .15s both}
+.lp-hero h1 em{font-style:italic;color:var(--lp-color)}
+.lp-hero-sub{font-size:clamp(18px,4vw,22px);color:var(--t2);line-height:1.5;max-width:480px;margin:0 auto 32px;animation:fadeUp .7s ease .3s both}
+.lp-hero-scroll{margin-top:16px;animation:drift 2s ease-in-out infinite,fadeUp .6s ease 1.2s both;color:var(--t3);font-size:20px}
+
+/* Problem section */
+.lp-problem{padding:80px 0;border-top:1px solid var(--stroke);overflow:hidden}
+.lp-problem h2{font-family:var(--serif);font-size:clamp(26px,6vw,36px);font-weight:400;line-height:1.25;color:var(--t1);margin-bottom:24px}
+.lp-problem-body{font-size:17px;color:var(--t2);line-height:1.8;margin-bottom:28px}
+.lp-problem-body strong{color:var(--t1);font-weight:600}
+.lp-pain-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.lp-pain-pill{font-size:13px;font-weight:500;color:var(--t3);padding:8px 14px;border-radius:20px;background:transparent;border:1px solid rgba(239,68,68,.25)}
+
+/* Solution section */
+.lp-solution{padding:80px 0;border-top:1px solid var(--stroke);overflow:hidden}
+.lp-solution h2{font-family:var(--serif);font-size:clamp(26px,6vw,36px);font-weight:400;line-height:1.25;color:var(--t1);margin-bottom:24px}
+.lp-solution h2 em{font-style:italic;color:var(--lp-color)}
+.lp-solution-body{font-size:17px;color:var(--t2);line-height:1.8;margin-bottom:32px}
+.lp-solution-body strong{color:var(--t1);font-weight:600}
+
+/* Science / citation block */
+.lp-science{padding:80px 0;border-top:1px solid var(--stroke);overflow:hidden}
+.lp-science h2{font-family:var(--serif);font-size:clamp(26px,6vw,36px);font-weight:400;line-height:1.25;color:var(--t1);margin-bottom:24px}
+.lp-science h2 em{font-style:italic;color:var(--lp-color)}
+.lp-science-body{font-size:17px;color:var(--t2);line-height:1.8;margin-bottom:32px}
+.lp-citation{padding:20px;border-radius:16px;background:var(--surface);border:1px solid var(--stroke);margin-bottom:32px}
+.lp-citation-finding{font-size:15px;font-weight:600;color:var(--t1);margin-bottom:8px;line-height:1.5}
+.lp-citation-source{font-size:13px;color:var(--t3);line-height:1.6}
+.lp-citation-source a{color:var(--accent);font-size:13px}
+.lp-kicker{font-family:var(--serif);font-size:clamp(20px,4.5vw,26px);font-weight:400;font-style:italic;color:var(--accent);line-height:1.4}
+
+/* Generic section heading (reused across pages) */
+.lp-section{padding:80px 0;border-top:1px solid var(--stroke);overflow:hidden}
+.lp-section h2{font-family:var(--serif);font-size:clamp(26px,6vw,36px);font-weight:400;line-height:1.25;color:var(--t1);margin-bottom:24px}
+.lp-section h2 em{font-style:italic;color:var(--lp-color)}
+.lp-section-body{font-size:17px;color:var(--t2);line-height:1.8;margin-bottom:32px}
+.lp-section-body strong{color:var(--t1);font-weight:600}
