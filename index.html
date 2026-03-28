@@ -21,7 +21,8 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap"></noscript>
 <link rel="stylesheet" href="css/main.css">
 <script type="application/ld+json">
 {
@@ -79,15 +80,24 @@
 
     <!-- Rotating figure: 3 poses, one per category -->
     <div class="hero-model" id="heroModel" aria-hidden="true">
-      <img src="assets/hero/hero_mobility.png" alt="3D figure demonstrating a mobility stretch" class="active" data-cat="mobility">
-      <img src="assets/hero/hero_bodyweight.png" alt="3D figure performing a bodyweight strength exercise" data-cat="bodyweight">
-      <img src="assets/hero/hero_breathwork.png" alt="3D figure in a breathwork session" data-cat="breathwork">
+      <picture>
+        <source type="image/webp" srcset="assets/hero/hero_mobility.webp">
+        <img src="assets/hero/hero_mobility.png" alt="3D figure demonstrating a mobility stretch" class="active" data-cat="mobility" width="400" height="572" fetchpriority="high">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="assets/hero/hero_bodyweight.webp">
+        <img src="assets/hero/hero_bodyweight.png" alt="3D figure performing a bodyweight strength exercise" data-cat="bodyweight" width="400" height="572">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="assets/hero/hero_breathwork.webp">
+        <img src="assets/hero/hero_breathwork.png" alt="3D figure in a breathwork session" data-cat="breathwork" width="400" height="572">
+      </picture>
     </div>
 
     <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
     <p class="hero-bridge">No scrolling. No choosing. Just press start.</p>
     <div id="notify" style="animation:fadeUp .7s ease .6s both;text-align:center">
-      <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" height="54"></a>
+      <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" width="159" height="54"></a>
       <p style="margin-top:12px;font-size:14px;color:var(--t3)"><span style="color:var(--green)">Free to try</span></p>
     </div>
   </div>
@@ -121,7 +131,10 @@
       <div class="iphone-frame">
         <div class="iphone-notch"></div>
         <div class="iphone-screen">
-          <img src="assets/screenshots/screen-start.jpg" alt="Baseline home screen with block grid and start button" loading="lazy">
+          <picture>
+            <source type="image/webp" srcset="assets/screenshots/screen-start.webp">
+            <img src="assets/screenshots/screen-start.jpg" alt="Baseline home screen with block grid and start button" loading="lazy" width="390" height="844">
+          </picture>
         </div>
       </div>
       <div class="screenshot-caption">
@@ -133,7 +146,10 @@
       <div class="iphone-frame">
         <div class="iphone-notch"></div>
         <div class="iphone-screen">
-          <img src="assets/screenshots/screen-session.jpg" alt="Exercise session with 3D guide showing couch stretch" loading="lazy">
+          <picture>
+            <source type="image/webp" srcset="assets/screenshots/screen-session.webp">
+            <img src="assets/screenshots/screen-session.jpg" alt="Exercise session with 3D guide showing couch stretch" loading="lazy" width="390" height="844">
+          </picture>
         </div>
       </div>
       <div class="screenshot-caption">
@@ -145,7 +161,10 @@
       <div class="iphone-frame">
         <div class="iphone-notch"></div>
         <div class="iphone-screen">
-          <img src="assets/screenshots/screen-shift.jpg" alt="Shift breathwork screen showing Prime mode" loading="lazy">
+          <picture>
+            <source type="image/webp" srcset="assets/screenshots/screen-shift.webp">
+            <img src="assets/screenshots/screen-shift.jpg" alt="Shift breathwork screen showing Prime mode" loading="lazy" width="390" height="844">
+          </picture>
         </div>
       </div>
       <div class="screenshot-caption">
@@ -352,7 +371,7 @@
   <div class="container">
     <h2 class="reveal">20 minutes.<br>Every day.<br><em>Handled.</em></h2>
     <div class="reveal" style="text-align:center">
-      <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" height="54"></a>
+      <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" width="159" height="54"></a>
       <p style="margin-top:16px;font-size:14px;color:var(--t3)"><span style="color:var(--green)">Free to try</span></p>
     </div>
   </div>
@@ -398,7 +417,7 @@
 
 <div class="bottom-bar">
   <span>Launching May 2026 · <span style="color:var(--green)">Free to try</span></span>
-  <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" height="36"></a>
+  <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" width="106" height="36"></a>
 </div>
 
 <script src="js/main.js"></script>

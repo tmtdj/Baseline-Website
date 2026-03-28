@@ -247,7 +247,7 @@ function positionOrb() {
   wrap.style.left = (left + block.offsetWidth / 2) + 'px';
 }
 positionOrb();
-window.addEventListener('resize', positionOrb);
+(function(){var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(positionOrb,150)})})();
 
 // ═══ Orb color rotation: indigo → solar → ice → lavender ═══
 (function() {
