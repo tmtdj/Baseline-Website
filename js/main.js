@@ -1,5 +1,5 @@
-// ═══ Localised pricing ═══
-(function(){
+// ═══ Localised pricing (deferred until after page load) ═══
+window.addEventListener('load', function(){
   var prices = {
     US:{first:'$9.99 USD',then:'$29.99 USD',breathwork:'~$130/yr',mobility:'~$108/yr',bodyweight:'~$80/yr',total:'~$318/yr',calm:'~$70/yr',headspace:'~$70/yr',wakingup:'~$100/yr',yoga:'~$2,400/yr',romwod:'~$108/yr',pliability:'~$100/yr'},
     AU:{first:'$14.99 AUD',then:'$49.99 AUD',breathwork:'~A$200/yr',mobility:'~A$170/yr',bodyweight:'~A$125/yr',total:'~A$495/yr',calm:'~A$110/yr',headspace:'~A$110/yr',wakingup:'~A$155/yr',yoga:'~A$3,600/yr',romwod:'~A$170/yr',pliability:'~A$155/yr'},
@@ -25,7 +25,7 @@
       });
     })
     .catch(function(){});
-})();
+});
 
 // ═══ Bottom bar: show after scrolling past hero email form ═══
 (function(){
