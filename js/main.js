@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
   var euPrice = {first:'€9.99 EUR',then:'€34.99 EUR',breathwork:'~€120/yr',mobility:'~€100/yr',bodyweight:'~€75/yr',total:'~€295/yr',calm:'~€65/yr',headspace:'~€65/yr',wakingup:'~€95/yr',yoga:'~€2,200/yr',romwod:'~€100/yr',pliability:'~€95/yr'};
 
   fetch('https://ipapi.co/json/',{signal:AbortSignal.timeout(3000)})
-    .then(function(r){return r.json()})
+    .then(function(r){if(!r.ok)throw 0;return r.json()})
     .then(function(d){
       var cc = d.country_code;
       var p = prices[cc] || (eu.indexOf(cc) > -1 ? euPrice : null);
