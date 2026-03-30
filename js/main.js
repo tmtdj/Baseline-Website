@@ -255,7 +255,8 @@ positionOrb();
     { r: 99, g: 102, b: 241 },  // indigo
     { r: 234, g: 179, b: 8 },   // solar
     { r: 103, g: 232, b: 249 }, // ice
-    { r: 167, g: 139, b: 250 }  // lavender
+    { r: 167, g: 139, b: 250 }, // lavender
+    { r: 52, g: 211, b: 153 }   // emerald
   ];
   const orbBg = document.querySelector('.shift-orb-bg');
   const orbBlock = document.querySelector('.shift-orb-block');

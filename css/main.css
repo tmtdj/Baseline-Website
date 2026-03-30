@@ -4,6 +4,7 @@
 @font-face{font-family:'FragmentMono-Italic';src:url('../fonts/FragmentMono-Italic.woff2') format('woff2'),url('../fonts/FragmentMono-Italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:'Fraunces-LightItalic';src:url('../fonts/Fraunces_72pt_Soft-LightItalic.woff2') format('woff2'),url('../fonts/Fraunces_72pt_Soft-LightItalic.ttf') format('truetype');font-weight:300;font-style:italic;font-display:swap}
 @font-face{font-family:'BigShoulders-Black';src:url('../fonts/BigShoulders-Black.woff2') format('woff2'),url('../fonts/BigShoulders-Black.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:'Sora-Thin';src:url('../fonts/Sora-Thin-RECHARGE.woff2') format('woff2');font-weight:100;font-style:normal;font-display:swap;unicode-range:U+0052,U+0061,U+0063,U+0065,U+0067,U+0068,U+0072}
 
 /* ═══ VARIABLES ═══ */
 :root{
@@ -11,7 +12,7 @@
   --stroke:rgba(255,255,255,.08);--t1:rgba(255,255,255,.95);--t2:rgba(255,255,255,.72);--t3:rgba(255,255,255,.45);
   --accent:#8FA89A;--accent-soft:rgba(143,168,154,.15);--accent-border:rgba(143,168,154,.35);
   --green:#30D158;--green-glow:rgba(48,209,88,.25);--tangerine:#FF6F2C;--steel:#7B8FA3;
-  --indigo:#6366F1;--solar:#EAB308;--ice:#67E8F9;--lavender:#A78BFA;--red:#EF4444;
+  --indigo:#6366F1;--solar:#EAB308;--ice:#67E8F9;--lavender:#A78BFA;--red:#EF4444;--emerald:#34D399;
   --serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
 }
 

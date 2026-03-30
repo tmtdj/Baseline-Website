@@ -1,12 +1,14 @@
 /* exercise.css: Shared styles for exercise + shift landing pages */
 
+@font-face{font-family:'Sora-Thin';src:url('../fonts/Sora-Thin-RECHARGE.woff2') format('woff2');font-weight:100;font-style:normal;font-display:swap;unicode-range:U+0052,U+0061,U+0063,U+0065,U+0067,U+0068,U+0072}
+
 /* ── Inherit base tokens from main.css ── */
 :root {
   --bg: #000; --surface: #111; --stroke: rgba(255,255,255,.08);
   --t1: #fff; --t2: rgba(255,255,255,.7); --t3: rgba(255,255,255,.4);
   --green: #30D158; --tangerine: #FF6F2C; --steel: #8EA8AA;
   --indigo: #6366F1; --solar: #EAB308; --ice: #67E8F9;
-  --lavender: #A78BFA; --red: #EF4444;
+  --lavender: #A78BFA; --red: #EF4444; --emerald: #34D399;
   --serif: 'DM Serif Display', Georgia, serif;
   --sans: 'DM Sans', -apple-system, sans-serif;
   --accent: #8FA89A;
@@ -339,6 +341,11 @@ a:hover { text-decoration: underline; }
 .shift-orb[data-color="red"] .shift-orb-mid { background: rgba(239,68,68,.40); }
 .shift-orb[data-color="red"] .shift-orb-inner { background: rgba(239,68,68,.55); }
 .shift-orb[data-color="red"] .shift-orb-block { background: rgba(239,68,68,.45); border: 1px solid rgba(239,68,68,.70); }
+
+.shift-orb[data-color="emerald"] .shift-orb-outer { background: rgba(52,211,153,.28); }
+.shift-orb[data-color="emerald"] .shift-orb-mid { background: rgba(52,211,153,.40); }
+.shift-orb[data-color="emerald"] .shift-orb-inner { background: rgba(52,211,153,.55); }
+.shift-orb[data-color="emerald"] .shift-orb-block { background: rgba(52,211,153,.45); border: 1px solid rgba(52,211,153,.70); }
 
 /* ── Footer ── */
 .page-footer {
