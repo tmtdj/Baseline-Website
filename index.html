@@ -65,17 +65,17 @@ section{position:relative}
 .mobile-nav a{color:var(--t2);font-size:15px;padding:10px 0;border-bottom:1px solid var(--stroke);text-decoration:none}
 .mobile-nav a:last-child{border-bottom:none}
 .mobile-nav a:hover{color:var(--accent)}
-.hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:hidden;padding:72px 24px 40px}
+.hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:hidden;padding:72px 24px 40px;background:linear-gradient(180deg,#0A0A0A 0%,#0E0D0C 50%,#121110 100%)}
 @media(min-width:768px){.hero{min-height:80vh}}
-.hero .glow{top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;transition:background .8s ease}
-.data-grid-hero{position:absolute;inset:0;z-index:0;display:grid;pointer-events:none;overflow:hidden}
+.hero .glow{top:45%;left:50%;transform:translate(-50%,-50%);width:400px;height:400px;opacity:.5;transition:background .8s ease}
+.data-grid-hero{position:absolute;inset:0;z-index:0;display:grid;pointer-events:none;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,black 40%,transparent 70%);mask-image:linear-gradient(to bottom,black 40%,transparent 70%)}
 .data-grid-hero.has-glow{pointer-events:auto}
 .grid-cell{border-radius:4px;aspect-ratio:1;opacity:var(--opacity-min,.04);will-change:opacity}
 .data-grid-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle 180px at var(--mx,50%) var(--my,50%),rgba(143,168,154,.12),transparent);opacity:0;transition:opacity .3s}
 .data-grid-hero.has-glow .data-grid-glow{opacity:1}
-.hero-model{position:relative;width:100%;height:clamp(200px,40vh,360px);margin:16px 0;pointer-events:none}
-.hero-model img{position:absolute;left:50%;top:0;transform:translateX(-50%) scale(.96);height:100%;width:auto;object-fit:contain;opacity:0;transition:opacity 1.2s ease,transform 1.2s ease}
-.hero-model img.active{opacity:.4;transform:translateX(-50%) scale(1)}
+.hero-model{position:relative;width:100%;height:clamp(260px,45vh,420px);margin:16px 0;pointer-events:none}
+.hero-model img{position:absolute;left:50%;top:0;transform:translateX(-50%) scale(.96);height:100%;width:auto;object-fit:contain;opacity:0;transition:opacity 2s ease,transform 2s ease,filter 2s ease}
+.hero-model img.active{opacity:.5;transform:translateX(-50%) scale(1)}
 .hero-copy{text-align:center;max-width:480px;position:relative;z-index:2;padding-bottom:20px}
 .hero h1{font-family:var(--serif);font-size:clamp(32px,8vw,52px);font-weight:400;line-height:1.1;color:var(--t1);margin-bottom:18px;animation:fadeUp .7s ease .15s both}
 .hero h1 em{font-style:italic;color:var(--green)}
@@ -141,29 +141,29 @@ section{position:relative}
 <!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="data-grid-hero" id="dataGridHero" aria-hidden="true"></div>
-  <div class="glow" id="heroGlow" style="background:radial-gradient(circle,var(--green-glow),transparent)"></div>
+  <div class="glow" id="heroGlow" style="background:radial-gradient(ellipse 600px 400px at 50% 65%,rgba(245,215,190,.12),transparent)"></div>
 
   <div class="hero-copy">
     <h1>The minimum<br><em>effective dose</em></h1>
 
-    <!-- Rotating figure: 3 poses, one per category -->
+    <!-- Rotating avatar: 3 poses, one per category -->
     <div class="hero-model" id="heroModel" aria-hidden="true">
       <picture>
-        <source type="image/webp" srcset="assets/hero/hero_mobility.webp">
-        <img src="assets/hero/hero_mobility.png" alt="3D figure demonstrating a mobility stretch" class="active" data-cat="mobility" width="400" height="572" fetchpriority="high">
+        <source type="image/webp" srcset="assets/avatar_mobility.webp">
+        <img src="assets/avatar_mobility.png" alt="Low-poly avatar performing a squat" class="active" data-cat="mobility" width="469" height="840" fetchpriority="high">
       </picture>
       <picture>
-        <source type="image/webp" srcset="assets/hero/hero_bodyweight.webp">
-        <img src="assets/hero/hero_bodyweight.png" alt="3D figure performing a bodyweight strength exercise" data-cat="bodyweight" width="400" height="572">
+        <source type="image/webp" srcset="assets/avatar_bodyweight.webp">
+        <img src="assets/avatar_bodyweight.png" alt="Low-poly avatar performing a push-up" data-cat="bodyweight" width="469" height="840">
       </picture>
       <picture>
-        <source type="image/webp" srcset="assets/hero/hero_breathwork.webp">
-        <img src="assets/hero/hero_breathwork.png" alt="3D figure in a breathwork session" data-cat="breathwork" width="400" height="572">
+        <source type="image/webp" srcset="assets/avatar_breathwork.webp">
+        <img src="assets/avatar_breathwork.png" alt="Low-poly avatar in meditation" data-cat="breathwork" width="386" height="714">
       </picture>
     </div>
 
     <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
-    <p class="hero-bridge">No scrolling. No choosing. Just press start.</p>
+    <p class="hero-bridge">Built around the science of just enough. <span style="color:var(--green);font-weight:600">Just press start.</span></p>
     <div id="notify" style="animation:fadeUp .7s ease .6s both;text-align:center">
       <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" width="159" height="54"></a>
       <p style="margin-top:12px;font-size:14px;color:var(--t3)"><span style="color:var(--green)">Free to try</span></p>
