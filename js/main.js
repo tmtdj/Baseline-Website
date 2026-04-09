@@ -140,7 +140,7 @@ window.addEventListener('load', function(){
     vid.play();
     glowEl.style.background = catGlows[vid.dataset.cat];
   }
-  setInterval(next, 5000);
+  setInterval(next, 4000);
 })();
 
 // ═══ Scroll reveal ═══
