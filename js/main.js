@@ -120,9 +120,9 @@ window.addEventListener('load', function(){
 
 // ═══ Hero figure rotation ═══
 (function(){
-  var imgs = document.querySelectorAll('#heroModel img');
+  var vids = document.querySelectorAll('#heroModel video');
   var glowEl = document.getElementById('heroGlow');
-  if (!imgs.length || !glowEl) return;
+  if (!vids.length || !glowEl) return;
   var catGlows = {
     mobility:'radial-gradient(ellipse 400px 300px at 50% 60%,rgba(168,197,176,.08),transparent)',
     bodyweight:'radial-gradient(ellipse 400px 300px at 50% 60%,rgba(245,215,190,.08),transparent)',
@@ -130,11 +130,15 @@ window.addEventListener('load', function(){
   };
   var current = 0;
   function next(){
-    imgs[current].classList.remove('active');
-    current = (current + 1) % imgs.length;
-    var img = imgs[current];
-    img.classList.add('active');
-    glowEl.style.background = catGlows[img.dataset.cat];
+    var prev = vids[current];
+    prev.classList.remove('active');
+    prev.pause();
+    current = (current + 1) % vids.length;
+    var vid = vids[current];
+    vid.currentTime = 0;
+    vid.classList.add('active');
+    vid.play();
+    glowEl.style.background = catGlows[vid.dataset.cat];
   }
   setInterval(next, 5000);
 })();

@@ -74,8 +74,8 @@ section{position:relative}
 .data-grid-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle 180px at var(--mx,50%) var(--my,50%),rgba(143,168,154,.12),transparent);opacity:0;transition:opacity .3s}
 .data-grid-hero.has-glow .data-grid-glow{opacity:1}
 .hero-model{position:relative;width:100%;height:clamp(260px,45vh,420px);margin:16px 0;pointer-events:none}
-.hero-model img{position:absolute;left:50%;top:0;transform:translateX(-50%) scale(.96);height:100%;width:auto;object-fit:contain;opacity:0;transition:opacity 2s ease,transform 2s ease,filter 2s ease}
-.hero-model img.active{opacity:.5;transform:translateX(-50%) scale(1)}
+.hero-model img,.hero-model video{position:absolute;left:50%;top:0;transform:translateX(-50%) scale(.96);height:100%;width:auto;object-fit:contain;opacity:0;transition:opacity 2s ease,transform 2s ease,filter 2s ease;mix-blend-mode:screen}
+.hero-model img.active,.hero-model video.active{opacity:.5;transform:translateX(-50%) scale(1)}
 .hero-copy{text-align:center;max-width:480px;position:relative;z-index:2;padding-bottom:20px}
 .hero h1{font-family:var(--serif);font-size:clamp(32px,8vw,52px);font-weight:400;line-height:1.1;color:var(--t1);margin-bottom:18px;animation:fadeUp .7s ease .15s both}
 .hero h1 em{font-style:italic;color:var(--green)}
@@ -146,20 +146,20 @@ section{position:relative}
   <div class="hero-copy">
     <h1>The minimum<br><em>effective dose</em></h1>
 
-    <!-- Rotating avatar: 3 poses, one per category -->
+    <!-- Rotating avatar: 3 looping videos, one per category -->
     <div class="hero-model" id="heroModel" aria-hidden="true">
-      <picture>
-        <source type="image/webp" srcset="assets/avatar_mobility.webp">
-        <img src="assets/avatar_mobility.png" alt="Low-poly avatar performing a squat" class="active" data-cat="mobility" width="414" height="740" fetchpriority="high">
-      </picture>
-      <picture>
-        <source type="image/webp" srcset="assets/avatar_bodyweight.webp">
-        <img src="assets/avatar_bodyweight.png" alt="Low-poly avatar performing a push-up" data-cat="bodyweight" width="414" height="740">
-      </picture>
-      <picture>
-        <source type="image/webp" srcset="assets/avatar_breathwork.webp">
-        <img src="assets/avatar_breathwork.png" alt="Low-poly avatar in meditation" data-cat="breathwork" width="414" height="740">
-      </picture>
+      <video class="active" data-cat="mobility" muted autoplay playsinline poster="assets/avatar_mobility.webp" preload="auto">
+        <source src="assets/avatar_mobility.webm" type="video/webm">
+        <source src="assets/avatar_mobility.mp4" type="video/mp4">
+      </video>
+      <video data-cat="bodyweight" muted playsinline poster="assets/avatar_bodyweight.webp" preload="none">
+        <source src="assets/avatar_bodyweight.webm" type="video/webm">
+        <source src="assets/avatar_bodyweight.mp4" type="video/mp4">
+      </video>
+      <video data-cat="breathwork" muted playsinline poster="assets/avatar_breathwork.webp" preload="none">
+        <source src="assets/avatar_breathwork.webm" type="video/webm">
+        <source src="assets/avatar_breathwork.mp4" type="video/mp4">
+      </video>
     </div>
 
     <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
