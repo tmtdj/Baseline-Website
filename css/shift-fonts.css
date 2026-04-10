@@ -1,0 +1,6 @@
+/* Shift tile accent fonts — loaded async to keep them off the critical path */
+@font-face{font-family:'JosefinSans-ThinItalic';src:url('../fonts/JosefinSans-ThinItalic.woff2') format('woff2'),url('../fonts/JosefinSans-ThinItalic.ttf') format('truetype');font-weight:100;font-style:italic;font-display:swap}
+@font-face{font-family:'Unbounded-Black';src:url('../fonts/Unbounded-Black-PRIME.woff2') format('woff2');font-weight:900;font-style:normal;font-display:swap;unicode-range:U+0045,U+0049,U+004D,U+0050,U+0052}
+@font-face{font-family:'FragmentMono-Italic';src:url('../fonts/FragmentMono-Italic.woff2') format('woff2'),url('../fonts/FragmentMono-Italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Fraunces-LightItalic';src:url('../fonts/Fraunces_72pt_Soft-LightItalic.woff2') format('woff2'),url('../fonts/Fraunces_72pt_Soft-LightItalic.ttf') format('truetype');font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:'BigShoulders-Black';src:url('../fonts/BigShoulders-Black.woff2') format('woff2'),url('../fonts/BigShoulders-Black.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap}

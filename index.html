@@ -20,18 +20,14 @@
 <link rel="icon" href="assets/favicon.ico">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 /* ═══ SELF-HOSTED GOOGLE FONTS ═══ */
 @font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/dm-serif-display-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/dm-serif-display-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'DM Sans';font-style:normal;font-weight:300 700;font-display:swap;src:url('fonts/dm-sans-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'DM Sans';font-style:italic;font-weight:300 700;font-display:swap;src:url('fonts/dm-sans-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-/* ═══ SHIFT FONTS ═══ */
-@font-face{font-family:'JosefinSans-ThinItalic';src:url('fonts/JosefinSans-ThinItalic.woff2') format('woff2'),url('fonts/JosefinSans-ThinItalic.ttf') format('truetype');font-weight:100;font-style:italic;font-display:swap}
-@font-face{font-family:'Unbounded-Black';src:url('fonts/Unbounded-Black-PRIME.woff2') format('woff2');font-weight:900;font-style:normal;font-display:swap;unicode-range:U+0045,U+0049,U+004D,U+0050,U+0052}
-@font-face{font-family:'FragmentMono-Italic';src:url('fonts/FragmentMono-Italic.woff2') format('woff2'),url('fonts/FragmentMono-Italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:'Fraunces-LightItalic';src:url('fonts/Fraunces_72pt_Soft-LightItalic.woff2') format('woff2'),url('fonts/Fraunces_72pt_Soft-LightItalic.ttf') format('truetype');font-weight:300;font-style:italic;font-display:swap}
-@font-face{font-family:'BigShoulders-Black';src:url('fonts/BigShoulders-Black.woff2') format('woff2'),url('fonts/BigShoulders-Black.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap}
+/* Shift fonts deferred to css/shift-fonts.css */
 /* ═══ CRITICAL CSS (above-the-fold) ═══ */
 :root{--bg:#000;--surface:rgba(255,255,255,.04);--surface-strong:rgba(255,255,255,.08);--stroke:rgba(255,255,255,.08);--t1:rgba(255,255,255,.95);--t2:rgba(255,255,255,.72);--t3:rgba(255,255,255,.45);--accent:#8FA89A;--accent-soft:rgba(143,168,154,.15);--accent-border:rgba(143,168,154,.35);--green:#30D158;--green-glow:rgba(48,209,88,.25);--tangerine:#FF6F2C;--steel:#7B8FA3;--indigo:#6366F1;--solar:#EAB308;--ice:#67E8F9;--lavender:#A78BFA;--red:#EF4444;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -114,6 +110,8 @@ section{position:relative}
   }
 }
 </script>
+<link rel="stylesheet" href="css/shift-fonts.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="css/shift-fonts.css"></noscript>
 </head>
 <body>
 
@@ -148,7 +146,7 @@ section{position:relative}
 
     <!-- Rotating avatar: 3 looping videos, one per category -->
     <div class="hero-model" id="heroModel" aria-hidden="true">
-      <video class="active" data-cat="mobility" muted autoplay playsinline poster="assets/avatar_mobility.webp" preload="auto">
+      <video class="active" data-cat="mobility" muted autoplay playsinline poster="assets/avatar_mobility.webp" preload="auto" fetchpriority="high">
         <source src="assets/avatar_mobility.webm" type="video/webm">
         <source src="assets/avatar_mobility.mp4" type="video/mp4">
       </video>
@@ -160,10 +158,13 @@ section{position:relative}
         <source src="assets/avatar_breathwork.webm" type="video/webm">
         <source src="assets/avatar_breathwork.mp4" type="video/mp4">
       </video>
+      <script>
+      if(window.innerWidth<=768){var ss=document.querySelectorAll('#heroModel source');for(var i=0;i<ss.length;i++){ss[i].src=ss[i].src.replace('.webm','_sm.webm').replace('.mp4','_sm.mp4')};document.querySelectorAll('#heroModel video').forEach(function(v){v.load()})}
+      </script>
     </div>
 
     <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
-    <p class="hero-bridge">Built around the science of just enough.<br><span style="color:var(--green);font-weight:600">Just press start.</span></p>
+    <p class="hero-bridge">Built around the science of just enough.<br><span style="color:var(--green);font-weight:600">Just press start</span></p>
     <div id="notify" style="animation:fadeUp .7s ease .6s both;text-align:center">
       <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" width="159" height="54"></a>
       <p style="margin-top:12px;font-size:14px;color:var(--t3)"><span style="color:var(--green)">Free to try</span></p>
@@ -191,8 +192,8 @@ section{position:relative}
 <section class="screenshots-section">
   <div class="container">
     <div class="section-label reveal">The whole app</div>
-    <h2 class="reveal">One screen. One button.</h2>
-    <p class="screenshots-sub reveal">No tabs. No feed. No content library to drown in.</p>
+    <h2 class="reveal">One button.</h2>
+    <p class="screenshots-sub reveal">No tabs, feed and no content library to drown in.</p>
   </div>
   <div class="screenshots-track reveal" id="screenshotsTrack">
     <div class="screenshot-card" data-index="0">
@@ -207,7 +208,7 @@ section{position:relative}
       </div>
       <div class="screenshot-caption">
         <span class="screenshot-caption-label">Press start</span>
-        <p class="screenshot-caption-desc">The system picks your session. One button. No choosing.</p>
+        <p class="screenshot-caption-desc">The system picks your session. No choosing.</p>
       </div>
     </div>
     <div class="screenshot-card" data-index="1">
@@ -256,7 +257,7 @@ section{position:relative}
   <div class="container">
     <div class="section-label reveal">The science</div>
     <h2 class="reveal">Every exercise has an<br><em>effective dose</em>.</h2>
-    <p class="dose-lead reveal">Every exercise has a threshold: the shortest duration that still creates measurable change. Baseline sets that number for each exercise and uses it as your target. Once you hit it, the benefit is locked in. Everything after that is a bonus. <a href="#references" style="color:var(--accent);border-bottom:1px solid rgba(143,168,154,.3)">See the research</a>.</p>
+    <p class="dose-lead reveal">Every exercise has a threshold: the shortest duration that still creates measurable change. Baseline sets that number for each exercise and uses it as your target. Once you hit it, the benefit is there. Everything after that is a bonus. <a href="#references" style="color:var(--accent);border-bottom:1px solid rgba(143,168,154,.3)">See the research</a>.</p>
 
     <div class="dose-card reveal" id="doseCard">
       <div class="dose-card-header">
@@ -327,11 +328,11 @@ section{position:relative}
     <div class="modes">
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◆</span></div><div><div class="mode-name">Baseline</div><div class="mode-tag">Default daily ritual</div></div></div>
-        <p class="mode-desc">Combines light movement and nervous system regulation into one session, with nothing to think about or decide.</p>
+        <p class="mode-desc">Combines movement, mobility and nervous system regulation into one session, with nothing to think about or decide.</p>
       </div>
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◇</span></div><div><div class="mode-name">Mobility</div><div class="mode-tag">Stretching · Joint work · Maintenance</div></div></div>
-        <p class="mode-desc">For tight hips, stiff backs, locked shoulders, and dodgy knees. Pick a focus area or let the system decide for you.</p>
+        <p class="mode-desc">For tight hips, stiff back, locked shoulders, and dodgy knees. Pick a focus area or let the system decide for you.</p>
       </div>
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(255,111,44,.15)"><span style="color:var(--tangerine);font-size:16px">▲</span></div><div><div class="mode-name">Bodyweight</div><div class="mode-tag">Strength · Push to effort · No equipment</div></div></div>
@@ -339,7 +340,7 @@ section{position:relative}
       </div>
       <div class="mode-card reveal">
         <div class="mode-header"><div class="mode-swatch" style="background:rgba(99,102,241,.15)"><span style="color:var(--indigo);font-size:16px">●</span></div><div><div class="mode-name">Shift</div><div class="mode-tag">Breathwork · Shifting state</div></div></div>
-        <p class="mode-desc">Five breathwork protocols, each targeting a different nervous system state. Customize with music, ambient sounds, binaural beats, and narration.</p>
+        <p class="mode-desc">Six breathwork protocols, each targeting a different nervous system state. Customize with music, ambient sounds, binaural beats, and narration.</p>
       </div>
     </div>
   </div>
@@ -357,7 +358,7 @@ section{position:relative}
     <div class="shift-header reveal">
       <div class="shift-wordmark">SHIFT</div>
       <div class="shift-orb-block"></div>
-      <p class="shift-sub">Breathwork for shifting state. Each mode targets a desired change.</p>
+      <p class="shift-sub">Breathwork for shifting state. Each mode targets a desired change. Backed by research.</p>
     </div>
     <div class="shift-modes">
       <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--indigo)"></div><div class="shift-tile-name" style="font-family:'JosefinSans-ThinItalic',sans-serif;letter-spacing:4px;color:var(--indigo)">ARRIVE</div><div class="shift-tile-desc">Scattered → Present</div></div>
@@ -394,7 +395,7 @@ section{position:relative}
   <div class="container">
     <div class="section-label reveal">Who it's for</div>
     <h2 class="reveal">Built for people who don't want<br>fitness to be yet another job.</h2>
-    <p class="whoisfor-desc reveal">You already have a thing. A gym, a run, a sport, a class. Baseline is everything around it. The mobility you skip. The breathwork that shifts your state. The bodyweight work that keeps you moving between sessions.</p>
+    <p class="whoisfor-desc reveal">You already have a thing. Whether it be gym, running, a sport or a class. Baseline works around it. The mobility you skip. The breathwork that shifts your state. The bodyweight work that keeps you moving between sessions.</p>
     <div class="whoisfor-pills reveal">
       <span class="anti-pill">Lifters who never stretch</span>
       <span class="anti-pill">Runners who skip mobility</span>

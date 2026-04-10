@@ -66,8 +66,8 @@ window.addEventListener('load', function(){
   el.appendChild(glowDiv);
 
   function build(){
-    Array.from(el.querySelectorAll('.grid-cell')).forEach(function(c){c.remove()});
     var w = el.offsetWidth, h = el.offsetHeight;
+    Array.from(el.querySelectorAll('.grid-cell')).forEach(function(c){c.remove()});
     if (!w || !h) return;
     // Scale cell size: smaller on wider screens so grid stays dense
     var cellSize = w > 1200 ? 28 : w > 768 ? 32 : 36;
