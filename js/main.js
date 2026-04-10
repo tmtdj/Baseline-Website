@@ -98,7 +98,7 @@ window.addEventListener('load', function(){
     }
     el.appendChild(frag);
   }
-  build();
+  requestAnimationFrame(build);
 
   // rebuild on resize (debounced)
   var resizeTimer;
@@ -250,7 +250,7 @@ function positionOrb() {
   wrap.style.top = (top + block.offsetHeight / 2) + 'px';
   wrap.style.left = (left + block.offsetWidth / 2) + 'px';
 }
-positionOrb();
+requestAnimationFrame(positionOrb);
 (function(){var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(positionOrb,150)})})();
 
 // ═══ Orb color rotation: indigo → solar → ice → lavender ═══
