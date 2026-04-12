@@ -243,7 +243,7 @@ details[open] summary::after{transform:rotate(180deg);color:var(--green)}
       "name": "How much does Baseline cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "$9.99 USD for your first year. After that, it renews at $29.99 USD/year. Or you can go monthly at $3.99 USD. Most fitness apps charge $10 to $20 a month. We charge less than a coffee per month for your first year."
+        "text": "$9.99 USD/year. Most fitness apps charge $10 to $20 a month. We charge less than a coffee per month."
       }
     },
     {
@@ -502,7 +502,7 @@ details[open] summary::after{transform:rotate(180deg);color:var(--green)}
       <details>
         <summary>How much does it cost?</summary>
         <div class="answer">
-          <strong><span id="faqPriceFirst">$9.99 USD</span> for your first year.</strong> After that, it renews at <span id="faqPriceThen">$29.99 USD</span>/year. Or you can go monthly at <span id="faqPriceMonthly">$3.99 USD</span>. Most fitness apps charge <span id="faqPriceOthers">$10 to $20 a month</span>. We charge less than a coffee per month for your first year.
+          <strong><span id="faqPriceFirst">$9.99 USD</span>/year.</strong> Most fitness apps charge <span id="faqPriceOthers">$10 to $20 a month</span>. We charge less than a coffee per month.
         </div>
       </details>
 
@@ -574,13 +574,13 @@ details[open] summary::after{transform:rotate(180deg);color:var(--green)}
 })();
 (function(){
   var prices={
-    US:{first:'$9.99 USD',then:'$29.99 USD',monthly:'$3.99 USD',others:'$10 to $20 a month'},
-    AU:{first:'$14.99 AUD',then:'$49.99 AUD',monthly:'$5.99 AUD',others:'A$15 to A$30 a month'},
-    GB:{first:'\u00A39.99 GBP',then:'\u00A329.99 GBP',monthly:'\u00A33.49 GBP',others:'\u00A38 to \u00A315 a month'},
-    NZ:{first:'$19.99 NZD',then:'$49.99 NZD',monthly:'$6.49 NZD',others:'NZ$18 to NZ$35 a month'}
+    US:{price:'$9.99 USD',others:'$10 to $20 a month'},
+    AU:{price:'$14.99 AUD',others:'A$15 to A$30 a month'},
+    GB:{price:'\u00A39.99 GBP',others:'\u00A38 to \u00A315 a month'},
+    NZ:{price:'$19.99 NZD',others:'NZ$18 to NZ$35 a month'}
   };
   var eu=['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE'];
-  var euPrice={first:'\u20AC9.99 EUR',then:'\u20AC34.99 EUR',monthly:'\u20AC3.99 EUR',others:'\u20AC10 to \u20AC20 a month'};
+  var euPrice={price:'\u20AC9.99 EUR',others:'\u20AC10 to \u20AC20 a month'};
   fetch('https://ipapi.co/json/',{signal:AbortSignal.timeout(3000)})
     .then(function(r){return r.json()})
     .then(function(d){
@@ -588,12 +588,8 @@ details[open] summary::after{transform:rotate(180deg);color:var(--green)}
       var p=prices[cc]||(eu.indexOf(cc)>-1?euPrice:null);
       if(!p)return;
       var e1=document.getElementById('faqPriceFirst');
-      var e2=document.getElementById('faqPriceThen');
-      var e3=document.getElementById('faqPriceMonthly');
       var e4=document.getElementById('faqPriceOthers');
-      if(e1)e1.textContent=p.first;
-      if(e2)e2.textContent=p.then;
-      if(e3)e3.textContent=p.monthly;
+      if(e1)e1.textContent=p.price;
       if(e4)e4.textContent=p.others;
     })
     .catch(function(){});

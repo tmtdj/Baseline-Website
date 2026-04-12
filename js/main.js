@@ -1,13 +1,13 @@
 // ═══ Localised pricing (deferred until after page load) ═══
 window.addEventListener('load', function(){
   var prices = {
-    US:{first:'$9.99 USD',then:'$29.99 USD',breathwork:'~$130/yr',mobility:'~$108/yr',bodyweight:'~$80/yr',total:'~$318/yr',calm:'~$70/yr',headspace:'~$70/yr',wakingup:'~$100/yr',yoga:'~$2,400/yr',romwod:'~$108/yr',pliability:'~$100/yr'},
-    AU:{first:'$14.99 AUD',then:'$49.99 AUD',breathwork:'~A$200/yr',mobility:'~A$170/yr',bodyweight:'~A$125/yr',total:'~A$495/yr',calm:'~A$110/yr',headspace:'~A$110/yr',wakingup:'~A$155/yr',yoga:'~A$3,600/yr',romwod:'~A$170/yr',pliability:'~A$155/yr'},
-    GB:{first:'£9.99 GBP',then:'£29.99 GBP',breathwork:'~£105/yr',mobility:'~£85/yr',bodyweight:'~£65/yr',total:'~£255/yr',calm:'~£55/yr',headspace:'~£55/yr',wakingup:'~£80/yr',yoga:'~£1,800/yr',romwod:'~£85/yr',pliability:'~£80/yr'},
-    NZ:{first:'$19.99 NZD',then:'$49.99 NZD',breathwork:'~NZ$220/yr',mobility:'~NZ$185/yr',bodyweight:'~NZ$140/yr',total:'~NZ$545/yr',calm:'~NZ$120/yr',headspace:'~NZ$120/yr',wakingup:'~NZ$170/yr',yoga:'~NZ$4,000/yr',romwod:'~NZ$185/yr',pliability:'~NZ$170/yr'}
+    US:{price:'$9.99 USD',breathwork:'~$130/yr',mobility:'~$108/yr',bodyweight:'~$80/yr',total:'~$318/yr',calm:'~$70/yr',headspace:'~$70/yr',wakingup:'~$100/yr',yoga:'~$2,400/yr',romwod:'~$108/yr',pliability:'~$100/yr'},
+    AU:{price:'$14.99 AUD',breathwork:'~A$200/yr',mobility:'~A$170/yr',bodyweight:'~A$125/yr',total:'~A$495/yr',calm:'~A$110/yr',headspace:'~A$110/yr',wakingup:'~A$155/yr',yoga:'~A$3,600/yr',romwod:'~A$170/yr',pliability:'~A$155/yr'},
+    GB:{price:'£9.99 GBP',breathwork:'~£105/yr',mobility:'~£85/yr',bodyweight:'~£65/yr',total:'~£255/yr',calm:'~£55/yr',headspace:'~£55/yr',wakingup:'~£80/yr',yoga:'~£1,800/yr',romwod:'~£85/yr',pliability:'~£80/yr'},
+    NZ:{price:'$19.99 NZD',breathwork:'~NZ$220/yr',mobility:'~NZ$185/yr',bodyweight:'~NZ$140/yr',total:'~NZ$545/yr',calm:'~NZ$120/yr',headspace:'~NZ$120/yr',wakingup:'~NZ$170/yr',yoga:'~NZ$4,000/yr',romwod:'~NZ$185/yr',pliability:'~NZ$170/yr'}
   };
   var eu = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE'];
-  var euPrice = {first:'€9.99 EUR',then:'€34.99 EUR',breathwork:'~€120/yr',mobility:'~€100/yr',bodyweight:'~€75/yr',total:'~€295/yr',calm:'~€65/yr',headspace:'~€65/yr',wakingup:'~€95/yr',yoga:'~€2,200/yr',romwod:'~€100/yr',pliability:'~€95/yr'};
+  var euPrice = {price:'€9.99 EUR',breathwork:'~€120/yr',mobility:'~€100/yr',bodyweight:'~€75/yr',total:'~€295/yr',calm:'~€65/yr',headspace:'~€65/yr',wakingup:'~€95/yr',yoga:'~€2,200/yr',romwod:'~€100/yr',pliability:'~€95/yr'};
 
   fetch('https://ipapi.co/json/',{signal:AbortSignal.timeout(3000)})
     .then(function(r){if(!r.ok)throw 0;return r.json()})
@@ -17,8 +17,8 @@ window.addEventListener('load', function(){
       if (!p) return;
       var el1 = document.getElementById('priceFirst');
       var el2 = document.getElementById('priceThen');
-      if (el1) el1.innerHTML = p.first + '<span class="price-baseline-period">/first year</span>';
-      if (el2) el2.textContent = 'Then ' + p.then + '/year';
+      if (el1) el1.innerHTML = p.price + '<span class="price-baseline-period">/year</span>';
+      if (el2) el2.style.display = 'none';
       ['breathwork','mobility','bodyweight','total','calm','headspace','wakingup','yoga','romwod','pliability'].forEach(function(k){
         var el = document.querySelector('[data-price="'+k+'"]');
         if (el && p[k]) el.textContent = p[k];
