@@ -88,8 +88,8 @@ section{position:relative}
 .bottom-bar a{white-space:nowrap}
 .bottom-bar a:hover{opacity:.85;text-decoration:none}
 </style>
-<link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="css/main.css"></noscript>
+<link rel="stylesheet" href="css/main.css?v=2" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="css/main.css?v=2"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -145,7 +145,7 @@ section{position:relative}
   <div class="glow" id="heroGlow" style="background:radial-gradient(ellipse 600px 400px at 50% 65%,rgba(245,215,190,.12),transparent)"></div>
 
   <div class="hero-copy">
-    <h1>The minimum<br><em>effective dose</em></h1>
+    <h1>You've tried fitness apps.<br><em>Baseline is different.</em></h1>
 
     <!-- Rotating avatar: 3 looping videos, one per category -->
     <div class="hero-model" id="heroModel" aria-hidden="true">
@@ -166,8 +166,7 @@ section{position:relative}
       </script>
     </div>
 
-    <p class="hero-sub">Mobility, strength, and breathwork<br><strong>in under 20 minutes.</strong></p>
-    <p class="hero-bridge">Built around the science of just enough.<br><span style="color:var(--green);font-weight:600">Just press start</span></p>
+    <p class="hero-sub">Mobility, strength, and breathwork in one app.<br><strong>Press start. The system does the rest.</strong></p>
     <div id="notify" style="animation:fadeUp .7s ease .6s both;text-align:center">
       <a href="https://apps.apple.com/us/app/baseline-daily-movement/id6757976640" class="app-store-badge" target="_blank" rel="noopener"><img src="assets/preorder-app-store.svg" alt="Pre-order on the App Store" width="159" height="54"></a>
       <p style="margin-top:12px;font-size:14px;color:var(--t3)"><span style="color:var(--green)">Free to try</span></p>
@@ -180,9 +179,10 @@ section{position:relative}
 <!-- ═══ NO DECISIONS ═══ -->
 <section class="decision-section">
   <div class="container">
-    <div class="section-label reveal">A content problem</div>
+    <div class="section-label reveal">A decision problem</div>
     <h2 class="reveal">Fitness shouldn't feel like<br>choosing a film on Netflix.</h2>
-    <p class="decision-desc reveal">You open a fitness app and you're bombarded with hundreds of workouts, filters, difficulty levels, and instructor personalities. You end up spending more time <strong>choosing what to do than actually doing it.</strong> Baseline removes this completely.</p>
+    <p class="decision-desc reveal">You open a fitness app and you're bombarded with hundreds of workouts, filters, difficulty levels, and instructor personalities. You scroll. You compare. You close the app. That's not a willpower problem. Every fitness app you've tried was designed to keep you engaged, <strong>not to keep you consistent.</strong></p>
+    <p class="decision-desc reveal" style="margin-top:24px"><strong>Baseline removes the decision entirely.</strong></p>
     <div class="reveal" style="text-align:center;padding:40px 0 32px">
       <div style="display:inline-block;font-size:17px;font-weight:700;color:var(--bg);background:var(--green);padding:16px 48px;border-radius:14px">Start</div>
     </div>
@@ -194,9 +194,9 @@ section{position:relative}
 <!-- ═══ APP SCREENSHOTS ═══ -->
 <section class="screenshots-section">
   <div class="container">
-    <div class="section-label reveal">The whole app</div>
-    <h2 class="reveal">One button.</h2>
-    <p class="screenshots-sub reveal">No tabs, feed and no content library to drown in.</p>
+    <div class="section-label reveal">How it works</div>
+    <h2 class="reveal">One button. Press start, that's it.</h2>
+    <p class="screenshots-sub reveal">No tabs, no feed and no content library. You press start and the system picks your session. 10 to 20 minutes later, you're done and moving on with your day.</p>
   </div>
   <div class="screenshots-track reveal" id="screenshotsTrack">
     <div class="screenshot-card" data-index="0">
@@ -253,14 +253,148 @@ section{position:relative}
 </section>
 
 
+<!-- ═══ FOUR MODES ═══ -->
+<section class="modes-section">
+  <div class="container">
+    <div class="section-label reveal">Four modes</div>
+    <h2 class="reveal">Body and mind in one daily session.</h2>
+    <p class="modes-sub reveal">Less than 20 minutes easily fits into your day. The system picks the mode. You can override it, but you'll rarely need to.</p>
+    <div class="modes">
+      <div class="mode-card reveal">
+        <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◆</span></div><div><div class="mode-name">Baseline</div><div class="mode-tag">Default daily ritual</div></div></div>
+        <p class="mode-desc">Combines movement, mobility and nervous system regulation into one session, with nothing to think about or decide.</p>
+      </div>
+      <div class="mode-card reveal">
+        <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◇</span></div><div><div class="mode-name">Mobility</div><div class="mode-tag">Stretching · Joint work · Maintenance</div></div></div>
+        <p class="mode-desc">For tight hips, stiff back, locked shoulders, and dodgy knees. Pick a focus area or let the system decide for you.</p>
+      </div>
+      <div class="mode-card reveal">
+        <div class="mode-header"><div class="mode-swatch" style="background:rgba(255,111,44,.15)"><span style="color:var(--tangerine);font-size:16px">▲</span></div><div><div class="mode-name">Bodyweight</div><div class="mode-tag">Strength · Push to effort · No equipment</div></div></div>
+        <p class="mode-desc">Push, pull, and hold your way through bodyweight strength without counting reps or tracking weights.</p>
+      </div>
+      <div class="mode-card reveal">
+        <div class="mode-header"><div class="mode-swatch" style="background:rgba(99,102,241,.15)"><span style="color:var(--indigo);font-size:16px">●</span></div><div><div class="mode-name">Shift</div><div class="mode-tag">Breathwork · Shifting state</div></div></div>
+        <p class="mode-desc">Six breathwork protocols, each targeting a different nervous system state. Customize with music, ambient sounds, binaural beats, and narration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ WHO THIS IS FOR ═══ -->
+<section class="whoisfor-section">
+  <div class="container">
+    <div class="section-label reveal">Who it's for</div>
+    <h2 class="reveal">Built for people who don't want<br>fitness to be another job.</h2>
+    <p class="whoisfor-desc reveal">You already have a thing. Baseline works around it. The mobility you skip. The breathwork you've never tried. Just press start and move.</p>
+    <div class="whoisfor-pills reveal">
+      <span class="anti-pill">Skip stretching every time</span>
+      <span class="anti-pill">Sit all day and feel it</span>
+      <span class="anti-pill">Too tired to decide what to do</span>
+      <span class="anti-pill">Never know where to start</span>
+      <span class="anti-pill">Want 13 minutes not 45</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FEATURES ═══ -->
+<section class="features">
+  <div class="container">
+    <div class="section-label reveal">By design</div>
+    <h2 class="reveal">Everything you need.<br><em>Nothing you don't.</em></h2>
+    <div class="feature-grid">
+      <div class="feature-item reveal"><div class="feature-title">Designed to be quick</div><div class="feature-desc">Every session fits into your day, not the other way around.</div></div>
+      <div class="feature-item reveal"><div class="feature-title">Clutter removed</div><div class="feature-desc">No notifications. No streaks. No leaderboards. No social features. No workout library. No calorie tracking. No goals.</div></div>
+      <div class="feature-item reveal"><div class="feature-title">Adapts to your day</div><div class="feature-desc">Reads Apple Health and adjusts accordingly. Had a hard gym day? It gives you mobility instead.</div></div>
+      <div class="feature-item reveal"><div class="feature-title">No equipment needed</div><div class="feature-desc">Everything is bodyweight, so it works in your living room, a hotel, or wherever you happen to be.</div></div>
+      <div class="feature-item reveal"><div class="feature-title">No account needed</div><div class="feature-desc">Download it, open it, and go. No sign-up required and no marketing spam.</div></div>
+      <div class="feature-item reveal"><div class="feature-title">Works offline</div><div class="feature-desc">No internet, no account, no cloud sync. Your data stays on your phone.</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ BLOCKS ═══ -->
+<section class="blocks-section">
+  <div class="container">
+    <div class="section-label reveal">The grid</div>
+    <h2 class="reveal">Blocks are the single metric.</h2>
+    <p class="blocks-sub reveal">Each exercise you complete fills a block. <strong style="color:var(--t1)">The grid resets every Monday.</strong> No streaks. No guilt. Just a clean slate every week.</p>
+    <div class="block-grid reveal" id="blockGrid"></div>
+    <div class="anti-pills reveal">
+      <span class="anti-pill">No streaks</span>
+      <span class="anti-pill">No leaderboards</span>
+      <span class="anti-pill">No scores</span>
+      <span class="anti-pill">No calories</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ WHAT HAPPENS ═══ -->
+<section class="whathappens-section" style="padding:80px 0;border-top:1px solid var(--stroke)">
+  <div class="container">
+    <div class="section-label reveal">What happens</div>
+    <h2 class="reveal" style="font-family:var(--serif);font-size:clamp(26px,6vw,36px);font-weight:400;line-height:1.25;margin-bottom:32px">Week 1, it <em style="font-style:italic;color:var(--green)">feels almost too simple.</em></h2>
+    <div class="reveal progress-grids" id="progressGrids">
+      <div class="progress-stage">
+        <div class="progress-mini-grid" data-fill="3"></div>
+        <strong>Week 1</strong>
+        <p>You just press start. It's short. You wonder if it's enough.</p>
+      </div>
+      <div class="progress-stage">
+        <div class="progress-mini-grid" data-fill="10"></div>
+        <strong>Week 2</strong>
+        <p>Your hips feel different. Your back stops complaining.</p>
+      </div>
+      <div class="progress-stage">
+        <div class="progress-mini-grid" data-fill="22"></div>
+        <strong>Week 4</strong>
+        <p>You stop thinking about it. It's just what you do before coffee.</p>
+      </div>
+      <div class="progress-stage">
+        <div class="progress-mini-grid" data-fill="28"></div>
+        <strong>Month 3</strong>
+        <p>You stop noticing. It's just there.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SHIFT + BREATHING ORB ═══ -->
+<section class="shift-section">
+  <div class="shift-orb-bg" id="orbWrap">
+    <div class="shift-orb-outer"></div>
+    <div class="shift-orb-mid"></div>
+    <div class="shift-orb-inner"></div>
+  </div>
+  <div class="container">
+    <div class="shift-header reveal">
+      <div class="shift-wordmark">SHIFT</div>
+      <div class="shift-orb-block"></div>
+      <p class="shift-sub">Breathwork for shifting state. Each mode targets a desired change. Backed by research.</p>
+    </div>
+    <div class="shift-modes">
+      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--indigo)"></div><div class="shift-tile-name" style="font-family:'JosefinSans-ThinItalic',sans-serif;letter-spacing:4px;color:var(--indigo)">ARRIVE</div><div class="shift-tile-desc">Scattered → Present</div></div>
+      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--solar)"></div><div class="shift-tile-name" style="font-family:'Unbounded-Black',sans-serif;letter-spacing:0;color:var(--solar)">PRIME</div><div class="shift-tile-desc">Flat → Warm</div></div>
+      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--ice)"></div><div class="shift-tile-name" style="font-family:'FragmentMono-Italic',monospace;letter-spacing:3px;color:var(--ice)">reset</div><div class="shift-tile-desc">Depleted → Restored</div></div>
+      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--lavender)"></div><div class="shift-tile-name" style="font-family:'Fraunces-LightItalic',serif;letter-spacing:1px;color:var(--lavender)">Downshift</div><div class="shift-tile-desc">On → Off</div></div>
+      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--emerald)"></div><div class="shift-tile-name" style="font-family:'Sora-Thin',sans-serif;letter-spacing:3px;color:var(--emerald)">Recharge</div><div class="shift-tile-desc">Tired → Rested</div></div>
+      <div class="shift-tile reveal" style="border-color:rgba(239,68,68,.15)"><div class="shift-tile-dot" style="background:var(--red)"></div><div class="shift-tile-name" style="font-family:'BigShoulders-Black',sans-serif;letter-spacing:5px;color:var(--red)">OVERRIDE</div><div class="shift-tile-desc">40 breaths. Full autonomic reset. For when nothing else works.</div></div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ═══ EFFECTIVE DOSE ═══ -->
 <section class="dose-section">
   <div class="glow"></div>
   <div class="container">
     <div class="section-label reveal">The science</div>
-    <h2 class="reveal">Every exercise has an<br><em>effective dose</em>.</h2>
-    <p class="dose-lead reveal">Every exercise has a threshold: the shortest duration that still creates measurable change. Baseline sets that number for each exercise and uses it as your target. Once you hit it, the benefit is there. Everything after that is a bonus. <a href="#references" style="color:var(--accent);border-bottom:1px solid rgba(143,168,154,.3)">See the research</a>.</p>
+    <h2 class="reveal"><em>Takes less time</em> than you think.</h2>
+    <p class="dose-lead reveal">13 minutes before work, 10 minutes after the kids are down or 4 minutes between meetings. <strong>Every exercise has a threshold, the minimum effective dose that creates measurable change.</strong> Baseline sets that number and uses it as your target. Once you hit it, the benefit is there. <a href="#references" style="color:var(--accent);border-bottom:1px solid rgba(143,168,154,.3)">See the research</a>.</p>
 
     <div class="dose-card reveal" id="doseCard">
       <div class="dose-card-header">
@@ -299,113 +433,7 @@ section{position:relative}
       </div>
     </div>
 
-    <p class="dose-kicker reveal">Short and frequent beats long and rare.</p>
-    <p class="dose-proof reveal">You can stay longer if you want, but the dose is earned at the threshold. What matters more than extra time today is whether you show up again tomorrow.</p>
-  </div>
-</section>
-
-
-<!-- ═══ BLOCKS ═══ -->
-<section class="blocks-section">
-  <div class="container">
-    <div class="section-label reveal">The grid</div>
-    <h2 class="reveal">One block per exercise.</h2>
-    <p class="blocks-sub reveal">Each block represents an exercise completed at its effective dose. <strong style="color:var(--t1)">The grid resets every week.</strong> No streak to protect, no guilt if you miss a day. Just a clean slate every Monday.</p>
-    <div class="block-grid reveal" id="blockGrid"></div>
-    <div class="anti-pills reveal">
-      <span class="anti-pill">No streaks</span>
-      <span class="anti-pill">No leaderboards</span>
-      <span class="anti-pill">No scores</span>
-      <span class="anti-pill">No calories</span>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══ FOUR MODES ═══ -->
-<section class="modes-section">
-  <div class="container">
-    <div class="section-label reveal">Four modes</div>
-    <h2 class="reveal">Body and mind in one daily session.</h2>
-    <p class="modes-sub reveal">The system picks the mode. You can override it, but you'll rarely need to.</p>
-    <div class="modes">
-      <div class="mode-card reveal">
-        <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◆</span></div><div><div class="mode-name">Baseline</div><div class="mode-tag">Default daily ritual</div></div></div>
-        <p class="mode-desc">Combines movement, mobility and nervous system regulation into one session, with nothing to think about or decide.</p>
-      </div>
-      <div class="mode-card reveal">
-        <div class="mode-header"><div class="mode-swatch" style="background:rgba(48,209,88,.15)"><span style="color:var(--green);font-size:16px">◇</span></div><div><div class="mode-name">Mobility</div><div class="mode-tag">Stretching · Joint work · Maintenance</div></div></div>
-        <p class="mode-desc">For tight hips, stiff back, locked shoulders, and dodgy knees. Pick a focus area or let the system decide for you.</p>
-      </div>
-      <div class="mode-card reveal">
-        <div class="mode-header"><div class="mode-swatch" style="background:rgba(255,111,44,.15)"><span style="color:var(--tangerine);font-size:16px">▲</span></div><div><div class="mode-name">Bodyweight</div><div class="mode-tag">Strength · Push to effort · No equipment</div></div></div>
-        <p class="mode-desc">Push, pull, and hold your way through bodyweight strength without counting reps or tracking weights.</p>
-      </div>
-      <div class="mode-card reveal">
-        <div class="mode-header"><div class="mode-swatch" style="background:rgba(99,102,241,.15)"><span style="color:var(--indigo);font-size:16px">●</span></div><div><div class="mode-name">Shift</div><div class="mode-tag">Breathwork · Shifting state</div></div></div>
-        <p class="mode-desc">Six breathwork protocols, each targeting a different nervous system state. Customize with music, ambient sounds, binaural beats, and narration.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══ SHIFT + BREATHING ORB ═══ -->
-<section class="shift-section">
-  <div class="shift-orb-bg" id="orbWrap">
-    <div class="shift-orb-outer"></div>
-    <div class="shift-orb-mid"></div>
-    <div class="shift-orb-inner"></div>
-  </div>
-  <div class="container">
-    <div class="shift-header reveal">
-      <div class="shift-wordmark">SHIFT</div>
-      <div class="shift-orb-block"></div>
-      <p class="shift-sub">Breathwork for shifting state. Each mode targets a desired change. Backed by research.</p>
-    </div>
-    <div class="shift-modes">
-      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--indigo)"></div><div class="shift-tile-name" style="font-family:'JosefinSans-ThinItalic',sans-serif;letter-spacing:4px;color:var(--indigo)">ARRIVE</div><div class="shift-tile-desc">Scattered → Present</div></div>
-      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--solar)"></div><div class="shift-tile-name" style="font-family:'Unbounded-Black',sans-serif;letter-spacing:0;color:var(--solar)">PRIME</div><div class="shift-tile-desc">Flat → Warm</div></div>
-      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--ice)"></div><div class="shift-tile-name" style="font-family:'FragmentMono-Italic',monospace;letter-spacing:3px;color:var(--ice)">reset</div><div class="shift-tile-desc">Depleted → Restored</div></div>
-      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--lavender)"></div><div class="shift-tile-name" style="font-family:'Fraunces-LightItalic',serif;letter-spacing:1px;color:var(--lavender)">Downshift</div><div class="shift-tile-desc">On → Off</div></div>
-      <div class="shift-tile reveal"><div class="shift-tile-dot" style="background:var(--emerald)"></div><div class="shift-tile-name" style="font-family:'Sora-Thin',sans-serif;letter-spacing:3px;color:var(--emerald)">Recharge</div><div class="shift-tile-desc">Tired → Rested</div></div>
-      <div class="shift-tile reveal" style="border-color:rgba(239,68,68,.15)"><div class="shift-tile-dot" style="background:var(--red)"></div><div class="shift-tile-name" style="font-family:'BigShoulders-Black',sans-serif;letter-spacing:5px;color:var(--red)">OVERRIDE</div><div class="shift-tile-desc">40 breaths. Full autonomic reset. For when nothing else works.</div></div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- ═══ FEATURES ═══ -->
-<section class="features">
-  <div class="container">
-    <h2 class="reveal">Everything you need.<br><em>Nothing you don't.</em></h2>
-    <p class="features-sub reveal">Already work out? Baseline is everything else. The mobility you skip, the breathwork that shifts your state, the maintenance your body needs between sessions.</p>
-    <div class="feature-grid">
-      <div class="feature-item reveal"><div class="feature-title">Designed to be quick</div><div class="feature-desc">Every session fits into your day, not the other way around.</div></div>
-      <div class="feature-item reveal"><div class="feature-title">Adapts to your day</div><div class="feature-desc">Reads Apple Health and adjusts accordingly. Had a hard gym day? It gives you mobility instead.</div></div>
-      <div class="feature-item reveal"><div class="feature-title">No equipment needed</div><div class="feature-desc">Everything is bodyweight, so it works in your living room, a hotel, or wherever you happen to be.</div></div>
-      <div class="feature-item reveal"><div class="feature-title">No account needed</div><div class="feature-desc">Download it, open it, and go. No sign-up required and no internet connection needed.</div></div>
-      <div class="feature-item reveal"><div class="feature-title">Reads your body</div><div class="feature-desc">Connects to Apple Health. After a hard gym session, it dials back to recovery. After rest, it pushes harder.</div></div>
-      <div class="feature-item reveal"><div class="feature-title">Works offline</div><div class="feature-desc">No internet, no account, no cloud sync. Your data stays on your phone.</div></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══ WHO THIS IS FOR ═══ -->
-<section class="whoisfor-section">
-  <div class="container">
-    <div class="section-label reveal">Who it's for</div>
-    <h2 class="reveal">Built for people who don't want<br>fitness to be yet another job.</h2>
-    <p class="whoisfor-desc reveal">You already have a thing. Whether it be gym, running, a sport or a class. Baseline works around it. The mobility you skip. The breathwork that shifts your state. The bodyweight work that keeps you moving between sessions.</p>
-    <div class="whoisfor-pills reveal">
-      <span class="anti-pill">Lifters who never stretch</span>
-      <span class="anti-pill">Runners who skip mobility</span>
-      <span class="anti-pill">Desk workers who sit 8+ hours</span>
-      <span class="anti-pill">Parents with zero free time</span>
-      <span class="anti-pill">Anyone who hates choosing workouts</span>
-    </div>
+    <p class="dose-kicker reveal" style="color:var(--green)">Short and frequent beats long and rare.</p>
   </div>
 </section>
 
@@ -414,16 +442,16 @@ section{position:relative}
 <section class="price-section">
   <div class="container">
     <div class="section-label reveal">The cost</div>
-    <h2 class="reveal">Three apps in one.<br><em>A fraction of the price.</em></h2>
+    <h2 class="reveal">All of this just <em>$9.99 a year.</em></h2>
     <div class="price-compare reveal">
       <div class="price-row"><span class="price-row-name">Breathwork app</span><span class="price-row-cost" data-price="breathwork">~$130/yr</span></div>
       <div class="price-row"><span class="price-row-name">Mobility app</span><span class="price-row-cost" data-price="mobility">~$108/yr</span></div>
       <div class="price-row"><span class="price-row-name">Bodyweight app</span><span class="price-row-cost" data-price="bodyweight">~$80/yr</span></div>
-      <div class="price-row price-row-total"><span class="price-row-name">Buying all three</span><span class="price-row-cost" data-price="total">~$318/yr</span></div>
+      <div class="price-row price-row-total"><span class="price-row-name">Buying separately</span><span class="price-row-cost" data-price="total">~$318/yr</span></div>
     </div>
     <div class="price-baseline reveal">
       <div class="price-baseline-amount" id="priceFirst">$9.99 USD<span class="price-baseline-period">/year</span></div>
-      <p class="price-baseline-note">All three disciplines. One app.</p>
+      <p class="price-baseline-note">Free to try. Not introductory pricing, this is the actual price. We have no servers, no bloated team, no VC funding, and no reason to charge you more. This is what fitness apps should cost.</p>
     </div>
   </div>
 </section>
@@ -432,7 +460,7 @@ section{position:relative}
 <section class="philosophy">
   <div class="container">
     <blockquote class="reveal">"You don't need more workouts. You need one that evolves without you thinking about it."</blockquote>
-    <cite class="reveal">The Baseline Manifesto</cite>
+    <cite class="reveal"><a href="/manifesto" style="color:inherit;border-bottom:1px solid rgba(143,168,154,.3)">The Baseline Manifesto</a></cite>
   </div>
 </section>
 

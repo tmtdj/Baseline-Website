@@ -225,6 +225,21 @@ if (doseEl) doseObs.observe(doseEl);
   };
 })();
 
+// ═══ Progress mini grids ═══
+(function(){
+  var grids = document.querySelectorAll('.progress-mini-grid');
+  if (!grids.length) return;
+  var TOTAL = 30; // 6x5
+  grids.forEach(function(grid){
+    var fill = parseInt(grid.dataset.fill) || 0;
+    for (var i = 0; i < TOTAL; i++){
+      var cell = document.createElement('div');
+      cell.className = 'progress-mini-cell' + (i < fill ? ' filled' : '');
+      grid.appendChild(cell);
+    }
+  });
+})();
+
 // ═══ Breathing orb label ═══
 const orbLabel = document.getElementById('orbLabel');
 let orbVisible = false;
