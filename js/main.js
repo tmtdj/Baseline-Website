@@ -18,6 +18,8 @@ window.addEventListener('load', function(){
       var el1 = document.getElementById('priceFirst');
       var el2 = document.getElementById('priceThen');
       if (el1) el1.innerHTML = p.price + '<span class="price-baseline-period">/year</span>';
+      var elH = document.getElementById('priceHeadline');
+      if (elH) elH.textContent = p.price + ' a year.';
       if (el2) el2.style.display = 'none';
       ['breathwork','mobility','bodyweight','total','calm','headspace','wakingup','yoga','romwod','pliability'].forEach(function(k){
         var el = document.querySelector('[data-price="'+k+'"]');
