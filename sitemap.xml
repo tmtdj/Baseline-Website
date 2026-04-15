@@ -577,6 +577,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://baselinebody.app/alternatives/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://baselinebody.app/alternatives/fitness-app-without-streaks</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
