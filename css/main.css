@@ -85,7 +85,7 @@ section{position:relative}
 .hero-model .active[data-cat="breathwork"]{filter:drop-shadow(0 0 50px rgba(167,139,250,.3))}
 .hero-copy{text-align:center;max-width:660px;position:relative;z-index:2;padding-bottom:20px}
 .hero-outcome{font-family:var(--sans);font-weight:500;font-size:clamp(15px,3.5vw,19px);color:var(--t2);margin-bottom:12px;animation:fadeUp .7s ease .05s both;letter-spacing:.3px}
-.hero h1{font-family:var(--serif);font-size:clamp(32px,8vw,52px);font-weight:400;line-height:1.1;color:var(--t1);margin-bottom:18px;animation:fadeUp .7s ease .15s both}
+.hero h1{font-family:var(--serif);font-size:clamp(32px,8vw,52px);font-weight:400;line-height:1.1;color:var(--t1);margin-bottom:18px;animation:fadeUp .7s ease .15s both;text-wrap:balance}
 .hero h1 em{font-style:italic;color:var(--green)}
 .hero-sub{font-size:clamp(20px,4.5vw,24px);color:var(--t1);line-height:1.5;margin-bottom:16px;animation:fadeUp .7s ease .3s both}
 .hero-sub strong{color:var(--green);font-weight:600}
