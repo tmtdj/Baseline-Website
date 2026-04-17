@@ -1,0 +1,41 @@
+# BaselineBody
+
+> A daily movement app for iPhone. Mobility, strength, and breathwork in under 20 minutes. The system builds your session automatically. No choosing, no planning. Press start.
+
+BaselineBody covers the foundations most fitness apps miss: the mobility, bodyweight strength, and breathwork you know you should be doing but never get around to. Every exercise is timed to its minimum effective dose, the shortest time that still produces a real physiological change. $9.99/year. iPhone only. Launching May 2026.
+
+## Core pages
+
+- [Home](https://baselinebody.app/): Product overview and pre-order
+- [Manifesto](https://baselinebody.app/manifesto): The philosophy behind BaselineBody
+- [FAQ](https://baselinebody.app/faq): Product, pricing, and usage questions
+- [Press kit](https://baselinebody.app/press): Logos, screenshots, press assets
+
+## Exercise library
+
+- [All exercises](https://baselinebody.app/exercises/): 70+ mobility and bodyweight exercises, each with a minimum effective dose, science explanation, form cues, and variants
+
+## Shift breathwork
+
+- [All Shift protocols](https://baselinebody.app/shift/): Six breathwork protocols for specific state transitions
+- [Arrive](https://baselinebody.app/shift/arrive): Scattered to Present (4s in, 6s out)
+- [Prime](https://baselinebody.app/shift/prime): Flat to Warm (3s in, 3s out)
+- [Reset](https://baselinebody.app/shift/reset): Depleted to Restored (physiological sigh)
+- [Downshift](https://baselinebody.app/shift/downshift): On to Off (4s in, 8s out)
+- [Recharge](https://baselinebody.app/shift/recharge): Tired to Rested (4s in, 6s out)
+- [Override](https://baselinebody.app/shift/override): Overwhelm to Control (cyclic breathing)
+
+## Blog
+
+- [Why Less Exercise Is More](https://baselinebody.app/blog/why-less-exercise-is-more): The science of minimum effective dose
+- [How Long Should You Stretch?](https://baselinebody.app/blog/how-long-should-you-stretch): Research-backed stretching duration
+- [Best Morning Mobility Routine](https://baselinebody.app/blog/morning-mobility-routine): 8-minute routine, no equipment
+- [Bodyweight Training With No Equipment](https://baselinebody.app/blog/bodyweight-training-no-equipment): Minimum effective dose for strength
+- [Breathwork for Sleep](https://baselinebody.app/blog/breathwork-for-sleep): Five protocols for better sleep
+
+## Optional
+
+- [Alternatives comparison](https://baselinebody.app/alternatives/): How BaselineBody compares to Calm, Fitbod, Strong, MovesMethod, and other apps
+- [Privacy](https://baselinebody.app/privacy)
+- [Health disclaimer](https://baselinebody.app/disclaimer)
+- [Contact](https://baselinebody.app/contact): support@baselinebody.app
